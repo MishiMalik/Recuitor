@@ -2,7 +2,13 @@ body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-color: $body;
     font-family: $font-poppins;
+    background-color: $body !important;
 }
+.body{
+    @media screen and (min-width:1600px){
+        padding: 0px 20px !important;
+    }
+}
+
 
