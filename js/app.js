@@ -64,3 +64,10 @@ function copyText () {
 }
 
 copyText();
+
+
+
+// In your Javascript (external .js resource or <script> tag)
+$(document).ready(function() {
+    $('.form-select').select2();
+});

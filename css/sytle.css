@@ -451,16 +451,28 @@ body {
       background-color: #34A853; }
   .bg-card .display__picture {
     position: relative;
-    margin-top: 15px; }
+    margin-top: 15px;
+    position: relative; }
+    .bg-card .display__picture .upload-pic {
+      position: absolute;
+      height: 90px;
+      width: 90px;
+      top: -10px;
+      left: 10%;
+      opacity: 0;
+      z-index: 10;
+      cursor: pointer; }
     .bg-card .display__picture img {
       width: 118px;
       height: 118px;
       border-radius: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      cursor: pointer; }
     .bg-card .display__picture-cam {
       position: absolute;
       top: -10px;
-      left: 45%; }
+      left: 45%;
+      cursor: pointer; }
   .bg-card .personal__text {
     text-align: center;
     margin-top: 5px; }
@@ -635,7 +647,9 @@ body {
       font-weight: 500;
       font-size: 18px;
       line-height: 27px;
-      padding: 9px 8px; }
+      padding: 9px 8px;
+      display: flex;
+      align-items: center !important; }
       @media only screen and (max-width: 1200px) {
         .bg-card .company__row .company__input input {
           font-size: 16px;
@@ -650,29 +664,6 @@ body {
         border-radius: 4px;
         outline: none !important;
         box-shadow: none !important; }
-    .bg-card .company__row .company__input select {
-      background-color: #FBFBFB;
-      border: 1px solid #C2C2C2;
-      box-sizing: border-box;
-      border-radius: 4px;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 27px;
-      padding: 9px 8px; }
-      @media only screen and (max-width: 1200px) {
-        .bg-card .company__row .company__input select {
-          font-size: 16px;
-          line-height: 25px;
-          padding: 8px 8px; } }
-      .bg-card .company__row .company__input select:active, .bg-card .company__row .company__input select:focus {
-        background: #FBFBFB;
-        border: 1px solid #157BFB;
-        box-sizing: border-box;
-        border-radius: 4px;
-        outline: none !important;
-        box-shadow: none !important; }
-      .bg-card .company__row .company__input select option {
-        padding: 6px; }
     .bg-card .company__row .company__input .company-contact {
       position: relative;
       width: 100%; }
@@ -685,45 +676,72 @@ body {
         width: 100%; }
       .bg-card .company__row .company__input .company-contact .input3 {
         padding: 9px 40px !important;
-        width: 100%; }
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+      .bg-card .company__row .company__input .company-contact .facebook-svg {
+        margin-top: 2px; }
       .bg-card .company__row .company__input .company-contact .input4 {
         padding: 9px 40px !important;
         width: 100%;
-        font-size: 16px; }
+        font-size: 16px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
         @media only screen and (max-width: 1200px) {
           .bg-card .company__row .company__input .company-contact .input4 {
             font-size: 14px;
             line-height: 25px; } }
         .bg-card .company__row .company__input .company-contact .input4::placeholder {
-          color: #000000;
           font-weight: 400; }
-    .bg-card .company__row .upload-video {
-      position: relative;
-      cursor: pointer; }
-      .bg-card .company__row .upload-video .video-input {
-        position: absolute;
-        height: 150px;
-        opacity: 0;
-        cursor: pointer; }
-        @media only screen and (max-width: 425px) {
-          .bg-card .company__row .upload-video .video-input {
-            height: 100%;
-            width: 100%; } }
-      .bg-card .company__row .upload-video img {
-        cursor: pointer;
-        width: 395px;
-        height: 224px;
-        object-fit: contain; }
   .bg-card .update-btn {
     background-color: #157BFB !important;
     border: none !important;
     padding: 10px;
-    border-radius: 4px; }
+    border-radius: 4px;
+    width: 395px !important;
+    height: 50px; }
     .bg-card .update-btn a {
       color: white;
       text-decoration: none;
       padding: 10px !important;
       width: 100%; }
+    @media only screen and (max-width: 375px) {
+      .bg-card .update-btn {
+        height: 40px; } }
+  @media only screen and (max-width: 600px) {
+    .bg-card .check-div {
+      flex-direction: column;
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
+      margin-top: 5px !important; } }
+  .bg-card .forget__text {
+    display: flex;
+    align-items: center; }
+    @media only screen and (max-width: 600px) {
+      .bg-card .forget__text {
+        flex-direction: column; } }
+    .bg-card .forget__text a {
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 25px;
+      color: #157BFB; }
+    .bg-card .forget__text p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 22px;
+      color: #515151;
+      margin: 0px 20px; }
+      @media only screen and (max-width: 600px) {
+        .bg-card .forget__text p {
+          margin: 0px; } }
+      @media only screen and (max-width: 375px) {
+        .bg-card .forget__text p {
+          font-size: 12px; } }
 
 @media only screen and (max-width: 1200px) {
   .row2 {
@@ -746,6 +764,87 @@ body {
 @media only screen and (max-width: 375px) {
   .bg-card-div {
     padding: 10px 10px !important; } }
+
+.upload-video {
+  position: relative;
+  cursor: pointer; }
+  .upload-video .video-input {
+    position: absolute;
+    height: 150px;
+    opacity: 0;
+    cursor: pointer; }
+    @media only screen and (max-width: 425px) {
+      .upload-video .video-input {
+        height: 100%;
+        width: 100%; } }
+  .upload-video img {
+    cursor: pointer;
+    width: 395px;
+    height: 224px;
+    object-fit: contain; }
+
+.settings-check {
+  margin: 0px 7px; }
+  .settings-check label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #515151; }
+    @media only screen and (max-width: 335px) {
+      .settings-check label {
+        font-size: 12px; } }
+
+.form-select {
+  background-color: #FBFBFB !important;
+  border: 1px solid #C2C2C2 !important;
+  border-radius: 4px !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 27px !important;
+  padding: 9px 8px !important; }
+  @media only screen and (max-width: 1200px) {
+    .form-select {
+      font-size: 16px !important;
+      line-height: 25px !important;
+      padding: 8px 8px !important; } }
+  .form-select:active, .form-select:focus {
+    background: #FBFBFB;
+    border: 1px solid #157BFB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none !important;
+    box-shadow: none !important; }
+  .form-select option {
+    padding: 6px !important;
+    border: 1px solid #C2C2C2 !important;
+    background-color: #FBFBFB !important; }
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #444;
+  line-height: 28px; }
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  display: block;
+  padding-left: 0px;
+  padding: 0px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: -13px; }
+
+.select2-container--default .select2-selection--single {
+  background-color: #FBFBFB !important;
+  border: 1px solid #C2C2C2 !important;
+  border-radius: 4px;
+  padding: 20px; }
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 26px;
+  position: absolute;
+  top: 10px !important;
+  right: 10px !important;
+  width: 20px; }
 
 .main {
   margin-top: 85px; }
@@ -1273,6 +1372,78 @@ body {
       line-height: 21px;
       color: #444447; }
 
+.table-row {
+  overflow-x: scroll !important;
+  min-height: 270px;
+  max-height: 300px;
+  overflow-y: auto;
+  white-space: nowrap;
+  backface-visibility: hidden;
+  border-radius: 10px; }
+  .table-row::-webkit-scrollbar {
+    width: 5px;
+    height: 5px; }
+  .table-row::-webkit-scrollbar-track {
+    background-color: white; }
+  .table-row::-webkit-scrollbar-thumb {
+    background-color: #157BFB;
+    border-radius: 10px; }
+
+.list-table {
+  width: 100%; }
+  .list-table tr,
+  .list-table th {
+    border-bottom: 1px solid #F5F5F5 !important;
+    padding: 15px; }
+  .list-table tr th {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #000000; }
+  .list-table td {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #000000;
+    padding: 15px; }
+    .list-table td .list-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 4px;
+      object-fit: cover;
+      margin: 0px 4px 0px 0px; }
+    .list-table td .contact {
+      display: flex; }
+      .list-table td .contact a {
+        margin: 0px 5px;
+        padding: 8px;
+        border: 1px solid #EDDFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        height: 40px;
+        width: 40px; }
+    .list-table td .list-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .list-table td .list-btn a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        color: #157BFB;
+        text-decoration: none;
+        padding: 5px 10px;
+        border: 1px solid #157BFB;
+        border: 1px solid #157BFB;
+        border-radius: 61px; }
+      .list-table td .list-btn svg {
+        margin: 0px 35px; }
+
 .navbar {
   height: 70px;
   background: #FFFFFF;
@@ -1376,6 +1547,9 @@ body {
   .navbar .active {
     color: #157BFB !important;
     border-bottom: 2px solid #157BFB; }
+    .navbar .active svg {
+      fill: #157BFB;
+      stroke: #157BFB; }
   .navbar .notifications {
     height: 22px;
     width: 19px;

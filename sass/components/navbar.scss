@@ -146,6 +146,10 @@
     .active {
         color: #157BFB !important;
         border-bottom: 2px solid #157BFB;
+        svg{
+            fill: #157BFB ;
+            stroke: #157BFB ;
+        }
     }
 
     .notifications {
