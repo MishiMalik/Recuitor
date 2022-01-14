@@ -3,6 +3,7 @@
         position: relative;
 
         &-num {
+            text-decoration: none;
             font-weight: 600;
             font-size: 20px;
             line-height: 130%;
@@ -17,6 +18,7 @@
             background: #FFFFFF;
             border: 1px solid #157BFB;
             margin: 0px 20px;
+            cursor: pointer;
 
             @media only screen and(max-width:600px) {
                 font-size: 17px;

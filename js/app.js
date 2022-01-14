@@ -92,6 +92,8 @@ function updateTextInputt(val) {
 // multisteps
 const prevBtns = document.querySelectorAll(".btn-prev");
 const nextBtns = document.querySelectorAll(".btn-next");
+const nextBtns2 = document.querySelectorAll(".btn-next2");
+const prevBtns2 = document.querySelectorAll(".btn-prev2");
 const progress = document.getElementById("progress");
 const formSteps = document.querySelectorAll(".step-forms");
 const progressSteps = document.querySelectorAll(".progress-step");
@@ -108,8 +110,28 @@ nextBtns.forEach((btn) => {
     });
 });
 
+nextBtns2.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        formStepsNum++;
+        formStepsNum++;
+        updateFormSteps();
+        // updateProgressbar();
+
+    });
+});
+
 prevBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
+        formStepsNum--;
+        updateFormSteps();
+        // updateProgressbar();
+
+    });
+});
+
+prevBtns2.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        formStepsNum--;
         formStepsNum--;
         updateFormSteps();
         // updateProgressbar();

@@ -1477,6 +1477,7 @@ body {
 .job__pregress .job__level {
   position: relative; }
   .job__pregress .job__level-num {
+    text-decoration: none;
     font-weight: 600;
     font-size: 20px;
     line-height: 130%;
@@ -1490,7 +1491,8 @@ body {
     border-radius: 100%;
     background: #FFFFFF;
     border: 1px solid #157BFB;
-    margin: 0px 20px; }
+    margin: 0px 20px;
+    cursor: pointer; }
     @media only screen and (max-width: 600px) {
       .job__pregress .job__level-num {
         font-size: 17px;
@@ -2197,16 +2199,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .group-inputs {
   position: relative; }
-
-.group-inputs label {
-  font-size: 13px;
-  position: absolute;
-  height: 19px;
-  padding: 4px 7px;
-  top: -14px;
-  left: 10px;
-  color: #a2a2a2;
-  background-color: white; }
 
 .welcome {
   height: 450px;
