@@ -326,6 +326,40 @@
                 }
             }
 
+            textarea{
+                background: #FBFBFB;
+                border: 1px solid #C2C2C2;
+                box-sizing: border-box;
+                border-radius: 4px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 27px;
+                padding: 9px 8px;
+                display: flex;
+                align-items: center !important;
+                width: 100%;
+
+                @media only screen and(max-width:1200px) {
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+
+                &::placeholder {
+                    color: #BBBBBB;
+                    font-weight: 400;
+                }
+
+                &:active,
+                &:focus {
+                    background: #FBFBFB;
+                    border: 1px solid #157BFB;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    outline: none !important;
+                    box-shadow: none !important;
+                }
+            }
+
 
             .company-contact {
                 position: relative;
@@ -551,8 +585,9 @@
 
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #444;
+    color: rgb(0, 0, 0) !important;
     line-height: 28px;
+    font-size: 16px !important;
 }
 .select2-container .select2-selection--single .select2-selection__rendered {
     
@@ -569,7 +604,7 @@
     background-color: #FBFBFB !important;
     border: 1px solid #C2C2C2 !important;
     border-radius: 4px;
-    padding: 20px;
+    padding: 22px;
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow {
     height: 26px;
