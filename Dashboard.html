@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +24,7 @@
         rel="stylesheet">
     <title>Dashboard</title>
 </head>
+
 <body>
     <header class="header py-0">
         <nav class="navbar navbar-expand-xl navbar-light   fixed-top py-0">
@@ -72,7 +74,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="add-job.html">
+                            <a class="nav-link" href="Add-Jobs.html">
                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -254,15 +256,85 @@
 
                 </div>
                 <div class="users d-flex align-items-center order2">
-                    <div class="notifications mx-2">
-                        <a href="">
+                    <div class="notifications mx-2  ">
+                        <div href="" class=" dropdown" >
                             <svg width="19" height="21" viewBox="0 0 19 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                                xmlns="http://www.w3.org/2000/svg" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M11.98 2.64094C11.8026 1.15337 10.5367 0 9.0013 0C7.46596 0 6.2 1.15337 6.02257 2.64094C3.5199 3.77546 1.77908 6.29555 1.77908 9.22222V14.2399L0.108582 17.5494C-0.227141 18.2145 0.25626 19 1.0013 19H6.17201C6.58385 20.1652 7.69509 21 9.0013 21C10.3075 21 11.4188 20.1652 11.8306 19H17.0013C17.7463 19 18.2297 18.2145 17.894 17.5494L16.2235 14.2399V9.22222C16.2235 6.29555 14.4827 3.77546 11.98 2.64094ZM14.3308 14.9286L15.3764 17H2.62623L3.6718 14.9286C3.74234 14.7888 3.77908 14.6345 3.77908 14.478V9.22222C3.77908 6.33807 6.11715 4 9.0013 4C11.8855 4 14.2235 6.33807 14.2235 9.22222V14.478C14.2235 14.6345 14.2603 14.7888 14.3308 14.9286Z"
                                     fill="#92929D" />
                             </svg>
-                        </a>
+
+                            <ul class="dropdown-menu notification__menu px-1 py-2" aria-labelledby="navbarDropdown">
+                                <div class="arrow4">
+                                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.44306 1.58133C8.09378 0.313358 9.90622 0.31336 10.5569 1.58133L16.8088 13.7635C17.4065 14.928 16.5608 16.3125 15.2519 16.3125H2.74812C1.43916 16.3125 0.593528 14.928 1.19118 13.7635L7.44306 1.58133Z"
+                                            fill="white" stroke="#D8D8D8" stroke-width="0.5" />
+                                    </svg>
+    
+                                </div>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                       <div class="d-flex flex-column align-items-start">
+                                        <p class="mb-0"> Payment confirmation of you acc.</p>
+                                        <span>12-3-2022</span>
+                                       </div>
+                                       <div class="state"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                       <div class="d-flex flex-column align-items-start">
+                                        <p class="mb-0"> Payment confirmation of you acc.</p>
+                                        <span>12-3-2022</span>
+                                       </div>
+                                       <div class="state"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                       <div class="d-flex flex-column align-items-start">
+                                        <p class="mb-0"> Payment confirmation of you acc.</p>
+                                        <span>12-3-2022</span>
+                                       </div>
+                                       <div class="state"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                       <div class="d-flex flex-column align-items-start">
+                                        <p class="mb-0"> Payment confirmation of you acc.</p>
+                                        <span>12-3-2022</span>
+                                       </div>
+                                       <div class="state2"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                       <div class="d-flex flex-column align-items-start">
+                                        <p class="mb-0"> Payment confirmation of you acc.</p>
+                                        <span>12-3-2022</span>
+                                       </div>
+                                       <div class="state2"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-center" href="#">
+                                      <h3 class="mb-0 d-flex align-items-center"> View All Notifications ></h3>
+                                    </a>
+                                </li>
+                               
+    
+                            </ul>
+                        </div>
+
+                       
+
+
+
                     </div>
                     <div class="user d-flex align-items-center ms-2">
                         <div class="user__dp">
@@ -758,7 +830,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
             <div class="row main-row  mt-2">
@@ -954,8 +1026,8 @@
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M11 1.00003L14.09 7.26003L21 8.27003L16 13.14L17.18 20.02L11 16.77L4.82 20.02L6 13.14L1 8.27003L7.91 7.26003L11 1.00003Z"
-                                                    stroke="#157BFB" stroke-width="2" stroke-linecap="round" fill="#157BFB"
-                                                    stroke-linejoin="round" />
+                                                    stroke="#157BFB" stroke-width="2" stroke-linecap="round"
+                                                    fill="#157BFB" stroke-linejoin="round" />
                                             </svg>
                                         </div>
                                     </td>
@@ -1129,8 +1201,8 @@
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M11 1.00003L14.09 7.26003L21 8.27003L16 13.14L17.18 20.02L11 16.77L4.82 20.02L6 13.14L1 8.27003L7.91 7.26003L11 1.00003Z"
-                                                    stroke="#157BFB" stroke-width="2" stroke-linecap="round" fill="#157BFB"
-                                                    stroke-linejoin="round" />
+                                                    stroke="#157BFB" stroke-width="2" stroke-linecap="round"
+                                                    fill="#157BFB" stroke-linejoin="round" />
                                             </svg>
                                         </div>
                                     </td>
@@ -1150,11 +1222,12 @@
 
 
 
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>

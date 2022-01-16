@@ -394,23 +394,89 @@
             right: 10px;
             z-index: -1 !important;
         }
+        .arrow4{
+            position: absolute;
+            top: -20px;
+            right: 10px;
+            z-index: -1 !important;
+            @media only screen and (max-width:560px){
+                right: 105px;
+            }
+            @media only screen and (max-width:400px){
+                right: 155px;
+            }
+            @media only screen and (max-width:355px){
+                right: 170px;
+             }
+        }
     }
 }
 
-// .help-svg {
-//     margin-right: -3px !important;
-// }
-// .help-text{
-//     @media only screen and(max-width:1200px){
-//         margin-left: 5px;
-//         width: 90px !important;
-//         display: flex;
-//         justify-content: space-between !important;
-//       }
-//       svg{
-//         @media only screen and(max-width:1200px){
-//            height: 25px;
-//            width: 25px;
-//           }
-//       }
-// }
+.notification__menu{
+    position: absolute !important;
+    top: 50px !important;
+    left: -300px !important;
+   background-color: white !important;
+   width: fit-content !important;
+   @media only screen and (max-width:560px){
+    left: -200px !important;
+    }
+    @media only screen and (max-width:400px){
+        left: -150px !important;
+    }
+    @media only screen and (max-width:355px){
+        left: -100px !important;
+     }
+   li{
+       width: 100% !important;
+       background-color: white;
+       border-top: 0.8px solid rgba(0, 0, 0, 0.21);
+       a{
+           padding-top: 12px;
+           width: 100%;
+           background-color: white;
+           p{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            color: #737373;
+            @media only screen and (max-width:355px){
+               font-size: 13px;
+            }
+        
+           }
+           span{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 8px;
+            line-height: 12px;
+            color: #000000;
+            
+           }
+          .state{
+            height: 10px;
+            width: 10px;
+            background-color: #157BFB;
+            border-radius: 100%;
+            margin-left:15px;
+           }
+           .state2{
+            height: 10px;
+            width: 10px;
+            background-color: #737373;
+            border-radius: 100%;
+            margin-left:15px;
+           }
+           h3{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #157BFB;
+            text-align: center;
+           }
+          
+       }
+   }
+}
