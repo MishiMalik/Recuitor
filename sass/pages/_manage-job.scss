@@ -7,7 +7,8 @@
     display: flex;
     align-items: center;
     overflow: hidden !important;
-    @media only screen and (max-width:767px){
+
+    @media only screen and (max-width:767px) {
         display: flex;
         flex-direction: column;
         background: transparent;
@@ -39,14 +40,16 @@
         @media only screen and(max-width:930px) {
             width: 70%;
         }
+
         @media only screen and(max-width:825px) {
             width: 65%;
         }
-        @media only screen and (max-width:767px){
+
+        @media only screen and (max-width:767px) {
             width: 100%;
             border-radius: 5px;
             border: 1px solid #8C8C8C !important;
-         }
+        }
 
         &::placeholder {
             color: #ADADAD;
@@ -79,18 +82,20 @@
         @media only screen and(max-width:825px) {
             width: 35%;
         }
-        @media only screen and (max-width:767px){
+
+        @media only screen and (max-width:767px) {
             width: 100%;
-         }
+        }
 
         .btn1 {
             background-color: transparent !important;
             border: none !important;
             display: flex;
             align-items: center;
-            @media only screen and (max-width:767px){
+
+            @media only screen and (max-width:767px) {
                 width: 50%;
-             }
+            }
 
             a {
                 background-color: #E6F1FF;
@@ -106,18 +111,20 @@
                     font-size: 16px !important;
                     padding: 12px 18px;
                 }
-                @media only screen and (max-width:767px){
-                   display: flex;
-                   width: 100%;
-                   justify-content: center;
-                   align-items: center;
-                   padding: 10px 10px;
-                   font-size: 16px;
-                 }
-                 @media only screen and (max-width:550px){
+
+                @media only screen and (max-width:767px) {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px 10px;
+                    font-size: 16px;
+                }
+
+                @media only screen and (max-width:550px) {
                     padding: 8px 10px;
-                   font-size: 14px;
-                   font-weight: 500;
+                    font-size: 14px;
+                    font-weight: 500;
                 }
 
             }
@@ -132,9 +139,10 @@
             border: none !important;
             display: flex;
             align-items: center;
-            @media only screen and (max-width:767px){
+
+            @media only screen and (max-width:767px) {
                 width: 50%;
-             }
+            }
 
 
             a {
@@ -153,20 +161,22 @@
                     font-size: 16px !important;
                     padding: 12px 18px;
                 }
-                @media only screen and (max-width:767px){
+
+                @media only screen and (max-width:767px) {
                     display: flex;
                     width: 100%;
                     justify-content: center;
                     align-items: center;
                     padding: 10px 10px;
                     font-size: 16px;
-                  }
-                  @media only screen and (max-width:550px){
-                    padding: 8px 10px;
-                   font-size: 14px;
-                   font-weight: 400;
                 }
- 
+
+                @media only screen and (max-width:550px) {
+                    padding: 8px 10px;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
 
 
             }
@@ -226,10 +236,11 @@
             display: flex;
             justify-content: center;
         }
-        @media only screen and (max-width:550px){
+
+        @media only screen and (max-width:550px) {
             padding: 8px 10px;
-           font-size: 14px;
-           font-weight: 400;
+            font-size: 14px;
+            font-weight: 400;
         }
     }
 }
@@ -241,7 +252,8 @@
     box-sizing: border-box;
     border-radius: 10px 10px 0px 0px;
     padding: 8px 0px;
-    @media only screen and (max-width:550px){
+
+    @media only screen and (max-width:550px) {
         padding: 8px 0px;
     }
 
@@ -249,9 +261,11 @@
 
 .detail__job-div {
     margin-top: 60px !important;
-    @media only screen and (max-width:991px){
+
+    @media only screen and (max-width:991px) {
         margin-top: 20px !important;
     }
+
     .main-heading {
         font-style: normal;
         font-weight: 500;
@@ -262,42 +276,7 @@
     }
 }
 
-
-
-// Jobs list with filer
-// .state__list {
-//     .active-port {
-//         background: #E5F1FF;
-//         border-radius: 4px;
-//         font-style: normal;
-//         font-weight: 500;
-//         font-size: 18px;
-//         line-height: 27px;
-//         color: #157BFB;
-//         border: none !important;
-//         padding: 6px 15px;
-//     }
-
-//     button {
-//         border: 1px solid #8C8C8C;
-//         box-sizing: border-box;
-//         border-radius: 4px;
-//         padding: 6px 15px;
-//         font-size: 18px;
-//         line-height: 27px;
-//         color: #555353;
-
-//         @media only screen and (max-width:1200px) {
-//             padding: 6px 10px;
-//             font-size: 16px;
-//         }
-
-//     }
-
-
-// }
-
-.states__table{
+.states__table {
 
     @media only screen and (max-width:1300px) {
         overflow-x: scroll;
@@ -342,26 +321,29 @@
                 line-height: 27px;
                 color: #157BFB;
                 white-space: nowrap;
-                @media only screen and (max-width:380px){
+
+                @media only screen and (max-width:380px) {
                     font-size: 16px;
-                 }
-            }
-            .state-date{
-                @media only screen and (max-width:991px){
-                   justify-content: center;
                 }
             }
+
+            .state-date {
+                @media only screen and (max-width:991px) {
+                    justify-content: center;
+                }
+            }
+
             span {
                 font-style: normal;
                 font-weight: 500;
                 font-size: 13px;
                 line-height: 19px;
                 color: #212325;
-               
-                @media only screen and (max-width:380px){
+
+                @media only screen and (max-width:380px) {
                     font-size: 12px;
                     white-space: nowrap;
-                 }
+                }
             }
 
             p {
@@ -369,10 +351,11 @@
                 font-size: 13px;
                 line-height: 19px;
                 color: #212325;
-                @media only screen and (max-width:380px){
+
+                @media only screen and (max-width:380px) {
                     font-size: 12px;
                     white-space: nowrap;
-                 }
+                }
             }
 
             .state {
@@ -420,10 +403,11 @@
     border-bottom: 1px solid #ccc;
     background-color: white;
     padding: 0px 10px 0px 20px;
-    @media only screen and (max-width:550px){
+
+    @media only screen and (max-width:550px) {
         padding: 8px 0px !important;
-     }
-    
+    }
+
 }
 
 /* Style the buttons inside the tab */
@@ -440,18 +424,21 @@
     font-size: 16px;
     line-height: 24px;
     color: #555353;
-    @media only screen and (max-width:550px){
+
+    @media only screen and (max-width:550px) {
         font-size: 12px;
         padding: 3px 14px;
     }
-    @media only screen and (max-width:330px){
+
+    @media only screen and (max-width:330px) {
         padding: 3px 10px !important;
-     }
+    }
 
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
+    color: #157BFB !important;
     border-bottom: 1px solid #157BFB;
 }
 
@@ -468,26 +455,30 @@
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-    @media only screen and (max-width:550px){
+
+    @media only screen and (max-width:550px) {
         padding: 6px 3px !important;
-     }
+    }
 }
 
 .overview__btns {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media only screen and (max-width:550px){
-       flex-direction: column;
-       width: 100%;
-     }
-     div{
-        @media only screen and (max-width:550px){
+
+    @media only screen and (max-width:550px) {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    div {
+        @media only screen and (max-width:550px) {
             display: flex;
             flex-direction: column;
             width: 100%;
         }
-     }
+    }
+
     .edit__job-btn {
         font-style: normal;
         font-weight: 500;
@@ -499,20 +490,22 @@
         box-sizing: border-box;
         border-radius: 4px;
         text-decoration: none;
-        @media only screen and (max-width:550px){
+
+        @media only screen and (max-width:550px) {
             display: flex;
             width: 100%;
             justify-content: center;
             align-items: center;
             margin: 5px 0px;
         }
-        
+
     }
 
     .edit__job-btn2 {
         background-color: #157BFB;
         color: white;
-        @media only screen and (max-width:550px){
+
+        @media only screen and (max-width:550px) {
             display: flex;
             width: 100%;
             margin: 0px 0px !important;
@@ -521,11 +514,12 @@
 }
 
 .overview__content {
-    background-color: #E6E6E6;
+    background-color: #FAFAFB;
     border-radius: 7px;
     padding: 10px 15px;
-    @media only screen and (max-width:550px){
-       padding: 8px 8px;
+
+    @media only screen and (max-width:550px) {
+        padding: 8px 8px;
     }
 
     .keywords {
@@ -571,10 +565,12 @@
     color: #272626;
     margin-bottom: 3px !important;
 }
-.tab2{
+
+.tab2 {
     display: flex;
 }
-.tabcontent2{
+
+.tabcontent2 {
     background: #FFFFFF !important;
     border: 1px solid #B1B1B1 !important;
     box-sizing: border-box;
@@ -585,39 +581,101 @@
         overflow-x: scroll;
     }
 }
+
 /* Create an active/current tablink class */
 .tab2 button {
     border: 1px solid #8C8C8C;
-        box-sizing: border-box;
-        border-radius: 4px;
-        padding: 6px 15px;
-        font-size: 18px;
-        line-height: 27px;
-        color: #555353;
-        margin: 0px 4px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 6px 15px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #555353;
+    margin: 0px 4px;
 
-        @media only screen and (max-width:1200px) {
-            padding: 6px 10px;
-            font-size: 16px;
-        }
-        @media only screen and (max-width:1050px) {
-            padding: 6px 8px;
-            font-size: 14px;
-        }
-        @media only screen and (max-width:330px){
-            padding: 3px 6px !important;
-            font-size: 12px;
-         }
+    @media only screen and (max-width:1200px) {
+        padding: 6px 10px;
+        font-size: 16px;
+    }
+
+    @media only screen and (max-width:1050px) {
+        padding: 6px 8px;
+        font-size: 14px;
+    }
+
+    @media only screen and (max-width:330px) {
+        padding: 3px 6px !important;
+        font-size: 12px;
+    }
 
 }
 
 /* Change background color of buttons on hover */
 .tab2 button:hover {
-    border-bottom: 1px solid #157BFB;
+    color: #157BFB;
+    background-color: #E5F1FF;
+    border: none;
 }
+
 .tab2 button.active2 {
     color: #157BFB;
     background-color: #E5F1FF;
     border: none;
 
 }
+
+
+// modal
+.filter-modal {
+    .modal-dialog {
+        max-width: 100vw !important;
+        width: 70vw !important;
+       
+
+        .modal-content {
+            background-color: $body;
+            width: 100% !important;
+        }
+        .select__box{
+            // background-color: #F1F8FF;
+            background: #FFFFFF;
+            border-radius: 10px;
+            border-radius: 7px;
+            padding: 7px ;
+            position: relative;
+        }
+        label{
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .modal-input{
+            font-size: 16px !important;
+            padding: 7px 10px !important;
+        }
+        .btn-secondary{
+            background-color: #157BFB !important;
+            border: none !important;
+        }
+        .selected{
+            span{
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: 600;
+                color: #157BFB;
+            }
+        }
+    }
+}
+.ui-widget{
+    position: relative;
+    z-index: 2000;
+}
+.ui-widget-content{
+    position: absolute !important;
+    // top: 0px !important;
+    // left: 0px !important;
+    background-color: white!important;
+    z-index: 2000 !important;
+    background-image: none !important;
+   
+ }

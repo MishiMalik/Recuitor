@@ -201,3 +201,37 @@ document.getElementById("defaultOpen2").click();
 //     // set layoutMode
 //     layoutMode: 'vertical'
 //   })
+
+
+
+        $(function () {
+            var availableTags = [
+                "ActionScript",
+                "AppleScript",
+                "ActionScript",
+                "BOption",
+                "COption",
+                "DOption",
+                "EOption",
+                "Lisp",
+                "Perl",
+                "PHP",
+                "Python",
+                "Ruby",
+                "Scala",
+                "Scheme"
+            ];
+            $("#tags").autocomplete({
+                source: availableTags,
+                select: function( event, ui ) {
+                var listChild=$('<li class="d-flex justify-content-between"><p class="mb-0">' + ui.item.value + '</p><span class="close"> x </span></li>')
+                $(".selected").prepend(listChild)
+                // $(".modal-input").value="";
+                }
+
+            });
+            $(".selected").on('click','.close',function(){
+             $(this.parentElement).remove();
+            });
+        });
+ 

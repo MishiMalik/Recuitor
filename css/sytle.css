@@ -2192,6 +2192,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
+  color: #157BFB !important;
   border-bottom: 1px solid #157BFB; }
 
 /* Create an active/current tablink class */
@@ -2250,7 +2251,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         margin: 0px 0px !important; } }
 
 .overview__content {
-  background-color: #E6E6E6;
+  background-color: #FAFAFB;
   border-radius: 7px;
   padding: 10px 15px; }
   @media only screen and (max-width: 550px) {
@@ -2326,12 +2327,51 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* Change background color of buttons on hover */
 .tab2 button:hover {
-  border-bottom: 1px solid #157BFB; }
+  color: #157BFB;
+  background-color: #E5F1FF;
+  border: none; }
 
 .tab2 button.active2 {
   color: #157BFB;
   background-color: #E5F1FF;
   border: none; }
+
+.filter-modal .modal-dialog {
+  max-width: 100vw !important;
+  width: 70vw !important; }
+  .filter-modal .modal-dialog .modal-content {
+    background-color: #F9F9F9;
+    width: 100% !important; }
+  .filter-modal .modal-dialog .select__box {
+    background: #FFFFFF;
+    border-radius: 10px;
+    border-radius: 7px;
+    padding: 7px;
+    position: relative; }
+  .filter-modal .modal-dialog label {
+    font-size: 16px;
+    font-weight: 500; }
+  .filter-modal .modal-dialog .modal-input {
+    font-size: 16px !important;
+    padding: 7px 10px !important; }
+  .filter-modal .modal-dialog .btn-secondary {
+    background-color: #157BFB !important;
+    border: none !important; }
+  .filter-modal .modal-dialog .selected span {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #157BFB; }
+
+.ui-widget {
+  position: relative;
+  z-index: 2000; }
+
+.ui-widget-content {
+  position: absolute !important;
+  background-color: white !important;
+  z-index: 2000 !important;
+  background-image: none !important; }
 
 .navbar {
   height: 70px;
