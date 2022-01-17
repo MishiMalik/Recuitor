@@ -148,28 +148,56 @@ function updateFormSteps() {
     formSteps[formStepsNum].classList.add("step-forms-active");
 }
 
-
-
+// 
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+// drafted list
+function openCity2(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent2");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks2");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active2", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active2";
+}
+document.getElementById("defaultOpen2").click();
 // 
 
-$(".gallery__cards  ").addClass("portfolio__projects grid");
+// $(".gallery__cards  ").addClass("portfolio__projects grid");
 
-let btn = $('.state__list');
+// let btn = $('.state__list');
 
-btn.click(function (e) {
-    $('.state__list button').removeClass("active-port");
-    e.target.classList.add("active-port");
+// btn.click(function (e) {
+//     $('.state__list button').removeClass("active-port");
+//     e.target.classList.add("active-port");
 
-    let selector = $(e.target).attr('data-filter');
-    $('.portfolio .grid').isotope({
-        filter: selector
-    });
-    return false;
-});
+//     let selector = $(e.target).attr('data-filter');
+//     $('.portfolio .grid').isotope({
+//         filter: selector
+//     });
+//     return false;
+// });
 // $('.gallery__cards').isotope({ layoutMode: 'vertical' })
-var $grid = $('.gallery__cards').isotope({
-    // main isotope options
-    itemSelector: '.gallery__cards-item',
-    // set layoutMode
-    layoutMode: 'vertical'
-  })
+// var $grid = $('.gallery__cards').isotope({
+//     // main isotope options
+//     itemSelector: '.gallery__cards-item',
+//     // set layoutMode
+//     layoutMode: 'vertical'
+//   })

@@ -439,137 +439,219 @@
                 </div>
 
                 <div class="col-lg-12 row">
-                    <div class="col-lg-4 px-1 py-4">
-                        <!-- =======Gallery section==== -->
-                        <div class="gallery  " data-aos="fade-up">
-                            <div class="portfolio" id="portfolio">
-                                <div class="state__list" data-aos="fade-down" data-aos-easing="ease-in-back"
-                                    data-aos-delay="300" data-aos-offset="0">
-                                    <button type="button" data-filter=".all" class="state__list--item active-port all">
-                                        All Jobs
-                                    </button>
-                                    <button type="button" data-filter=".drafted" class="state__list--item">
-                                        Drafted
-                                    </button>
-                                    <button type="button" data-filter=".promoted" class="state__list--item">
-                                        Promoted Jobs
-                                    </button>
+                    <div class="col-lg-4 px-1 py-3">                      
+                        <div class="d-flex flex-column">
+                            <div class="tab2">
+                                <button class="tablinks2 active" id="defaultOpen2" onclick="openCity2(event, 'All-Jobs')">All Jobs</button>
+                                <button class="tablinks2" onclick="openCity2(event, 'Drafted')">Drafted</button>
+                                <button class="tablinks2" onclick="openCity2(event, 'Promoted-JObs')">Promoted JObs</button>
+                            </div>
+                            <div class="">
+                                <div id="All-Jobs" class="tabcontent2">
+                                    <div class="states__table">
+                                        <table class="table jobs-table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Title</th>
+                                                    <th scope="col">Responses</th>
+                                                    <th scope="col">Promoted</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="states__table__cards  ">
+                                                <tr class="gallery__cards-item all drafted ">
+                                                    <th scope="row">1</th>
+                                                    <td>
+                                                        <h3 class="p-0 m-0">Senior UX Designer</h3>
+                                                        <div class="d-flex state-date"> <span>Posted Date:</span>
+                                                            <p class="mb-0">20-05-2021</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>10</td>
+                                                    <td class="">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="state">Active</div>
+                                                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
+                                                                    stroke="#157BFB" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                            </svg>
+                                                        </div>
+                                                    </td>
+        
+                                                </tr>
+                                                <tr class="gallery__cards-item all  promoted">
+                                                    <th scope="row">2</th>
+                                                    <td>
+                                                        <h3 class="p-0 m-0">Senior UX Designer</h3>
+                                                        <div class="d-flex state-date"> <span>Posted Date:</span>
+                                                            <p class="mb-0">20-05-2021</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>10</td>
+                                                    <td class="">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="state">Active</div>
+                                                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
+                                                                    stroke="#157BFB" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                            </svg>
+                                                        </div>
+                                                    </td>
+        
+                                                </tr>
+                                                <tr class=" gallery__cards-item all drafted promoted">
+                                                    <th scope="row">3</th>
+                                                    <td>
+                                                        <h3 class="p-0 m-0">Senior UX Designer</h3>
+                                                        <div class="d-flex state-date"> <span>Posted Date:</span>
+                                                            <p class="mb-0">20-05-2021</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>10</td>
+                                                    <td class="">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="state">Active</div>
+                                                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
+                                                                    stroke="#157BFB" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                            </svg>
+                                                        </div>
+                                                    </td>
+        
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-
-                                <div class="gallery__cards2">
-                                    <table class="table jobs-table">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">Title</th>
-                                                <th scope="col">Responses</th>
-                                                <th scope="col">Promoted</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="gallery__cards  ">
-                                            <tr class="gallery__cards-item all drafted ">
-                                                <th scope="row">1</th>
-                                                <td>
-                                                    <h3 class="p-0 m-0">Senior UX Designer</h3>
-                                                    <div class="d-flex"> <span>Posted Date:</span>
-                                                        <p class="mb-0">20-05-2021</p>
-                                                    </div>
-                                                </td>
-                                                <td>10</td>
-                                                <td class="">
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="state">Active</div>
-                                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
-                                                                stroke="#157BFB" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </svg>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-                                            <tr class="gallery__cards-item all  promoted">
-                                                <th scope="row">2</th>
-                                                <td>
-                                                    <h3 class="p-0 m-0">Senior UX Designer</h3>
-                                                    <div class="d-flex"> <span>Posted Date:</span>
-                                                        <p class="mb-0">20-05-2021</p>
-                                                    </div>
-                                                </td>
-                                                <td>10</td>
-                                                <td class="">
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="state">Active</div>
-                                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
-                                                                stroke="#157BFB" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </svg>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-                                            <tr class=" gallery__cards-item all drafted promoted">
-                                                <th scope="row">3</th>
-                                                <td>
-                                                    <h3 class="p-0 m-0">Senior UX Designer</h3>
-                                                    <div class="d-flex"> <span>Posted Date:</span>
-                                                        <p class="mb-0">20-05-2021</p>
-                                                    </div>
-                                                </td>
-                                                <td>10</td>
-                                                <td class="">
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="state">Active</div>
-                                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
-                                                                stroke="#157BFB" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </svg>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-                                            <tr class="gallery__cards-item all promoted ">
-                                                <th scope="row">4</th>
-                                                <td>
-                                                    <h3 class="p-0 m-0">Senior UX Designer</h3>
-                                                    <div class="d-flex"> <span>Posted Date:</span>
-                                                        <p class="mb-0">20-05-2021</p>
-                                                    </div>
-                                                </td>
-                                                <td>10</td>
-                                                <td class="">
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="state">Active</div>
-                                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
-                                                                stroke="#157BFB" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </svg>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
+        
+                                <div id="Drafted" class="tabcontent2">
+                                    <div class="states__table">
+                                        <table class="table jobs-table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Title</th>
+                                                    <th scope="col">Created edit</th>
+                                                    <th scope="col">Last edit</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="states__table__cards  ">
+                                                <tr class="gallery__cards-item all drafted ">
+                                                    <th scope="row">01</th>
+                                                    <td>
+                                                        <h3 class="p-0 m-0">Senior UX Designer</h3>
+                                                        <div class="d-flex"> <span>City:</span>
+                                                            <p class="mb-0">London</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>20-05-2021</td>
+                                                    <td class="">
+                                                        <div class="d-flex justify-content-between">
+                                                            week ago
+                                                        </div>
+                                                    </td>
+                                                    <tr class="gallery__cards-item all drafted ">
+                                                        <th scope="row">01</th>
+                                                        <td>
+                                                            <h3 class="p-0 m-0">Senior UX Designer</h3>
+                                                            <div class="d-flex"> <span>City:</span>
+                                                                <p class="mb-0">London</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>20-05-2021</td>
+                                                        <td class="">
+                                                            <div class="d-flex justify-content-between">
+                                                                week ago
+                                                            </div>
+                                                        </td>
+            
+                                                    </tr>
+                                                    <tr class="gallery__cards-item all drafted ">
+                                                        <th scope="row">01</th>
+                                                        <td>
+                                                            <h3 class="p-0 m-0">Senior UX Designer</h3>
+                                                            <div class="d-flex"> <span>City:</span>
+                                                                <p class="mb-0">London</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>20-05-2021</td>
+                                                        <td class="">
+                                                            <div class="d-flex justify-content-between">
+                                                                week ago
+                                                            </div>
+                                                        </td>
+            
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-
-
+                                <div id="Promoted-JObs" class="tabcontent2">
+                                    <div class="states__table">
+                                        <table class="table jobs-table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Title</th>
+                                                    <th scope="col">Created edit</th>
+                                                    <th scope="col">Last edit</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="states__table__cards  ">
+                                                <tr class="gallery__cards-item all drafted ">
+                                                    <th scope="row">01</th>
+                                                    <td>
+                                                        <h3 class="p-0 m-0">Senior UX Designer</h3>
+                                                        <div class="d-flex"> <span>City:</span>
+                                                            <p class="mb-0">London</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>20-05-2021</td>
+                                                    <td class="">
+                                                        <div class="d-flex justify-content-between">
+                                                            week ago
+                                                        </div>
+                                                    </td>
+        
+                                                </tr>
+                                                <tr class="gallery__cards-item all drafted ">
+                                                    <th scope="row">01</th>
+                                                    <td>
+                                                        <h3 class="p-0 m-0">Senior UX Designer</h3>
+                                                        <div class="d-flex"> <span>City:</span>
+                                                            <p class="mb-0">London</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>20-05-2021</td>
+                                                    <td class="">
+                                                        <div class="d-flex justify-content-between">
+                                                            week ago
+                                                        </div>
+                                                    </td>
+        
+                                                </tr>
+                                               
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+                        
+
                     </div>
 
-                    <div class="col-lg-8 px-1 py-4 detail__job-div">
+                    <div class="col-lg-8 px-1 py-1 detail__job-div">
                         <div class="bg-card2">
                             <h2 class="text-center main-heading">Detail of Jobs</h2>
                             <div class="tab">
@@ -1004,20 +1086,20 @@
 
     <script src="js/app.js"></script>
     <script>
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-        document.getElementById("defaultOpen").click();
+        // function openCity(evt, cityName) {
+        //     var i, tabcontent, tablinks;
+        //     tabcontent = document.getElementsByClassName("tabcontent");
+        //     for (i = 0; i < tabcontent.length; i++) {
+        //         tabcontent[i].style.display = "none";
+        //     }
+        //     tablinks = document.getElementsByClassName("tablinks");
+        //     for (i = 0; i < tablinks.length; i++) {
+        //         tablinks[i].className = tablinks[i].className.replace(" active", "");
+        //     }
+        //     document.getElementById(cityName).style.display = "block";
+        //     evt.currentTarget.className += " active";
+        // }
+        // document.getElementById("defaultOpen").click();
 
     </script>
 </body>

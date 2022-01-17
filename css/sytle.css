@@ -1873,6 +1873,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: flex;
   align-items: center;
   overflow: hidden !important; }
+  @media only screen and (max-width: 767px) {
+    .search__bar {
+      display: flex;
+      flex-direction: column;
+      background: transparent;
+      border: none !important; } }
   .search__bar input {
     font-style: normal;
     font-weight: 500;
@@ -1897,6 +1903,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     @media only screen and (max-width: 825px) {
       .search__bar input {
         width: 65%; } }
+    @media only screen and (max-width: 767px) {
+      .search__bar input {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #8C8C8C !important; } }
     .search__bar input::placeholder {
       color: #ADADAD; }
     .search__bar input:active, .search__bar input:focus {
@@ -1918,11 +1929,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     @media only screen and (max-width: 825px) {
       .search__bar-btn {
         width: 35%; } }
+    @media only screen and (max-width: 767px) {
+      .search__bar-btn {
+        width: 100%; } }
     .search__bar-btn .btn1 {
       background-color: transparent !important;
       border: none !important;
       display: flex;
       align-items: center; }
+      @media only screen and (max-width: 767px) {
+        .search__bar-btn .btn1 {
+          width: 50%; } }
       .search__bar-btn .btn1 a {
         background-color: #E6F1FF;
         border-radius: 4px;
@@ -1936,6 +1953,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
           .search__bar-btn .btn1 a {
             font-size: 16px !important;
             padding: 12px 18px; } }
+        @media only screen and (max-width: 767px) {
+          .search__bar-btn .btn1 a {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 10px;
+            font-size: 16px; } }
+        @media only screen and (max-width: 550px) {
+          .search__bar-btn .btn1 a {
+            padding: 8px 10px;
+            font-size: 14px;
+            font-weight: 500; } }
       .search__bar-btn .btn1 svg {
         margin: 0px 5px; }
     .search__bar-btn .btn2 {
@@ -1943,6 +1973,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       border: none !important;
       display: flex;
       align-items: center; }
+      @media only screen and (max-width: 767px) {
+        .search__bar-btn .btn2 {
+          width: 50%; } }
       .search__bar-btn .btn2 a {
         background: #157BFB;
         border-radius: 4px;
@@ -1958,6 +1991,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
           .search__bar-btn .btn2 a {
             font-size: 16px !important;
             padding: 12px 18px; } }
+        @media only screen and (max-width: 767px) {
+          .search__bar-btn .btn2 a {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 10px;
+            font-size: 16px; } }
+        @media only screen and (max-width: 550px) {
+          .search__bar-btn .btn2 a {
+            padding: 8px 10px;
+            font-size: 14px;
+            font-weight: 400; } }
       .search__bar-btn .btn2 svg {
         margin: 0px 5px; }
 
@@ -1990,7 +2036,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding: 17px 38px;
     text-decoration: none;
     white-space: nowrap; }
-    @media only screen and (max-width: 1300px) {
+    @media only screen and (max-width: 500px) {
       .job-btn a {
         font-size: 16px !important;
         padding: 14px 34px; } }
@@ -1999,6 +2045,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         width: 100%;
         display: flex;
         justify-content: center; } }
+    @media only screen and (max-width: 550px) {
+      .job-btn a {
+        padding: 8px 10px;
+        font-size: 14px;
+        font-weight: 400; } }
 
 .bg-card2 {
   background: #FFFFFF;
@@ -2006,9 +2057,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   box-sizing: border-box;
   border-radius: 10px 10px 0px 0px;
   padding: 8px 0px; }
+  @media only screen and (max-width: 550px) {
+    .bg-card2 {
+      padding: 8px 0px; } }
 
 .detail__job-div {
-  margin-top: 50px !important; }
+  margin-top: 60px !important; }
+  @media only screen and (max-width: 991px) {
+    .detail__job-div {
+      margin-top: 20px !important; } }
   .detail__job-div .main-heading {
     font-style: normal;
     font-weight: 500;
@@ -2016,97 +2073,85 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     line-height: 28px;
     color: #000000; }
 
-.state__list .active-port {
-  background: #E5F1FF;
-  border-radius: 4px;
+@media only screen and (max-width: 1300px) {
+  .states__table {
+    overflow-x: scroll; } }
+
+.states__table .headings {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  color: #157BFB;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000; }
+
+.states__table .jobs-table th {
+  text-align: center; }
+
+.states__table .jobs-table td {
   border: none !important;
-  padding: 6px 15px; }
-
-.state__list button {
-  border: 1px solid #8C8C8C;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 6px 15px;
-  font-size: 18px;
-  line-height: 27px;
-  color: #555353; }
-  @media only screen and (max-width: 1200px) {
-    .state__list button {
-      padding: 6px 10px;
-      font-size: 16px; } }
-
-.gallery__cards2 {
-  background: #FFFFFF !important;
-  border: 1px solid #B1B1B1 !important;
-  box-sizing: border-box;
-  border-radius: 10px 10px 0px 0px !important;
-  margin-top: 10px; }
-  @media only screen and (max-width: 1300px) {
-    .gallery__cards2 {
-      overflow-x: scroll; } }
-  .gallery__cards2 .headings {
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    font-style: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  color: #212325;
+  text-align: center;
+  width: fit-content; }
+  .states__table .jobs-table td h3 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #000000; }
-  .gallery__cards2 .jobs-table th {
-    text-align: center; }
-  .gallery__cards2 .jobs-table td {
-    border: none !important;
+    font-size: 18px;
+    line-height: 27px;
+    color: #157BFB;
+    white-space: nowrap; }
+    @media only screen and (max-width: 380px) {
+      .states__table .jobs-table td h3 {
+        font-size: 16px; } }
+  @media only screen and (max-width: 991px) {
+    .states__table .jobs-table td .state-date {
+      justify-content: center; } }
+  .states__table .jobs-table td span {
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 19px;
-    color: #212325;
-    text-align: center;
-    width: fit-content; }
-    .gallery__cards2 .jobs-table td h3 {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 27px;
-      color: #157BFB;
-      white-space: nowrap; }
-    .gallery__cards2 .jobs-table td span {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 13px;
-      line-height: 19px;
-      color: #212325; }
-    .gallery__cards2 .jobs-table td p {
-      font-weight: 500;
-      font-size: 13px;
-      line-height: 19px;
-      color: #212325; }
-    .gallery__cards2 .jobs-table td .state {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 13px;
-      line-height: 19px;
-      color: #2BC155; }
-      .gallery__cards2 .jobs-table td .state::before {
-        content: ' ';
-        height: 7px;
-        width: 7px;
-        border-radius: 100%;
-        display: inline-block;
-        background-color: #2BC155; }
-    .gallery__cards2 .jobs-table td tr {
-      display: flex;
-      width: 100% !important;
-      flex-basis: 100%; }
-  .gallery__cards2 .jobs-table th {
-    border: none !important;
-    border-bottom: 1px solid #B1B1B1 !important; }
+    color: #212325; }
+    @media only screen and (max-width: 380px) {
+      .states__table .jobs-table td span {
+        font-size: 12px;
+        white-space: nowrap; } }
+  .states__table .jobs-table td p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    color: #212325; }
+    @media only screen and (max-width: 380px) {
+      .states__table .jobs-table td p {
+        font-size: 12px;
+        white-space: nowrap; } }
+  .states__table .jobs-table td .state {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    color: #2BC155; }
+    .states__table .jobs-table td .state::before {
+      content: ' ';
+      height: 7px;
+      width: 7px;
+      border-radius: 100%;
+      display: inline-block;
+      background-color: #2BC155; }
+  .states__table .jobs-table td tr {
+    display: flex;
+    width: 100% !important;
+    flex-basis: 100%; }
+
+.states__table .jobs-table th {
+  border: none !important;
+  border-bottom: 1px solid #B1B1B1 !important; }
 
 .gallery__cards-item {
   position: unset !important;
@@ -2119,6 +2164,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-bottom: 1px solid #ccc;
   background-color: white;
   padding: 0px 10px 0px 20px; }
+  @media only screen and (max-width: 550px) {
+    .tab {
+      padding: 8px 0px !important; } }
 
 /* Style the buttons inside the tab */
 .tab button {
@@ -2134,6 +2182,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 16px;
   line-height: 24px;
   color: #555353; }
+  @media only screen and (max-width: 550px) {
+    .tab button {
+      font-size: 12px;
+      padding: 3px 14px; } }
+  @media only screen and (max-width: 330px) {
+    .tab button {
+      padding: 3px 10px !important; } }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
@@ -2150,11 +2205,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none; }
+  @media only screen and (max-width: 550px) {
+    .tabcontent {
+      padding: 6px 3px !important; } }
 
 .overview__btns {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 550px) {
+    .overview__btns {
+      flex-direction: column;
+      width: 100%; } }
+  @media only screen and (max-width: 550px) {
+    .overview__btns div {
+      display: flex;
+      flex-direction: column;
+      width: 100%; } }
   .overview__btns .edit__job-btn {
     font-style: normal;
     font-weight: 500;
@@ -2166,14 +2233,29 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     box-sizing: border-box;
     border-radius: 4px;
     text-decoration: none; }
+    @media only screen and (max-width: 550px) {
+      .overview__btns .edit__job-btn {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0px; } }
   .overview__btns .edit__job-btn2 {
     background-color: #157BFB;
     color: white; }
+    @media only screen and (max-width: 550px) {
+      .overview__btns .edit__job-btn2 {
+        display: flex;
+        width: 100%;
+        margin: 0px 0px !important; } }
 
 .overview__content {
   background-color: #E6E6E6;
   border-radius: 7px;
   padding: 10px 15px; }
+  @media only screen and (max-width: 550px) {
+    .overview__content {
+      padding: 8px 8px; } }
   .overview__content .keywords {
     display: flex; }
     .overview__content .keywords span {
@@ -2205,6 +2287,51 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   line-height: 27px;
   color: #272626;
   margin-bottom: 3px !important; }
+
+.tab2 {
+  display: flex; }
+
+.tabcontent2 {
+  background: #FFFFFF !important;
+  border: 1px solid #B1B1B1 !important;
+  box-sizing: border-box;
+  border-radius: 10px 10px 0px 0px !important;
+  margin-top: 5px; }
+  @media only screen and (max-width: 1300px) {
+    .tabcontent2 {
+      overflow-x: scroll; } }
+
+/* Create an active/current tablink class */
+.tab2 button {
+  border: 1px solid #8C8C8C;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 6px 15px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #555353;
+  margin: 0px 4px; }
+  @media only screen and (max-width: 1200px) {
+    .tab2 button {
+      padding: 6px 10px;
+      font-size: 16px; } }
+  @media only screen and (max-width: 1050px) {
+    .tab2 button {
+      padding: 6px 8px;
+      font-size: 14px; } }
+  @media only screen and (max-width: 330px) {
+    .tab2 button {
+      padding: 3px 6px !important;
+      font-size: 12px; } }
+
+/* Change background color of buttons on hover */
+.tab2 button:hover {
+  border-bottom: 1px solid #157BFB; }
+
+.tab2 button.active2 {
+  color: #157BFB;
+  background-color: #E5F1FF;
+  border: none; }
 
 .navbar {
   height: 70px;
