@@ -2,7 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: $font-poppins;
+    font-family: $font-poppins !important;
     background-color: $body !important;
 }
 .body{
@@ -10,8 +10,6 @@ body{
         padding: 0px 20px !important;
     }
 }
-.job-body{
-    overflow-x: hidden;
-}
+
 
 

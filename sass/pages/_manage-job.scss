@@ -1,3 +1,9 @@
+.manage-job{
+    padding: 0px 30px !important;
+    @media only screen and (max-width:400px) {
+       padding: 0px 7px;
+    }
+}
 .search__bar {
     background: #FFFFFF;
     border: 1px solid #AFAFAF;
@@ -49,6 +55,8 @@
             width: 100%;
             border-radius: 5px;
             border: 1px solid #8C8C8C !important;
+            padding: 9px 10px;
+            font-size: 14px;
         }
 
         &::placeholder {
@@ -226,9 +234,13 @@
         text-decoration: none;
         white-space: nowrap;
 
-        @media only screen and(max-width:500px) {
+        @media only screen and(max-width:1200px) {
             font-size: 16px !important;
             padding: 14px 34px;
+        }
+        @media only screen and(max-width:1100px) {
+            font-size: 16px !important;
+            padding: 14px 25px;
         }
 
         @media only screen and(max-width:991px) {
@@ -245,13 +257,17 @@
     }
 }
 
-
+// .scroll-div{
+//     overflow-y: scroll;
+//     height:57vh;
+// }
 .bg-card2 {
     background: #FFFFFF;
     border: 1px solid #B1B1B1;
     box-sizing: border-box;
     border-radius: 10px 10px 0px 0px;
     padding: 8px 0px;
+    
 
     @media only screen and (max-width:550px) {
         padding: 8px 0px;
@@ -260,7 +276,7 @@
 }
 
 .detail__job-div {
-    margin-top: 60px !important;
+    // margin-top: 60px !important;
 
     @media only screen and (max-width:991px) {
         margin-top: 20px !important;
@@ -278,7 +294,7 @@
 
 .states__table {
 
-    @media only screen and (max-width:1300px) {
+    @media only screen and (max-width:10px) {
         overflow-x: scroll;
     }
 
@@ -314,11 +330,13 @@
             color: #212325;
             text-align: center;
             width: fit-content;
+            white-space: nowrap !important;
+            // padding: 15px 0px !important;
 
+           
             h3 {
                 font-weight: 500;
-                font-size: 18px;
-                line-height: 27px;
+                font-size: 16px ;
                 color: #157BFB;
                 white-space: nowrap;
 
@@ -328,6 +346,7 @@
             }
 
             .state-date {
+                justify-content: center;
                 @media only screen and (max-width:991px) {
                     justify-content: center;
                 }
@@ -336,7 +355,7 @@
             span {
                 font-style: normal;
                 font-weight: 500;
-                font-size: 13px;
+                font-size: 12px;
                 line-height: 19px;
                 color: #212325;
 
@@ -348,7 +367,7 @@
 
             p {
                 font-weight: 500;
-                font-size: 13px;
+                font-size: 12px;
                 line-height: 19px;
                 color: #212325;
 
@@ -358,12 +377,13 @@
                 }
             }
 
-            .state {
+            .state-active {
                 font-style: normal;
                 font-weight: 500;
                 font-size: 13px;
                 line-height: 19px;
                 color: #2BC155;
+               
 
                 &::before {
                     content: ' ';
@@ -372,19 +392,57 @@
                     border-radius: 100%;
                     display: inline-block;
                     background-color: #2BC155;
+                    margin: 0px 5px !important;
+                }
+            }
+            .state-off {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 19px;
+                color: #92929D;
+
+                &::before {
+                    content: ' ';
+                    height: 7px;
+                    width: 7px;
+                    border-radius: 100%;
+                    display: inline-block;
+                    background-color: #92929D;
+                    margin: 0px 5px !important;
                 }
             }
 
-            tr {
-                display: flex;
-                width: 100% !important;
-                flex-basis: 100%;
-            }
+            // tr {
+            //     display: flex;
+            //     width: 100% !important;
+            //     flex-basis: 100%;
+            //     padding-top: 5px;
+            //     &:hover{
+            //         background: #F5F5F5;
+            //         position: relative;
+            //         z-index: 20;
+            //     }
+            // }
         }
-
+        // .table-svg{
+        //     svg:hover{
+        //         fill: #157BFB;
+        //     }
+        // }
         th {
             border: none !important;
             border-bottom: 1px solid #B1B1B1 !important;
+            font-size: 15px !important;
+            white-space: nowrap !important;
+        }
+        tr {
+            &:hover{
+                background: #F5F5F5;
+                position: relative;
+                cursor: pointer;
+                border-right: 1px solid #AFAFAF !important;
+            }
         }
     }
 }
@@ -396,16 +454,41 @@
 }
 
 
-
+.tab-div {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .toggle__btn{
+        margin: 0px 5px !important;
+    }
+    @media only screen and(max-width:1123px){
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .toggle__btn{
+           order: 1;
+           margin-left: auto !important;
+           
+        }
+        .tab{
+            order: 2;
+        }
+    }
+}
 /* Style the tab */
 .tab {
     overflow: hidden;
-    border-bottom: 1px solid #ccc;
+    // border-bottom: 1px solid #ccc;
     background-color: white;
     padding: 0px 10px 0px 20px;
 
     @media only screen and (max-width:550px) {
-        padding: 8px 0px !important;
+        padding: 0px 0px !important;
+    }
+    .active-tab{
+        color: #157BFB;
+        border-bottom: 1px solid #157BFB;
     }
 
 }
@@ -424,7 +507,7 @@
     font-size: 16px;
     line-height: 24px;
     color: #555353;
-
+    
     @media only screen and (max-width:550px) {
         font-size: 12px;
         padding: 3px 14px;
@@ -448,6 +531,12 @@
     border-bottom: 1px solid #157BFB;
 
 }
+.tab button.active4 {
+    color: #157BFB;
+    border-bottom: 1px solid #157BFB;
+
+}
+
 
 /* Style the tab content */
 .tabcontent {
@@ -547,6 +636,7 @@
                 border-radius: 30px;
                 padding: 4px 7px;
                 margin: 3px !important;
+                white-space: nowrap !important;
 
                 @media only screen and (max-width:1050px) {
                     font-size: 12px;
@@ -571,6 +661,12 @@
 }
 
 .tabcontent2 {
+    background: transparent!important;
+    border: none !important;
+
+}
+
+.tabcontent3 {
     background: #FFFFFF !important;
     border: 1px solid #B1B1B1 !important;
     box-sizing: border-box;
@@ -581,7 +677,6 @@
         overflow-x: scroll;
     }
 }
-
 /* Create an active/current tablink class */
 .tab2 button {
     border: 1px solid #8C8C8C;
@@ -593,7 +688,7 @@
     color: #555353;
     margin: 0px 4px;
 
-    @media only screen and (max-width:1200px) {
+    @media only screen and (max-width:1250px) {
         padding: 6px 10px;
         font-size: 16px;
     }
@@ -627,14 +722,23 @@
 
 // modal
 .filter-modal {
+    
     .modal-dialog {
         max-width: 100vw !important;
         width: 70vw !important;
        
+        @media only screen and(max-width:767px){
+            width: 90vw !important;
+            display: flex !important;
+            justify-self: center !important;
+            align-items: center !important;
+            margin: 0px auto !important;
+        }
 
         .modal-content {
             background-color: $body;
             width: 100% !important;
+            
         }
         .select__box{
             // background-color: #F1F8FF;
@@ -644,18 +748,35 @@
             padding: 7px ;
             position: relative;
         }
-        label{
-            font-size: 16px;
+       .heading{
+            font-size: 16px !important;
+            font-weight: 600 !important;
+            color: #157BFB
+        }
+        .selected-label{
+           label{
+            font-size: 14px !important;
             font-weight: 500;
+           }
+           p{
+               font-weight: 500;
+               color: #157BFB;
+               cursor: pointer;
+           }
         }
         .modal-input{
             font-size: 16px !important;
             padding: 7px 10px !important;
+            &:active{
+                outline: none;
+                box-shadow: none !important;
+            }
         }
         .btn-secondary{
             background-color: #157BFB !important;
             border: none !important;
         }
+        
         .selected{
             span{
                 cursor: pointer;
@@ -672,10 +793,32 @@
 }
 .ui-widget-content{
     position: absolute !important;
-    // top: 0px !important;
-    // left: 0px !important;
     background-color: white!important;
     z-index: 2000 !important;
     background-image: none !important;
    
  }
+//  make column static
+// .fixed-col{
+//     // position: fixed;
+//     // padding: 18px 10px !important;
+//     // overflow: hidden;
+//     // backface-visibility: hidden;
+// }
+// .non-fixed{
+//     margin-left: auto;
+// }
+.table-div{
+   padding: 0px 4px !important;
+}
+.fixed-row{
+    position: relative;
+    z-index: 20;
+}
+.star-color{
+    // background-color: #157BFB;
+    fill: #157BFB;
+}
+.active-tab{
+    color: #157BFB !important;
+}

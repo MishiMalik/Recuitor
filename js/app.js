@@ -178,60 +178,148 @@ function openCity2(evt, cityName) {
     evt.currentTarget.className += " active2";
 }
 document.getElementById("defaultOpen2").click();
-// 
 
-// $(".gallery__cards  ").addClass("portfolio__projects grid");
-
-// let btn = $('.state__list');
-
-// btn.click(function (e) {
-//     $('.state__list button').removeClass("active-port");
-//     e.target.classList.add("active-port");
-
-//     let selector = $(e.target).attr('data-filter');
-//     $('.portfolio .grid').isotope({
-//         filter: selector
-//     });
-//     return false;
-// });
-// $('.gallery__cards').isotope({ layoutMode: 'vertical' })
-// var $grid = $('.gallery__cards').isotope({
-//     // main isotope options
-//     itemSelector: '.gallery__cards-item',
-//     // set layoutMode
-//     layoutMode: 'vertical'
-//   })
+// promoted list
+function openCity3(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent4");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active4", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active4";
+}
+document.getElementById("defaultOpenT").click();
 
 
 
-        $(function () {
-            var availableTags = [
-                "ActionScript",
-                "AppleScript",
-                "ActionScript",
-                "BOption",
-                "COption",
-                "DOption",
-                "EOption",
-                "Lisp",
-                "Perl",
-                "PHP",
-                "Python",
-                "Ruby",
-                "Scala",
-                "Scheme"
-            ];
-            $("#tags").autocomplete({
-                source: availableTags,
-                select: function( event, ui ) {
-                var listChild=$('<li class="d-flex justify-content-between"><p class="mb-0">' + ui.item.value + '</p><span class="close"> x </span></li>')
-                $(".selected").prepend(listChild)
+
+// autocomplete
+
+$(function () {
+    var availableTags = [
+        "ActionScript",
+        "AppleScript",
+        "ActionScript",
+        "BOption",
+        "COption",
+        "DOption",
+        "EOption",
+        "Lisp",
+        "Perl",
+        "PHP",
+        "Python",
+        "Ruby",
+        "Scala",
+        "Scheme"
+    ];
+    // $("#tags").autocomplete({
+    //     source: availableTags,
+    //     select: function (event, ui) {
+    //         var listChild = $('<li class="d-flex justify-content-between"><p class="mb-0">' + ui.item.value + '</p><span class="close"> x </span></li>')
+    //         $(".selected").prepend(listChild)
+    //         // $(".modal-input").value="";
+    //     }
+
+    // });
+
+
+    $('.tags').each(function() {
+        $(this).autocomplete({
+            source: availableTags,
+            select: function (event, ui) {
+                event.preventDefault()
+                var listChild = $('<li class="d-flex justify-content-between"><p class="mb-0">' + ui.item.value + '</p><span class="close"> x </span></li>')
+                // $(".selected").prepend(listChild)
+                let ul = $(this).parent().parent().find('.selected')
+                ul.prepend(listChild)
+                $(this).val("")
                 // $(".modal-input").value="";
-                }
-
-            });
-            $(".selected").on('click','.close',function(){
-             $(this.parentElement).remove();
-            });
+            }
+    
         });
- 
+    })
+
+
+    $('.selected').each(function() {
+        $(this).on('click', '.close', function () {
+            $(this.parentElement).remove();
+        });
+    })
+
+    $('.selected-label p').each(function() {
+        $(this).on('click', function() {
+            $(this).parent().next().empty()
+        })
+    })
+
+
+    $('.stars').each(function() {
+        $(this).on('click', function() {
+            let star = $(this).find('svg')
+            if(star.attr('fill') == 'none') {
+                $(this).find('svg').attr('fill', '#157BFB')
+            } else {
+                $(this).find('svg').attr('fill', 'none')
+            }
+            // $(this).find('svg').toggleClass('star-color')
+        })
+    })
+
+
+
+});
+
+
+// stars
+
+// $('.table-svg').click(function() {
+//     if($('#path').css({fill:"#FFFFFF"})){
+//         $('#path').css({ fill: "#157BFB" });
+//    }else{
+//         $('#path').css({ fill: "#157BFB" });
+//     }
+// });
+
+// make column dixed
+$(window).scroll(function (e) {
+    var $el = $('.fixed-col');
+    var $nonFixed = $('.non-fixed');
+    var $table = $('.table-div');
+    var $state__table = $('.states__table');
+    var isPositionFixed = ($el.css('position') == 'fixed');
+    if ($(this).scrollTop() >= 140 && !isPositionFixed && $(window).width() > 991) {
+        $el.css({ 'position': 'fixed', 'top': '120px' });
+        $table.css({ 'padding': '18px 10px' });
+        $state__table.css({ 'padding-right': '10px', 'overflow': 'hidden' });
+        $table.css({ 'overflow': 'hidden' });
+        $el.css({ 'width': '32.233333% ' });
+        $nonFixed.css({ 'margin-left': 'auto' });
+
+    }
+    if ($(this).scrollTop() <= 140 && isPositionFixed) {
+        $el.css({ 'position': 'static', 'top': '0px' });
+        $table.css({ 'padding': '0px 0px' });
+        $nonFixed.css({ 'margin-left': 'auto' });
+        $el.css({ 'width': '33.333333%' });
+    }
+
+});
+// make column dixed
+$(window).scroll(function (e) {
+    var $fixed_row = $('.fixed-row')
+    var isPositionFixed = ($fixed_row.css('position') == 'fixed');
+    if ($(this).scrollTop() >= 140 && !isPositionFixed && $(window).width() > 991) {
+        $fixed_row.css({ 'position': 'fixed', 'top': '60px', 'left': '0px' });
+        $fixed_row.css({ 'margin-top': '0px' });
+    }
+    if ($(this).scrollTop() <= 140 && isPositionFixed) {
+        $fixed_row.css({ 'position': 'static', 'top': '0px' });
+    }
+
+});
+
