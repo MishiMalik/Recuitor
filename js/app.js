@@ -228,7 +228,7 @@ $(function () {
     // });
 
 
-    $('.tags').each(function() {
+    $('.tags').each(function () {
         $(this).autocomplete({
             source: availableTags,
             select: function (event, ui) {
@@ -240,28 +240,28 @@ $(function () {
                 $(this).val("")
                 // $(".modal-input").value="";
             }
-    
+
         });
     })
 
 
-    $('.selected').each(function() {
+    $('.selected').each(function () {
         $(this).on('click', '.close', function () {
             $(this.parentElement).remove();
         });
     })
 
-    $('.selected-label p').each(function() {
-        $(this).on('click', function() {
+    $('.selected-label p').each(function () {
+        $(this).on('click', function () {
             $(this).parent().next().empty()
         })
     })
 
 
-    $('.stars').each(function() {
-        $(this).on('click', function() {
+    $('.stars').each(function () {
+        $(this).on('click', function () {
             let star = $(this).find('svg')
-            if(star.attr('fill') == 'none') {
+            if (star.attr('fill') == 'none') {
                 $(this).find('svg').attr('fill', '#157BFB')
             } else {
                 $(this).find('svg').attr('fill', 'none')
@@ -270,6 +270,41 @@ $(function () {
         })
     })
 
+
+
+    $('.target-select').each(function () {
+        $(this).on('select2:select', function (e) {
+            // e.preventDefault()
+            // console.log($(this).parent().next().find('ul'))
+            let ul = $(this).parent().parent().find('ul')
+            ul.append('<li class="select-item">' + $(this).val() + '<span class="cross">x</span></li>')
+        });
+    })
+
+
+    $('.my-select').each(function () {
+        $(this).on('click', '.cross', function () {
+            // alert()
+            $(this).parent().remove();
+        })
+    })
+
+
+    $('#method-card').on('click', function () {
+        $('#credit-radio').prop('checked', true)
+        $('.credit-detail').show()
+    })
+
+    $('#method-paypal').on('click', function () {
+        $('#paypal-radio').prop('checked', true)
+        $('.credit-detail').hide()
+    })
+
+    $('.monthly__spends').each(function () {
+        $(this).on('click', function () {
+            $(this).find('input[type="radio"]').prop('checked', true)
+        })
+    })
 
 
 });

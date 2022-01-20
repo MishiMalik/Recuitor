@@ -543,7 +543,7 @@
     position: relative;
     display: inline-block;
     width: 45px;
-    height: 20px;
+    height: 18px;
 }
 
 /* Hide default HTML checkbox */
@@ -561,7 +561,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: rgb(163, 163, 163);
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -569,11 +569,11 @@
 .slider:before {
     position: absolute;
     content: "";
-    height: 24px;
-    width: 24px;
+    height: 22px;
+    width: 22px;
     left: 0px;
     bottom: -2px;
-    background-color: #157BFB;
+    background-color: rgb(212, 212, 212);
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -581,9 +581,19 @@
 input:checked+.slider {
     background-color: #E4CFFF;
 }
-
+input:checked+.slider:before {
+    // position: absolute;
+    // content: "";
+    // height: 24px;
+    // width: 24px;
+    // left: 0px;
+    // bottom: -2px;
+    background-color: #157BFB;
+    // -webkit-transition: .4s;
+    // transition: .4s;
+}
 input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px black;
     // background: #E4CFFF;
 }
 
@@ -608,7 +618,9 @@ input:checked+.slider:before {
     font-size: 16px;
     line-height: 24px;
     color: #5C5C5C;
-
+    @media only screen and(max-width:400px) {
+      font-size: 14px;
+    }
 }
 
 .toggle__btn {
