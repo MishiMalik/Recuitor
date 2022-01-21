@@ -321,6 +321,7 @@
     // }
 
     .jobs-table {
+        padding-right: 0px !important;
         th {
             text-align: center;
         }
@@ -1319,6 +1320,7 @@ input[type="radio"] {
     height: 15px;
     background-color: #fff;
     transition: all ease-in 0.2s;
+    outline: none;
     // margin-top: -14px;
 
 }
@@ -1327,9 +1329,6 @@ input[type="radio"]:checked {
     background-color: #157BFB;
     border: none !important;
 
-    &~.monthly__spends {
-        border: 1px solid #157BFB !important;
-    }
 }
 
 
