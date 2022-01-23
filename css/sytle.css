@@ -2335,7 +2335,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border: 2px solid #157BFB;
     box-sizing: border-box;
     border-radius: 4px;
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: pointer; }
     @media only screen and (max-width: 550px) {
       .overview__btns .edit__job-btn {
         display: flex;
@@ -2345,7 +2346,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         margin: 5px 0px; } }
   .overview__btns .edit__job-btn2 {
     background-color: #157BFB;
-    color: white; }
+    color: white;
+    cursor: pointer; }
     @media only screen and (max-width: 550px) {
       .overview__btns .edit__job-btn2 {
         display: flex;
@@ -2753,7 +2755,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       font-size: 16px;
       line-height: 24px;
       color: #FFFFFF;
-      padding: 7px 12px; }
+      padding: 7px 12px;
+      cursor: pointer; }
+      .package__state .view-pkg a:hover {
+        color: white; }
 
 .gray-line {
   border: 1px solid #BDBDBD; }
@@ -2869,43 +2874,49 @@ input[type="radio"]:checked {
   @media only screen and (max-width: 700px) {
     .total-text {
       margin: 10px 0px !important; } }
-  @media only screen and (max-width: 500px) {
-    .total .check-btn {
-      flex-direction: column !important; } }
-  .total .check-btn button {
-    background-color: transparent;
-    border: none; }
-    .total .check-btn button a {
-      padding: 5px 30px;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
-      color: #FFFFFF;
-      background-color: #157BFB;
-      text-decoration: none;
-      border-radius: 3px; }
-      @media only screen and (max-width: 500px) {
-        .total .check-btn button a {
-          padding: 7px 40px; } }
-  .total .check-btn .promotion__stop {
-    background-color: white;
-    border: 2px solid #EA0707;
-    border-radius: 3px;
-    color: #EA0707;
-    text-decoration: none;
-    padding: 3px 25px;
-    display: flex;
-    font-weight: 500;
-    justify-content: space-between;
-    align-items: center;
+  .total .check-btn {
     cursor: pointer; }
     @media only screen and (max-width: 500px) {
-      .total .check-btn .promotion__stop {
-        margin: 15px 0px; } }
-  @media only screen and (max-width: 500px) {
-    .total .check-btn {
-      margin-top: 20px !important; } }
+      .total .check-btn {
+        flex-direction: column !important; } }
+    .total .check-btn button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer; }
+      .total .check-btn button a {
+        padding: 5px 30px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        background-color: #157BFB;
+        text-decoration: none;
+        border-radius: 3px;
+        cursor: pointer; }
+        .total .check-btn button a:hover {
+          color: white; }
+        @media only screen and (max-width: 500px) {
+          .total .check-btn button a {
+            padding: 7px 40px; } }
+    .total .check-btn .promotion__stop {
+      background-color: white;
+      border: 2px solid #EA0707;
+      border-radius: 3px;
+      color: #EA0707;
+      text-decoration: none;
+      padding: 3px 25px;
+      display: flex;
+      font-weight: 500;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer; }
+      @media only screen and (max-width: 500px) {
+        .total .check-btn .promotion__stop {
+          margin: 15px 0px; } }
+    @media only screen and (max-width: 500px) {
+      .total .check-btn {
+        margin-top: 20px !important; } }
 
 .paayment-heading {
   font-style: normal !important;
@@ -2980,17 +2991,19 @@ input[type="radio"]:checked {
   padding-bottom: 0px !important; }
 
 .check-button {
-  width: 100%; }
+  width: 100%;
+  cursor: pointer; }
   .check-button a {
     text-decoration: none;
     background-color: #157BFB;
     border-radius: 4px;
-    color: white;
+    color: white !important;
     padding: 17px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; }
+    width: 100%;
+    cursor: pointer; }
 
 .promoted__stats {
   background: #FFFFFF;
@@ -3114,6 +3127,188 @@ input[type="radio"]:checked {
 .bg-blue {
   background-color: #157BFB;
   color: white; }
+
+.payment-modal .modal-dialog {
+  max-width: 60vw !important; }
+  @media only screen and (max-width: 900px) {
+    .payment-modal .modal-dialog {
+      max-width: 80vw !important; } }
+  @media only screen and (max-width: 600px) {
+    .payment-modal .modal-dialog {
+      max-width: 90vw !important;
+      margin: auto; } }
+  @media only screen and (max-width: 500px) {
+    .payment-modal .modal-dialog {
+      max-width: 97vw !important;
+      margin: auto; } }
+
+.payment-modal .pay-content {
+  background-image: url("/images/image 4.png") !important;
+  width: 80vw !important;
+  border: 4px solid #157BFB; }
+  @media only screen and (max-width: 600px) {
+    .payment-modal .pay-content {
+      width: 90vw !important;
+      margin: auto; } }
+  @media only screen and (max-width: 500px) {
+    .payment-modal .pay-content {
+      width: 97vw !important;
+      margin: auto; } }
+  .payment-modal .pay-content .tick {
+    background-color: white !important;
+    height: 80px !important;
+    width: 80px !important;
+    border-radius: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .payment-modal .pay-content .pay-heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #157BFB; }
+  .payment-modal .pay-content p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #157BFB; }
+    @media only screen and (max-width: 620px) {
+      .payment-modal .pay-content p {
+        font-size: 16px; } }
+  .payment-modal .pay-content .exective__requirments {
+    background: #0C97F7;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 15px;
+    width: 40vw;
+    margin: 0px auto; }
+    @media only screen and (max-width: 900px) {
+      .payment-modal .pay-content .exective__requirments {
+        width: 60vw !important; } }
+    @media only screen and (max-width: 900px) {
+      .payment-modal .pay-content .exective__requirments {
+        width: 100% !important; } }
+    .payment-modal .pay-content .exective__requirments p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: #FFFFFF; }
+    .payment-modal .pay-content .exective__requirments h3 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 43px;
+      line-height: 50px;
+      color: #FFFFFF; }
+    .payment-modal .pay-content .exective__requirments span {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+      margin-top: 5px !important; }
+    .payment-modal .pay-content .exective__requirments ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      background-color: white;
+      width: fit-content;
+      padding: 15px 30px;
+      border-radius: 4px;
+      margin: 0px auto; }
+      @media only screen and (max-width: 400px) {
+        .payment-modal .pay-content .exective__requirments ul {
+          padding: 15px !important; } }
+      .payment-modal .pay-content .exective__requirments ul li {
+        display: flex;
+        align-items: center; }
+        .payment-modal .pay-content .exective__requirments ul li .circle-img {
+          height: 15px !important;
+          width: auto !important;
+          margin-top: 4px;
+          margin-right: 8px; }
+        .payment-modal .pay-content .exective__requirments ul li p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 138.69%;
+          color: #000000; }
+          @media only screen and (max-width: 400px) {
+            .payment-modal .pay-content .exective__requirments ul li p {
+              font-size: 14px; } }
+          @media only screen and (max-width: 335px) {
+            .payment-modal .pay-content .exective__requirments ul li p {
+              font-size: 12px; } }
+    .payment-modal .pay-content .exective__requirments .research-list {
+      background-color: transparent !important; }
+      .payment-modal .pay-content .exective__requirments .research-list li p {
+        color: white !important; }
+  .payment-modal .pay-content .include-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-align: left !important; }
+
+.pop__buttons {
+  margin: 20px auto; }
+  @media only screen and (max-width: 400px) {
+    .pop__buttons {
+      display: flex;
+      flex-direction: column; } }
+  .pop__buttons .button1 {
+    background-color: transparent !important;
+    border: 1px solid #157BFB !important;
+    padding: 7px 20px;
+    border-radius: 4px;
+    margin: 3px 5px; }
+    .pop__buttons .button1 a {
+      color: #157BFB;
+      text-decoration: none; }
+      .pop__buttons .button1 a:hover {
+        color: #157BFB; }
+  .pop__buttons .button2 {
+    background-color: #157BFB !important;
+    border: 1px solid #157BFB !important;
+    padding: 7px 20px;
+    border-radius: 4px;
+    margin: 3px 5px; }
+    .pop__buttons .button2 a {
+      color: white;
+      text-decoration: none; }
+      .pop__buttons .button2 a:hover {
+        color: white; }
+
+.pay-btn {
+  background-color: transparent !important;
+  border: none !important;
+  width: 100%;
+  cursor: pointer; }
+  .pay-btn a {
+    display: flex !important;
+    justify-content: space-between !important;
+    background-color: #ffffff !important;
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: 40%;
+    text-decoration: none;
+    margin: 0px auto;
+    margin-top: 20px;
+    cursor: pointer; }
+    @media only screen and (max-width: 450px) {
+      .pay-btn a {
+        width: 90%; } }
+    .pay-btn a p {
+      color: #157BFB !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px !important;
+      line-height: 24px;
+      color: #157BFB !important; }
 
 .manage-job {
   padding: 0px 30px !important; }
@@ -3562,7 +3757,8 @@ input[type="radio"]:checked {
     border: 2px solid #157BFB;
     box-sizing: border-box;
     border-radius: 4px;
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: pointer; }
     @media only screen and (max-width: 550px) {
       .overview__btns .edit__job-btn {
         display: flex;
@@ -3572,7 +3768,8 @@ input[type="radio"]:checked {
         margin: 5px 0px; } }
   .overview__btns .edit__job-btn2 {
     background-color: #157BFB;
-    color: white; }
+    color: white;
+    cursor: pointer; }
     @media only screen and (max-width: 550px) {
       .overview__btns .edit__job-btn2 {
         display: flex;
@@ -3980,7 +4177,10 @@ input[type="radio"]:checked {
       font-size: 16px;
       line-height: 24px;
       color: #FFFFFF;
-      padding: 7px 12px; }
+      padding: 7px 12px;
+      cursor: pointer; }
+      .package__state .view-pkg a:hover {
+        color: white; }
 
 .gray-line {
   border: 1px solid #BDBDBD; }
@@ -4096,43 +4296,49 @@ input[type="radio"]:checked {
   @media only screen and (max-width: 700px) {
     .total-text {
       margin: 10px 0px !important; } }
-  @media only screen and (max-width: 500px) {
-    .total .check-btn {
-      flex-direction: column !important; } }
-  .total .check-btn button {
-    background-color: transparent;
-    border: none; }
-    .total .check-btn button a {
-      padding: 5px 30px;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
-      color: #FFFFFF;
-      background-color: #157BFB;
-      text-decoration: none;
-      border-radius: 3px; }
-      @media only screen and (max-width: 500px) {
-        .total .check-btn button a {
-          padding: 7px 40px; } }
-  .total .check-btn .promotion__stop {
-    background-color: white;
-    border: 2px solid #EA0707;
-    border-radius: 3px;
-    color: #EA0707;
-    text-decoration: none;
-    padding: 3px 25px;
-    display: flex;
-    font-weight: 500;
-    justify-content: space-between;
-    align-items: center;
+  .total .check-btn {
     cursor: pointer; }
     @media only screen and (max-width: 500px) {
-      .total .check-btn .promotion__stop {
-        margin: 15px 0px; } }
-  @media only screen and (max-width: 500px) {
-    .total .check-btn {
-      margin-top: 20px !important; } }
+      .total .check-btn {
+        flex-direction: column !important; } }
+    .total .check-btn button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer; }
+      .total .check-btn button a {
+        padding: 5px 30px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        background-color: #157BFB;
+        text-decoration: none;
+        border-radius: 3px;
+        cursor: pointer; }
+        .total .check-btn button a:hover {
+          color: white; }
+        @media only screen and (max-width: 500px) {
+          .total .check-btn button a {
+            padding: 7px 40px; } }
+    .total .check-btn .promotion__stop {
+      background-color: white;
+      border: 2px solid #EA0707;
+      border-radius: 3px;
+      color: #EA0707;
+      text-decoration: none;
+      padding: 3px 25px;
+      display: flex;
+      font-weight: 500;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer; }
+      @media only screen and (max-width: 500px) {
+        .total .check-btn .promotion__stop {
+          margin: 15px 0px; } }
+    @media only screen and (max-width: 500px) {
+      .total .check-btn {
+        margin-top: 20px !important; } }
 
 .paayment-heading {
   font-style: normal !important;
@@ -4207,17 +4413,19 @@ input[type="radio"]:checked {
   padding-bottom: 0px !important; }
 
 .check-button {
-  width: 100%; }
+  width: 100%;
+  cursor: pointer; }
   .check-button a {
     text-decoration: none;
     background-color: #157BFB;
     border-radius: 4px;
-    color: white;
+    color: white !important;
     padding: 17px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; }
+    width: 100%;
+    cursor: pointer; }
 
 .promoted__stats {
   background: #FFFFFF;
@@ -4341,6 +4549,188 @@ input[type="radio"]:checked {
 .bg-blue {
   background-color: #157BFB;
   color: white; }
+
+.payment-modal .modal-dialog {
+  max-width: 60vw !important; }
+  @media only screen and (max-width: 900px) {
+    .payment-modal .modal-dialog {
+      max-width: 80vw !important; } }
+  @media only screen and (max-width: 600px) {
+    .payment-modal .modal-dialog {
+      max-width: 90vw !important;
+      margin: auto; } }
+  @media only screen and (max-width: 500px) {
+    .payment-modal .modal-dialog {
+      max-width: 97vw !important;
+      margin: auto; } }
+
+.payment-modal .pay-content {
+  background-image: url("/images/image 4.png") !important;
+  width: 80vw !important;
+  border: 4px solid #157BFB; }
+  @media only screen and (max-width: 600px) {
+    .payment-modal .pay-content {
+      width: 90vw !important;
+      margin: auto; } }
+  @media only screen and (max-width: 500px) {
+    .payment-modal .pay-content {
+      width: 97vw !important;
+      margin: auto; } }
+  .payment-modal .pay-content .tick {
+    background-color: white !important;
+    height: 80px !important;
+    width: 80px !important;
+    border-radius: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .payment-modal .pay-content .pay-heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #157BFB; }
+  .payment-modal .pay-content p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #157BFB; }
+    @media only screen and (max-width: 620px) {
+      .payment-modal .pay-content p {
+        font-size: 16px; } }
+  .payment-modal .pay-content .exective__requirments {
+    background: #0C97F7;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 15px;
+    width: 40vw;
+    margin: 0px auto; }
+    @media only screen and (max-width: 900px) {
+      .payment-modal .pay-content .exective__requirments {
+        width: 60vw !important; } }
+    @media only screen and (max-width: 900px) {
+      .payment-modal .pay-content .exective__requirments {
+        width: 100% !important; } }
+    .payment-modal .pay-content .exective__requirments p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: #FFFFFF; }
+    .payment-modal .pay-content .exective__requirments h3 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 43px;
+      line-height: 50px;
+      color: #FFFFFF; }
+    .payment-modal .pay-content .exective__requirments span {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+      margin-top: 5px !important; }
+    .payment-modal .pay-content .exective__requirments ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      background-color: white;
+      width: fit-content;
+      padding: 15px 30px;
+      border-radius: 4px;
+      margin: 0px auto; }
+      @media only screen and (max-width: 400px) {
+        .payment-modal .pay-content .exective__requirments ul {
+          padding: 15px !important; } }
+      .payment-modal .pay-content .exective__requirments ul li {
+        display: flex;
+        align-items: center; }
+        .payment-modal .pay-content .exective__requirments ul li .circle-img {
+          height: 15px !important;
+          width: auto !important;
+          margin-top: 4px;
+          margin-right: 8px; }
+        .payment-modal .pay-content .exective__requirments ul li p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 138.69%;
+          color: #000000; }
+          @media only screen and (max-width: 400px) {
+            .payment-modal .pay-content .exective__requirments ul li p {
+              font-size: 14px; } }
+          @media only screen and (max-width: 335px) {
+            .payment-modal .pay-content .exective__requirments ul li p {
+              font-size: 12px; } }
+    .payment-modal .pay-content .exective__requirments .research-list {
+      background-color: transparent !important; }
+      .payment-modal .pay-content .exective__requirments .research-list li p {
+        color: white !important; }
+  .payment-modal .pay-content .include-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-align: left !important; }
+
+.pop__buttons {
+  margin: 20px auto; }
+  @media only screen and (max-width: 400px) {
+    .pop__buttons {
+      display: flex;
+      flex-direction: column; } }
+  .pop__buttons .button1 {
+    background-color: transparent !important;
+    border: 1px solid #157BFB !important;
+    padding: 7px 20px;
+    border-radius: 4px;
+    margin: 3px 5px; }
+    .pop__buttons .button1 a {
+      color: #157BFB;
+      text-decoration: none; }
+      .pop__buttons .button1 a:hover {
+        color: #157BFB; }
+  .pop__buttons .button2 {
+    background-color: #157BFB !important;
+    border: 1px solid #157BFB !important;
+    padding: 7px 20px;
+    border-radius: 4px;
+    margin: 3px 5px; }
+    .pop__buttons .button2 a {
+      color: white;
+      text-decoration: none; }
+      .pop__buttons .button2 a:hover {
+        color: white; }
+
+.pay-btn {
+  background-color: transparent !important;
+  border: none !important;
+  width: 100%;
+  cursor: pointer; }
+  .pay-btn a {
+    display: flex !important;
+    justify-content: space-between !important;
+    background-color: #ffffff !important;
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: 40%;
+    text-decoration: none;
+    margin: 0px auto;
+    margin-top: 20px;
+    cursor: pointer; }
+    @media only screen and (max-width: 450px) {
+      .pay-btn a {
+        width: 90%; } }
+    .pay-btn a p {
+      color: #157BFB !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px !important;
+      line-height: 24px;
+      color: #157BFB !important; }
 
 .manage-job {
   padding: 0px 30px !important; }
@@ -4789,7 +5179,8 @@ input[type="radio"]:checked {
     border: 2px solid #157BFB;
     box-sizing: border-box;
     border-radius: 4px;
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: pointer; }
     @media only screen and (max-width: 550px) {
       .overview__btns .edit__job-btn {
         display: flex;
@@ -4799,7 +5190,8 @@ input[type="radio"]:checked {
         margin: 5px 0px; } }
   .overview__btns .edit__job-btn2 {
     background-color: #157BFB;
-    color: white; }
+    color: white;
+    cursor: pointer; }
     @media only screen and (max-width: 550px) {
       .overview__btns .edit__job-btn2 {
         display: flex;
@@ -5207,7 +5599,10 @@ input[type="radio"]:checked {
       font-size: 16px;
       line-height: 24px;
       color: #FFFFFF;
-      padding: 7px 12px; }
+      padding: 7px 12px;
+      cursor: pointer; }
+      .package__state .view-pkg a:hover {
+        color: white; }
 
 .gray-line {
   border: 1px solid #BDBDBD; }
@@ -5323,43 +5718,49 @@ input[type="radio"]:checked {
   @media only screen and (max-width: 700px) {
     .total-text {
       margin: 10px 0px !important; } }
-  @media only screen and (max-width: 500px) {
-    .total .check-btn {
-      flex-direction: column !important; } }
-  .total .check-btn button {
-    background-color: transparent;
-    border: none; }
-    .total .check-btn button a {
-      padding: 5px 30px;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
-      color: #FFFFFF;
-      background-color: #157BFB;
-      text-decoration: none;
-      border-radius: 3px; }
-      @media only screen and (max-width: 500px) {
-        .total .check-btn button a {
-          padding: 7px 40px; } }
-  .total .check-btn .promotion__stop {
-    background-color: white;
-    border: 2px solid #EA0707;
-    border-radius: 3px;
-    color: #EA0707;
-    text-decoration: none;
-    padding: 3px 25px;
-    display: flex;
-    font-weight: 500;
-    justify-content: space-between;
-    align-items: center;
+  .total .check-btn {
     cursor: pointer; }
     @media only screen and (max-width: 500px) {
-      .total .check-btn .promotion__stop {
-        margin: 15px 0px; } }
-  @media only screen and (max-width: 500px) {
-    .total .check-btn {
-      margin-top: 20px !important; } }
+      .total .check-btn {
+        flex-direction: column !important; } }
+    .total .check-btn button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer; }
+      .total .check-btn button a {
+        padding: 5px 30px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        background-color: #157BFB;
+        text-decoration: none;
+        border-radius: 3px;
+        cursor: pointer; }
+        .total .check-btn button a:hover {
+          color: white; }
+        @media only screen and (max-width: 500px) {
+          .total .check-btn button a {
+            padding: 7px 40px; } }
+    .total .check-btn .promotion__stop {
+      background-color: white;
+      border: 2px solid #EA0707;
+      border-radius: 3px;
+      color: #EA0707;
+      text-decoration: none;
+      padding: 3px 25px;
+      display: flex;
+      font-weight: 500;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer; }
+      @media only screen and (max-width: 500px) {
+        .total .check-btn .promotion__stop {
+          margin: 15px 0px; } }
+    @media only screen and (max-width: 500px) {
+      .total .check-btn {
+        margin-top: 20px !important; } }
 
 .paayment-heading {
   font-style: normal !important;
@@ -5434,17 +5835,19 @@ input[type="radio"]:checked {
   padding-bottom: 0px !important; }
 
 .check-button {
-  width: 100%; }
+  width: 100%;
+  cursor: pointer; }
   .check-button a {
     text-decoration: none;
     background-color: #157BFB;
     border-radius: 4px;
-    color: white;
+    color: white !important;
     padding: 17px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; }
+    width: 100%;
+    cursor: pointer; }
 
 .promoted__stats {
   background: #FFFFFF;
@@ -5568,6 +5971,288 @@ input[type="radio"]:checked {
 .bg-blue {
   background-color: #157BFB;
   color: white; }
+
+.payment-modal .modal-dialog {
+  max-width: 60vw !important; }
+  @media only screen and (max-width: 900px) {
+    .payment-modal .modal-dialog {
+      max-width: 80vw !important; } }
+  @media only screen and (max-width: 600px) {
+    .payment-modal .modal-dialog {
+      max-width: 90vw !important;
+      margin: auto; } }
+  @media only screen and (max-width: 500px) {
+    .payment-modal .modal-dialog {
+      max-width: 97vw !important;
+      margin: auto; } }
+
+.payment-modal .pay-content {
+  background-image: url("/images/image 4.png") !important;
+  width: 80vw !important;
+  border: 4px solid #157BFB; }
+  @media only screen and (max-width: 600px) {
+    .payment-modal .pay-content {
+      width: 90vw !important;
+      margin: auto; } }
+  @media only screen and (max-width: 500px) {
+    .payment-modal .pay-content {
+      width: 97vw !important;
+      margin: auto; } }
+  .payment-modal .pay-content .tick {
+    background-color: white !important;
+    height: 80px !important;
+    width: 80px !important;
+    border-radius: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .payment-modal .pay-content .pay-heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #157BFB; }
+  .payment-modal .pay-content p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #157BFB; }
+    @media only screen and (max-width: 620px) {
+      .payment-modal .pay-content p {
+        font-size: 16px; } }
+  .payment-modal .pay-content .exective__requirments {
+    background: #0C97F7;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 15px;
+    width: 40vw;
+    margin: 0px auto; }
+    @media only screen and (max-width: 900px) {
+      .payment-modal .pay-content .exective__requirments {
+        width: 60vw !important; } }
+    @media only screen and (max-width: 900px) {
+      .payment-modal .pay-content .exective__requirments {
+        width: 100% !important; } }
+    .payment-modal .pay-content .exective__requirments p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: #FFFFFF; }
+    .payment-modal .pay-content .exective__requirments h3 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 43px;
+      line-height: 50px;
+      color: #FFFFFF; }
+    .payment-modal .pay-content .exective__requirments span {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+      margin-top: 5px !important; }
+    .payment-modal .pay-content .exective__requirments ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      background-color: white;
+      width: fit-content;
+      padding: 15px 30px;
+      border-radius: 4px;
+      margin: 0px auto; }
+      @media only screen and (max-width: 400px) {
+        .payment-modal .pay-content .exective__requirments ul {
+          padding: 15px !important; } }
+      .payment-modal .pay-content .exective__requirments ul li {
+        display: flex;
+        align-items: center; }
+        .payment-modal .pay-content .exective__requirments ul li .circle-img {
+          height: 15px !important;
+          width: auto !important;
+          margin-top: 4px;
+          margin-right: 8px; }
+        .payment-modal .pay-content .exective__requirments ul li p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 138.69%;
+          color: #000000; }
+          @media only screen and (max-width: 400px) {
+            .payment-modal .pay-content .exective__requirments ul li p {
+              font-size: 14px; } }
+          @media only screen and (max-width: 335px) {
+            .payment-modal .pay-content .exective__requirments ul li p {
+              font-size: 12px; } }
+    .payment-modal .pay-content .exective__requirments .research-list {
+      background-color: transparent !important; }
+      .payment-modal .pay-content .exective__requirments .research-list li p {
+        color: white !important; }
+  .payment-modal .pay-content .include-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-align: left !important; }
+
+.pop__buttons {
+  margin: 20px auto; }
+  @media only screen and (max-width: 400px) {
+    .pop__buttons {
+      display: flex;
+      flex-direction: column; } }
+  .pop__buttons .button1 {
+    background-color: transparent !important;
+    border: 1px solid #157BFB !important;
+    padding: 7px 20px;
+    border-radius: 4px;
+    margin: 3px 5px; }
+    .pop__buttons .button1 a {
+      color: #157BFB;
+      text-decoration: none; }
+      .pop__buttons .button1 a:hover {
+        color: #157BFB; }
+  .pop__buttons .button2 {
+    background-color: #157BFB !important;
+    border: 1px solid #157BFB !important;
+    padding: 7px 20px;
+    border-radius: 4px;
+    margin: 3px 5px; }
+    .pop__buttons .button2 a {
+      color: white;
+      text-decoration: none; }
+      .pop__buttons .button2 a:hover {
+        color: white; }
+
+.pay-btn {
+  background-color: transparent !important;
+  border: none !important;
+  width: 100%;
+  cursor: pointer; }
+  .pay-btn a {
+    display: flex !important;
+    justify-content: space-between !important;
+    background-color: #ffffff !important;
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: 40%;
+    text-decoration: none;
+    margin: 0px auto;
+    margin-top: 20px;
+    cursor: pointer; }
+    @media only screen and (max-width: 450px) {
+      .pay-btn a {
+        width: 90%; } }
+    .pay-btn a p {
+      color: #157BFB !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px !important;
+      line-height: 24px;
+      color: #157BFB !important; }
+
+.checkout__heading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  color: #666666; }
+
+.checkout-col1 {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  padding: 15px 18px; }
+
+.check__out-detail-heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  color: #666666; }
+
+.check__out-detail input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: black;
+  background: #F7F7F7;
+  border-radius: 6px;
+  padding: 10px 10px;
+  width: 100%;
+  border: none !important; }
+  .check__out-detail input::placeholder {
+    color: #8F8F8F; }
+  .check__out-detail input:active, .check__out-detail input:focus {
+    outline: none !important;
+    border: none !important; }
+
+.checkout__progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .checkout__progress p {
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #157BFB;
+    font-size: 18px;
+    font-weight: 500; }
+    @media only screen and (max-width: 400px) {
+      .checkout__progress p {
+        width: 55px;
+        height: 55px; } }
+  .checkout__progress .active-progress {
+    background-color: #157BFB;
+    color: white; }
+  .checkout__progress .progress-line {
+    border: 3px dashed #8F8F8F;
+    width: 50%;
+    background-color: white; }
+
+.order__detail {
+  background-color: #157BFB;
+  padding: 15px 20px;
+  border-radius: 4px; }
+  .order__detail .order__deatil-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF !important;
+    text-align: center !important; }
+  .order__detail .order__deatil-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media only screen and (max-width: 400px) {
+      .order__detail .order__deatil-content {
+        flex-direction: column;
+        margin-top: 20px; } }
+    .order__detail .order__deatil-content p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 147.19%;
+      color: #FFFFFF; }
+    .order__detail .order__deatil-content h4 {
+      font-weight: bold !important;
+      font-size: 30px !important;
+      line-height: 130% !important;
+      color: #FFFFFF !important; }
 
 .view__job {
   margin-top: 8px !important; }
@@ -5625,6 +6310,18 @@ input[type="radio"]:checked {
   box-sizing: border-box;
   border-radius: 4px;
   margin: 0px 5px; }
+  @media only screen and (max-width: 500px) {
+    .tab-cv button {
+      padding: 4px 12px;
+      font-size: 14px; } }
+  @media only screen and (max-width: 393px) {
+    .tab-cv button {
+      padding: 4px 10px;
+      font-size: 12px; } }
+  @media only screen and (max-width: 330px) {
+    .tab-cv button {
+      padding: 4px 8px !important;
+      font-size: 12px !important; } }
 
 /* Change background color of buttons on hover */
 .tab-cv button:hover {
@@ -5647,6 +6344,18 @@ input[type="radio"]:checked {
   background-color: #E5F1FF !important;
   border-radius: 4px !important;
   border: none !important; }
+  @media only screen and (max-width: 500px) {
+    .tab-cv .active-cv {
+      padding: 4px 12px !important;
+      font-size: 14px !important; } }
+  @media only screen and (max-width: 393px) {
+    .tab-cv .active-cv {
+      padding: 4px 10px !important;
+      font-size: 12px !important; } }
+  @media only screen and (max-width: 330px) {
+    .tab-cv .active-cv {
+      padding: 4px 8px !important;
+      font-size: 12px !important; } }
 
 /* Style the tab content */
 .tabcontent-cv {
@@ -5826,6 +6535,19 @@ button.accordion.active:after {
   .check__boxes .checkbox-danger input[type="checkbox"]:checked + label::after {
     color: #fff; }
 
+.quick__filter-div {
+  display: flex;
+  justify-content: space-between;
+  align-self: center; }
+  @media only screen and (max-width: 880px) {
+    .quick__filter-div {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+  @media only screen and (max-width: 600px) {
+    .quick__filter-div {
+      width: 100% !important; } }
+
 .Quick__filter {
   display: flex;
   align-items: center; }
@@ -5833,6 +6555,9 @@ button.accordion.active:after {
     .Quick__filter {
       flex-direction: column;
       justify-content: start; } }
+  @media only screen and (max-width: 600px) {
+    .Quick__filter {
+      width: 100% !important; } }
   .Quick__filter p {
     font-style: normal;
     font-weight: normal;
@@ -5850,13 +6575,289 @@ button.accordion.active:after {
     box-sizing: border-box;
     border-radius: 4px;
     padding: 7px 15px;
-    margin: 3px 5px; }
+    margin: 3px 5px;
+    text-align: center; }
     @media only screen and (max-width: 550px) {
       .Quick__filter a {
         width: 100%; } }
   .Quick__filter .active-btn {
     background-color: #157BFB !important;
     color: white !important; }
+
+@media only screen and (max-width: 550px) {
+  .newest-div {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px; } }
+
+.newest-dropdown {
+  background-color: transparent !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5C5C5C !important; }
+  @media only screen and (max-width: 550px) {
+    .newest-dropdown {
+      width: 100%;
+      margin-top: 15px; } }
+  .newest-dropdown:hover {
+    background-color: transparent !important;
+    outline: none !important;
+    color: #157BFB !important;
+    box-shadow: none !important; }
+
+.panel-main {
+  height: 80vh;
+  overflow-y: scroll; }
+  .panel-main::-webkit-scrollbar {
+    width: 5px; }
+  .panel-main::-webkit-scrollbar-track {
+    box-shadow: none !important; }
+  .panel-main::-webkit-scrollbar-thumb {
+    background-color: #157BFB;
+    outline: 1px solid slategrey;
+    width: 5px;
+    border-radius: 10px; }
+  .panel-main .personal__info {
+    background: #F2FBFF;
+    box-shadow: 0px 5px 20px rgba(146, 146, 157, 0.05);
+    border-radius: 10px;
+    padding: 20px 0px; }
+    .panel-main .personal__info-pic {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      @media only screen and (max-width: 991px) {
+        .panel-main .personal__info-pic {
+          flex-direction: column; } }
+      .panel-main .personal__info-pic .dp {
+        width: 98px;
+        height: 88px;
+        top: 559px;
+        background: #C4C4C4;
+        border-radius: 10px;
+        overflow: hidden; }
+        .panel-main .personal__info-pic .dp img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover; }
+      @media only screen and (max-width: 991px) {
+        .panel-main .personal__info-pic .text {
+          text-align: center; } }
+      .panel-main .personal__info-pic .text span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #8A8A8A;
+        margin: 0px !important;
+        padding: 0px !important; }
+      .panel-main .personal__info-pic .text h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 25px;
+        color: #000000; }
+      .panel-main .personal__info-pic .text p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #212325; }
+      @media only screen and (max-width: 991px) {
+        .panel-main .personal__info-pic .text .location {
+          text-align: center !important;
+          justify-content: center; } }
+      .panel-main .personal__info-pic .text .location p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1px;
+        color: #44444F; }
+      .panel-main .personal__info-pic .text .location span {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1px;
+        color: #92929D;
+        margin: 0px 7px !important; }
+        .panel-main .personal__info-pic .text .location span::before {
+          content: '';
+          display: inline-block;
+          height: 5px;
+          width: 5px;
+          border-radius: 100%;
+          background-color: #157BFB;
+          margin: 0px 5px; }
+    .panel-main .personal__info .social__contact {
+      display: flex;
+      justify-content: center;
+      margin: 15px 0px;
+      cursor: pointer; }
+      .panel-main .personal__info .social__contact a {
+        margin: 10px 5px; }
+    .panel-main .personal__info ul {
+      list-style: none;
+      margin: 0px !important;
+      padding: 7px 0px !important; }
+      .panel-main .personal__info ul li {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 7px 10px;
+        border-top: 1px solid #E2E2EA; }
+        .panel-main .personal__info ul li p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 19px;
+          letter-spacing: 0.1px;
+          color: #696974;
+          width: 50%; }
+        .panel-main .personal__info ul li span {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.1px;
+          color: #44444F; }
+  .panel-main-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #272626;
+    margin: 0px 5px !important; }
+    .panel-main-heading::before {
+      content: '';
+      height: 10px;
+      width: 10px;
+      background-color: #157BFB;
+      border-radius: 100%;
+      display: inline-block;
+      margin: 0px 5px !important; }
+  .panel-main .main-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #272626; }
+    .panel-main .main-text::before {
+      content: '';
+      height: 8px;
+      width: 8px;
+      background: #92929D;
+      border-radius: 100%;
+      display: inline-block;
+      margin: 0px 5px !important; }
+  .panel-main .text-body {
+    margin: 3px 0px 10px 22px; }
+  .panel-main .text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #515151; }
+  .panel-main__detail {
+    border-bottom: 1px solid #C4C4C4; }
+  .panel-main .accordian-btn {
+    margin-left: 10px !important;
+    border: none !important;
+    border-left: 0.7px solid #92929D !important;
+    padding: 0px;
+    margin-top: 0px;
+    padding: 0px 8px !important;
+    background-color: transparent !important; }
+  .panel-main .accordian-btn2 {
+    margin-left: 10px !important;
+    border: none !important;
+    border-left: 0.7px solid #92929D !important;
+    padding: 0px;
+    margin-top: 0px;
+    padding: 0px 8px !important;
+    background-color: transparent !important; }
+  .panel-main .panel2 {
+    margin-left: 10px !important;
+    border-left: 0.7px solid #92929D;
+    padding: 0px;
+    margin-top: 0px;
+    padding: 0px 8px !important; }
+  .panel-main .accordian-btn:after {
+    content: '\002B';
+    color: black;
+    font-weight: 500;
+    float: right;
+    font-size: 16px;
+    margin-right: 15px;
+    border: 1px solid black;
+    line-height: 2px;
+    padding: 7px 1px 6px 1px !important;
+    width: 15px; }
+  .panel-main .accordian-btn.active:after {
+    content: "\2212";
+    color: black;
+    font-weight: 500;
+    float: right;
+    font-size: 16px;
+    border: 1px solid #313131;
+    line-height: 2px;
+    padding: 7px 1px 6px 1px !important;
+    width: 15px; }
+  .panel-main .blue-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #157BFB; }
+  .panel-main .date-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #676767; }
+  .panel-main .skils-list {
+    list-style: none;
+    margin: 0px !important;
+    padding: 0px !important;
+    padding: 5px 25px !important;
+    display: flex; }
+    .panel-main .skils-list li {
+      background-color: #157BFB;
+      border-radius: 15px;
+      padding: 3px 8px;
+      color: white;
+      margin: 0px 5px;
+      margin-bottom: 10px; }
+
+.write__note {
+  width: 100%; }
+  .write__note textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px; }
+  .write__note .note-btn {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 20px; }
+    .write__note .note-btn button {
+      background-color: transparent !important;
+      border: none !important; }
+    .write__note .note-btn .cancel {
+      background-color: gray;
+      color: white;
+      border-radius: 4px;
+      padding: 7px 15px;
+      text-decoration: none; }
+    .write__note .note-btn .save {
+      background-color: #157BFB;
+      color: white;
+      border-radius: 4px;
+      padding: 7px 15px;
+      text-decoration: none; }
+
+.border {
+  border: 3px solid #157BFB !important; }
 
 .navbar {
   height: 70px;

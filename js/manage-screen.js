@@ -47,3 +47,19 @@ document.getElementById("defaultOpenT").click();
 
 
 
+$('#promote-stats-btn').hide()
+
+$('#promote-job-btn').on('click', function() {
+    $('#promote-stats-btn').show()
+    $('#promote-stats-btn').addClass('active')
+    $('.detail__job-div .main-heading').text('Add Jobs Promotion')
+})
+
+$('.tablinks').each(function() {
+    $(this).on('click', function() {
+        if($(this).hasClass('active') && $(this)[0].id !== "promote-stats-btn") {
+            $('#promote-stats-btn').hide()
+            $('.detail__job-div .main-heading').text('Detail of Jobs')
+        }
+    })
+})

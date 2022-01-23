@@ -1,21 +1,4 @@
-// =======================copy text=======================
-// function copyFunction() {
-//     /* Get the text field */
-//     var copyText = document.getElementById("myInput");
-
-//     /* Select the text field */
-//     copyText.select();
-//     copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-//      /* Copy the text inside the text field */
-//     navigator.clipboard.writeText(copyText.value);
-
-//     /* Alert the copied text */
-//     alert("Copied the text: " + copyText.value);
-//   }
-//   $(function () {
-//     $('[data-toggle="tooltip"]').tooltip()
-//   });
+// copy text to toolpit
 
 function myCopyFunction() {
     var copyText = document.querySelector(".code-input");
@@ -27,10 +10,12 @@ function myCopyFunction() {
     tooltip.innerHTML = "Copied " ;
 }
 
+// copy to clipboard
 function outFunc() {
     var tooltip = document.getElementById("myTooltip");
     tooltip.innerHTML = "Copy to clipboard";
 }
+
 function copyText() {
     let buttons = document.querySelectorAll('.copy-btn');
 
@@ -54,7 +39,7 @@ copyText();
 
 
 
-// In your Javascript (external .js resource or <script> tag)
+// dropdowns with seach inputs
 $(document).ready(function () {
     $('.form-select').each(function () {
         $(this).select2()
@@ -64,7 +49,7 @@ $(document).ready(function () {
 });
 
 
-// With JQuery slider
+// For Range Slider
 
 function updateTextInput(val) {
     document.getElementById('textInput').value = val + "$";
@@ -76,7 +61,7 @@ function updateTextInputt(val) {
 
 
 
-// multisteps
+// Progress buttons on Add job screen /// multisteps
 const prevBtns = document.querySelectorAll(".btn-prev");
 const nextBtns = document.querySelectorAll(".btn-next");
 const nextBtns2 = document.querySelectorAll(".btn-next2");
@@ -136,7 +121,7 @@ function updateFormSteps() {
 }
 
 
-// autocomplete
+//For Filter Input autocomplete
 
 $(function () {
     var availableTags = [
@@ -155,15 +140,6 @@ $(function () {
         "Scala",
         "Scheme"
     ];
-    // $("#tags").autocomplete({
-    //     source: availableTags,
-    //     select: function (event, ui) {
-    //         var listChild = $('<li class="d-flex justify-content-between"><p class="mb-0">' + ui.item.value + '</p><span class="close"> x </span></li>')
-    //         $(".selected").prepend(listChild)
-    //         // $(".modal-input").value="";
-    //     }
-
-    // });
 
 
     $('.tags').each(function () {
@@ -218,7 +194,8 @@ $(function () {
             ul.append('<li class="select-item">' + $(this).val() + '<span class="cross">x</span></li>')
         });
     })
-
+ 
+    // close selected tags
 
     $('.my-select').each(function () {
         $(this).on('click', '.cross', function () {
@@ -228,6 +205,8 @@ $(function () {
     })
 
 
+
+    // slect radio buttons on card click
     $('#method-card').on('click', function () {
         $('#credit-radio').prop('checked', true)
         $('.credit-detail').show()
@@ -238,6 +217,14 @@ $(function () {
         $('.credit-detail').hide()
     })
 
+    $('#credit-pay').on('click', function () {
+        $(this).find('input[type="radio"]').prop('checked', true)
+    })
+
+    $('#paypal-pay').on('click', function () {
+        $(this).find('input[type="radio"]').prop('checked', true)
+    })
+
     $('.monthly__spends').each(function () {
         $(this).on('click', function () {
             $(this).find('input[type="radio"]').prop('checked', true)
@@ -245,18 +232,11 @@ $(function () {
     })
 
 
+
+
+
 });
 
-
-// stars
-
-// $('.table-svg').click(function() {
-//     if($('#path').css({fill:"#FFFFFF"})){
-//         $('#path').css({ fill: "#157BFB" });
-//    }else{
-//         $('#path').css({ fill: "#157BFB" });
-//     }
-// });
 
 // make column dixed
 $(window).scroll(function (e) {
@@ -297,6 +277,47 @@ $(window).scroll(function (e) {
 });
 
 
+// pay modal show hide divs
+$('#pay-btn').on('click', function() {
+    // alert()
+    $('#staticBackdrop-check-out').modal('hide')
+})
+
+$('#candidate-research').hide()
+
+let count = 0;
+$('#no-thanks').on('click', function() {
+    $('#exective-requirments').hide()
+    if(count == 1) {
+        $('#staticBackdrop-payment').modal('hide')
+        $('#exective-requirments').show()
+        $('#candidate-research').hide()
+        
+        count = 0;
+    }else{
+        $('#candidate-research').show()
+        count++;
+    }
+    // $('#candidate-research').show()
+})
 
 
 
+// =======================copy text=======================
+// function copyFunction() {
+//     /* Get the text field */
+//     var copyText = document.getElementById("myInput");
+
+//     /* Select the text field */
+//     copyText.select();
+//     copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+//      /* Copy the text inside the text field */
+//     navigator.clipboard.writeText(copyText.value);
+
+//     /* Alert the copied text */
+//     alert("Copied the text: " + copyText.value);
+//   }
+//   $(function () {
+//     $('[data-toggle="tooltip"]').tooltip()
+//   });
