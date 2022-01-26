@@ -1,9 +1,40 @@
+.heading__main {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 75px;
+  color: #157BFB; }
+  @media only screen and (max-width: 767px) {
+    .heading__main {
+      font-size: 35px;
+      line-height: unset !important; } }
+  @media only screen and (max-width: 400px) {
+    .heading__main {
+      font-size: 30px; } }
+
 .heading__primary {
   font-style: normal;
   font-weight: 500;
   font-size: 18px !important;
   line-height: 27px;
   color: #272626; }
+
+.h-34 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #001E5A; }
+  @media only screen and (max-width: 767px) {
+    .h-34 {
+      font-size: 28px; } }
+  @media only screen and (max-width: 500px) {
+    .h-34 {
+      font-size: 18px; } }
+  @media only screen and (max-width: 500px) {
+    .h-34 {
+      font-size: 16px; } }
 
 .order1 {
   order: 1; }
@@ -6858,6 +6889,139 @@ button.accordion.active:after {
 
 .border {
   border: 3px solid #157BFB !important; }
+
+.candidate-container {
+  padding: 0px 40px; }
+  @media only screen and (max-width: 767px) {
+    .candidate-container {
+      padding: 0px  20px; } }
+  @media only screen and (max-width: 767px) {
+    .candidate-container {
+      padding: 0px  10px; } }
+  @media only screen and (max-width: 375px) {
+    .candidate-container {
+      padding: 0px 8px; } }
+
+.hero-section {
+  background-image: url("/images/candidate-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 20px 40px 100px 40px; }
+  @media only screen and (max-width: 991px) {
+    .hero-section {
+      background-image: none; } }
+  @media only screen and (max-width: 767px) {
+    .hero-section {
+      padding: 20px 20px 100px 20px; } }
+  @media only screen and (max-width: 767px) {
+    .hero-section {
+      padding: 20px 10px 100px 10px; } }
+  @media only screen and (max-width: 375px) {
+    .hero-section {
+      padding: 8px 10px 100px 8px; } }
+  @media only screen and (max-width: 991px) {
+    .hero-section-text {
+      order: 2; } }
+  .hero-section-text p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #212325; }
+  .hero-section-text ul {
+    list-style: none; }
+    .hero-section-text ul li {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 32px;
+      text-transform: capitalize;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #1D2B4F; }
+      .hero-section-text ul li svg {
+        margin-right: 5px; }
+      @media only screen and (max-width: 500px) {
+        .hero-section-text ul li {
+          font-size: 18px;
+          line-height: unset; } }
+      @media only screen and (max-width: 400px) {
+        .hero-section-text ul li {
+          font-size: 16px;
+          line-height: unset; } }
+      @media only screen and (max-width: 375px) {
+        .hero-section-text ul li {
+          font-size: 14px;
+          line-height: unset; } }
+  .hero-section-video {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .hero-section-video .video {
+      height: 400px;
+      width: 550px !important;
+      width: auto;
+      border-radius: 7px; }
+      @media only screen and (max-width: 991px) {
+        .hero-section-video .video {
+          width: 100% !important; } }
+
+.buy-form .form-label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #515151; }
+
+.buy-form .form-control {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  background: #FFFFFF;
+  border: 1px solid #C2C2C2;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px 8px !important; }
+
+.buy-form textarea {
+  width: 100%;
+  border: 1px solid #C2C2C2 !important;
+  box-sizing: border-box !important;
+  border-radius: 4px !important;
+  padding: 10px 8px !important; }
+
+.buy-form .buy-btn {
+  background-color: #157BFB;
+  color: white;
+  padding: 13px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF; }
+
+.candidate-heading {
+  display: flex;
+  align-items: center; }
+  .candidate-heading h2 {
+    white-space: nowrap;
+    margin-right: 10px; }
+
+.candidate-line {
+  height: 2px;
+  background: #B9B9B9;
+  width: 100%; }
+
+.no-thanks {
+  text-decoration: none;
+  color: #157BFB;
+  border: 2px solid #157BFB;
+  padding: 7px 70px;
+  border-radius: 4px; }
 
 .navbar {
   height: 70px;
