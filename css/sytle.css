@@ -144,7 +144,7 @@
       flex-direction: column; } }
   .two__btns .btn-blank {
     background-color: transparent !important;
-    width: 350px;
+    width: 250px;
     border: 2px solid #157BFB;
     padding: 8px 0px; }
     @media only screen and (max-width: 500px) {
@@ -159,7 +159,7 @@
       letter-spacing: 0.005em;
       width: 100%;
       color: #157BFB;
-      width: 350px; }
+      width: 250px; }
       @media only screen and (max-width: 500px) {
         .two__btns .btn-blank a {
           width: 280px; } }
@@ -171,7 +171,7 @@
     border: 2px solid #157BFB;
     padding: 8px 0px;
     background-color: #157BFB;
-    width: 350px;
+    width: 250px;
     margin-left: 10px; }
     @media only screen and (max-width: 500px) {
       .two__btns .btn-fill {
@@ -186,7 +186,7 @@
       text-align: center;
       letter-spacing: 0.005em;
       color: white;
-      width: 350px; }
+      width: 250px; }
       @media only screen and (max-width: 500px) {
         .two__btns .btn-fill a {
           width: 280px; } }
