@@ -6481,9 +6481,15 @@ input[type="radio"]:checked {
 .why {
   background-color: #1D2B4F;
   height: 70vh; }
+  @media only screen and (max-width: 767px) {
+    .why {
+      background-color: transparent; } }
 
 .why-content {
   margin-top: -400px !important; }
+  @media only screen and (max-width: 767px) {
+    .why-content {
+      margin-top: 20px !important; } }
   .why-content-container {
     margin-top: 80px;
     background-color: white;

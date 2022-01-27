@@ -272,10 +272,16 @@
 .why {
     background-color: #1D2B4F;
     height: 70vh;
+    @media only screen and(max-width:767px){
+        background-color: transparent;
+    }
    
 }
 .why-content{
     margin-top: -400px !important;
+    @media only screen and(max-width:767px){
+        margin-top: 20px !important;
+    }
     &-container {
         margin-top: 80px;
         background-color: white;
