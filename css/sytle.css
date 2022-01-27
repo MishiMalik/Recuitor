@@ -6483,7 +6483,8 @@ input[type="radio"]:checked {
   height: 70vh; }
   @media only screen and (max-width: 767px) {
     .why {
-      background-color: transparent; } }
+      background-color: transparent;
+      height: 0px; } }
 
 .why-content {
   margin-top: -400px !important; }
