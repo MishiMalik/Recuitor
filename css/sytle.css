@@ -158,7 +158,11 @@
       text-align: center;
       letter-spacing: 0.005em;
       width: 100%;
-      color: #157BFB; }
+      color: #157BFB;
+      width: 350px; }
+      @media only screen and (max-width: 500px) {
+        .two__btns .btn-blank a {
+          width: 280px; } }
     .two__btns .btn-blank:hover {
       background-color: #157BFB !important; }
       .two__btns .btn-blank:hover a {
@@ -167,7 +171,7 @@
     border: 2px solid #157BFB;
     padding: 8px 0px;
     background-color: #157BFB;
-    width: 100%;
+    width: 350px;
     margin-left: 10px; }
     @media only screen and (max-width: 500px) {
       .two__btns .btn-fill {
@@ -181,7 +185,11 @@
       line-height: 120%;
       text-align: center;
       letter-spacing: 0.005em;
-      color: white; }
+      color: white;
+      width: 350px; }
+      @media only screen and (max-width: 500px) {
+        .two__btns .btn-fill a {
+          width: 280px; } }
     .two__btns .btn-fill:hover {
       background-color: white; }
       .two__btns .btn-fill:hover a {
@@ -6291,7 +6299,7 @@ input[type="radio"]:checked {
       padding: 0px 8px; } }
 
 .hero-section {
-  margin-top: 100px !important;
+  margin-top: 130px !important;
   background-image: url("/images/candidate-bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -6351,8 +6359,7 @@ input[type="radio"]:checked {
     align-items: center; }
     .hero-section-video .video {
       height: 400px;
-      width: 550px !important;
-      width: auto;
+      width: 95% !important;
       border-radius: 7px; }
       @media only screen and (max-width: 991px) {
         .hero-section-video .video {

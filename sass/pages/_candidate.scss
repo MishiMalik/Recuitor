@@ -15,7 +15,7 @@
 }
 
 .hero-section {
-    margin-top: 100px !important;
+    margin-top: 130px !important;
     background-image: url('/images/candidate-bg.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -98,8 +98,8 @@
 
         .video {
             height: 400px;
-            width: 550px !important;
-            width: auto;
+            // width: 550px !important;
+            width:95% !important;
             border-radius: 7px;
 
             @media only screen and(max-width:991px) {

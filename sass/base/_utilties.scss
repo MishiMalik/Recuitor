@@ -110,7 +110,10 @@
             letter-spacing: 0.005em;
             width: 100%;
             color: #157BFB;
-           
+            width: 350px;
+            @media only screen and(max-width:500px){
+                width: 280px;
+            }
             
         }
         &:hover{
@@ -124,7 +127,7 @@
         border: 2px solid #157BFB;
         padding: 8px 0px;
         background-color: #157BFB;
-       width: 100%;
+       width: 350px;
         margin-left: 10px;
         @media only screen and(max-width:500px){
             margin-left: 0px;
@@ -140,6 +143,10 @@
             text-align: center;
             letter-spacing: 0.005em;
             color:white;
+            width: 350px;
+            @media only screen and(max-width:500px){
+                width: 280px;
+            }
            
         }
         &:hover{
