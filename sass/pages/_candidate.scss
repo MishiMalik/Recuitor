@@ -1,44 +1,57 @@
 .candidate-container {
     padding: 0px 40px;
-    @media only screen and(max-width:767px){
-        padding: 0px  20px;
+
+    @media only screen and(max-width:767px) {
+        padding: 0px 20px;
     }
-    @media only screen and(max-width:767px){
-        padding: 0px  10px;
+
+    @media only screen and(max-width:767px) {
+        padding: 0px 10px;
     }
-    @media only screen and(max-width:375px){
+
+    @media only screen and(max-width:375px) {
         padding: 0px 8px;
     }
 }
 
 .hero-section {
+    margin-top: 100px !important;
     background-image: url('/images/candidate-bg.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 20px 40px 100px 40px;
-    @media only screen and(max-width:991px){
+
+    @media only screen and(max-width:991px) {
         background-image: none;
     }
-    @media only screen and(max-width:767px){
+
+    @media only screen and(max-width:767px) {
         padding: 20px 20px 100px 20px;
     }
-    @media only screen and(max-width:767px){
+
+    @media only screen and(max-width:767px) {
         padding: 20px 10px 100px 10px;
     }
-    @media only screen and(max-width:375px){
+
+    @media only screen and(max-width:375px) {
         padding: 8px 10px 100px 8px;
     }
 
     &-text {
-        @media only screen and(max-width:991px){
-          order: 2;
+        @media only screen and(max-width:991px) {
+            order: 2;
         }
+
         p {
             font-style: normal;
             font-weight: normal;
             font-size: 20px;
             line-height: 30px;
             color: #212325;
+
+            @media only screen and(max-width:500px) {
+                font-size: 16px !important;
+            }
         }
 
         ul {
@@ -57,15 +70,18 @@
                 font-feature-settings: 'pnum'on,
                 'lnum'on;
                 color: #1D2B4F;
-                @media only screen and(max-width:500px){
+              
+                @media only screen and(max-width:500px) {
                     font-size: 18px;
                     line-height: unset;
                 }
-                @media only screen and(max-width:400px){
+
+                @media only screen and(max-width:400px) {
                     font-size: 16px;
                     line-height: unset;
                 }
-                @media only screen and(max-width:375px){
+
+                @media only screen and(max-width:375px) {
                     font-size: 14px;
                     line-height: unset;
                 }
@@ -77,7 +93,7 @@
     &-video {
         order: 1;
         display: flex;
-        justify-content: center;
+        justify-content:flex-start;
         align-items: center;
 
         .video {
@@ -85,8 +101,15 @@
             width: 550px !important;
             width: auto;
             border-radius: 7px;
-            @media only screen and(max-width:991px){
+
+            @media only screen and(max-width:991px) {
                 width: 100% !important;
+                height: 250 !important;
+            }
+
+            @media only screen and(max-width:500px) {
+                width: 100% !important;
+                height: 100% !important;
             }
         }
     }
@@ -137,7 +160,7 @@
         line-height: 24px;
         color: #FFFFFF;
     }
-    
+
 }
 
 .candidate-heading {
@@ -156,10 +179,265 @@
     width: 100%;
 }
 
-.no-thanks{
+.no-thanks {
     text-decoration: none;
     color: #157BFB;
-    border:2px solid #157BFB;
+    border: 2px solid #157BFB;
     padding: 7px 70px;
     border-radius: 4px;
+}
+
+.trusted__companies {
+    &-row {
+        display: flex;
+        justify-content: center;
+
+        &--col {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+    }
+
+    .comany-logo {
+        height: auto;
+        width: 130px;
+    }
+}
+
+.process-row {
+    &--col {
+        padding: 10px;
+
+        .process-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #FFFFFF;
+            border: 1px solid #157BFB;
+            box-sizing: border-box;
+            padding: 0px 0px 40px 0px;
+            border-bottom: 5px solid #157BFB;
+            border-radius: 4px;
+
+            p {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 150%;
+                color: #FFFFFF;
+                padding: 5px 30px;
+                background-color: #157BFB;
+                border-radius: 0px 0px 3px 3px;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #001E5A;
+                    @media only screen and(max-width:1300px) {
+                        font-size: 15px;
+                    }
+                    @media only screen and(max-width:1100px) {
+                        font-size: 12px;
+                    }
+    
+                    @media only screen and(max-width:991px) {
+                        font-size: 18px;
+                    }
+    
+                    @media only screen and(max-width:375px) {
+                        font-size: 14px;
+                        line-height: unset;
+                    }
+
+
+                    img {
+                        height: 14px;
+                        width: 14px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+.why {
+    background-color: #1D2B4F;
+    height: 70vh;
+   
+}
+.why-content{
+    margin-top: -400px !important;
+    &-container {
+        margin-top: 80px;
+        background-color: white;
+        border: 15px solid #E7E7E7;
+        box-sizing: border-box;
+        border-radius: 4px;
+
+        &-data {
+            padding: 40px 0px;
+        }
+    }
+}
+.customers-row {
+    &--col {
+        padding: 10px 20px;
+
+        .customers-card {
+            min-height: 320px;
+            width: 100%;
+
+            .customer-video {
+                min-height: 320px;
+                width: 100%;
+            }
+
+            img {
+                min-height: 320px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .customer-id {
+                img {
+                    width: 40px !important;
+                    min-height: 40px !important;
+                    height: 40px !important;
+                    border-radius: 100%;
+                    object-fit: cover;
+                }
+
+                h3 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: 0.5px;
+                    color: #000000;
+                }
+
+                p {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: 0.5px;
+                    color: #AAAAAA;
+                }
+
+                .overview-text {
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: 0.5px
+                }
+            }
+        }
+
+        .card-text {
+            padding: 20px;
+            background: #FFFFFF;
+            box-shadow: 10px 24px 35px rgba(0, 0, 0, 0.07);
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+    }
+}
+.question-col{
+    /* Style the buttons that are used to open and close the accordion panel */
+.accordion-candidate {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding:22px 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-weight: 500;
+    box-shadow: 10px 24px 35px rgba(0, 0, 0, 0.07);
+    border-radius: 4px;
+    @media only screen and(max-width:375px) {
+        padding:20px 10px;
+    }
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion-candidate:hover {
+    background-color: #157BFB !important;
+    color: white;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 10px 18px !important;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+
+    p{
+        font-size: 18px;
+    }
+  }
+  .accordion-candidate:after {
+    content: '\002B';
+    color: white;
+    font-weight: 600;
+    float: right;
+    font-size: 25px;
+    margin-right: 15px;
+    line-height: 2px;
+    width: 30px;
+    height:30px ;
+    background-color: #157BFB;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    @media only screen and(max-width:375px) {
+        margin-right: 5px;
+        height: 20px;
+        width: 20px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+.accordion-candidate.active:after {
+    content: "\2212";
+    color: #157BFB;
+    font-weight: 700;
+    float: right;
+    font-size: 25px;
+    line-height: 2px;
+    padding: 7px 1px 6px 1px !important;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: white;
+    @media only screen and(max-width:375px) {
+        margin-right: 5px;
+        height: 20px;
+        width: 20px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
 }

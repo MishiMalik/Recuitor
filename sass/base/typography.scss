@@ -38,3 +38,40 @@
         font-size: 16px;
     }
 }
+.h-40{
+    font-weight: 600;
+font-size: 40px;
+line-height: 64px;
+text-align: center;
+text-transform: capitalize;
+color: #001E5A;
+@media only screen and(max-width:991px){
+    font-size: 35px;
+    line-height: unset;
+}
+@media only screen and(max-width:767px){
+    font-size: 35px;
+}
+@media only screen and(max-width:500px){
+    font-size: 25px;
+}
+@media only screen and(max-width:500px){
+    font-size: 20px;
+}
+}
+.h-29{
+    font-weight: 500;
+font-size: 29px;
+line-height: 32px;
+color: #001E5A;
+text-transform: capitalize !important;
+@media only screen and(max-width:991px) {
+    font-size: 25px;
+}
+@media only screen and(max-width:767px) {
+    font-size: 20px;
+}
+@media only screen and(max-width:500px) {
+    font-size: 18px;
+}
+}
