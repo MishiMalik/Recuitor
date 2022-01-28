@@ -248,7 +248,7 @@ $(window).scroll(function (e) {
     if ($(this).scrollTop() >= 140 && !isPositionFixed && $(window).width() > 991) {
         $el.css({ 'position': 'fixed', 'top': '120px' });
         $table.css({ 'padding': '18px 10px' });
-        $state__table.css({ 'padding-right': '10px', 'overflow': 'hidden' });
+        $state__table.css({ 'padding-right': '0px', 'overflow': 'hidden' });
         $table.css({ 'overflow': 'hidden' });
         $el.css({ 'width': '32.233333% ' });
         $nonFixed.css({ 'margin-left': 'auto' });

@@ -71,7 +71,32 @@
             border: none !important;
         }
     }
-
+    .filter-input{
+        select{
+            width: 75% !important;
+            
+            @media only screen and(max-width:1120px) {
+                width: 70% !important;
+            }
+    
+            @media only screen and(max-width:991px) {
+                width: 75% !important;
+            }
+    
+            @media only screen and(max-width:930px) {
+                width: 70% !important;
+            }
+    
+            @media only screen and(max-width:825px) {
+                width: 65% !important;
+            }
+    
+            @media only screen and (max-width:767px) {
+                width: 100% !important;
+            }
+        }
+    }
+   
     &-btn {
         width: 27%;
         display: flex;

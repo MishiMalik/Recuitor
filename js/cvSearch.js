@@ -71,6 +71,9 @@ $('.accordion').each(function() {
   $(this).find('label[for="checkbox6"]').on('click', function(e) {
     e.stopPropagation()
   })
+  $(this).find('.cross-input-label').on('click', function(e) {
+    e.stopPropagation()
+  })
 })
 // quick filter buttons
 $('.quick-btn').each(function() {

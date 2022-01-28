@@ -384,8 +384,19 @@
                 <div class="col-lg-12">
                     <div class="row p-0">
                         <div class="col-lg-12 p-0">
-                            <div class="search__bar">
-                                <input type="text" placeholder="Search by Title, Company or any jobs keyword...">
+                            <div class="search__bar py-2">
+                                <!-- <input type="text" placeholder="Search by Title, Company or any jobs keyword..."> -->
+                                <div class="filter-input ">
+                                    <select id="disabledSelect" class="form-select " placeholder="Keywords"
+                                        name="states[]" multiple="multiple">
+                                        <option disabled selected hidden>Keywords</option>
+                                        <option disabled selected hidden value="AL">Alabama</option>
+                                        <option disabled selected hidden value="WY">Wyoming</option>
+                                        <option>Option2</option>
+                                        <option>Option3</option>
+                                    </select>
+                                </div>
+
                                 <div class="search__bar-btn">
                                     <button class="btn1">
                                         <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -802,8 +813,8 @@
                                                                     class="check-tick" />
                                                             </div>
                                                             <div class="checkbox checkbox-danger error-checkbox">
-                                                                <input id="checkbox6" type="checkbox" checked="">
-                                                                <label for="checkbox6"></label>
+                                                                <input id="checkbox7" class="cross-input" type="checkbox" checked="">
+                                                                <label for="checkbox7" class="cross-input-label"></label>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -997,6 +1008,13 @@
                                                                 <span>$40 - $60 / Hr</span>
                                                             </li>
                                                         </ul>
+
+                                                        <div class="cv-btns d-flex justify-content-center">
+                                                            <a href="#" class="view-cv" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop-payment">View CV</a>
+                                                    <a href="#" class="view-cv" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop-payment">View Cover Letter</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-8 py-3">
@@ -1068,46 +1086,59 @@
                                                     <div class="panel-main__detail pt-2">
                                                         <h3 class="panel-main-heading">Desired Salary Package</h3>
                                                         <div class="text-body">
-                                                            
-                                                           <p>$40 - $60 / Hr</p>
-                                                          
+
+                                                            <p>$40 - $60 / Hr</p>
+
                                                         </div>
                                                     </div>
                                                     <div class="panel-main__detail pt-2">
                                                         <h3 class="panel-main-heading">Desired Role</h3>
                                                         <div class="text-body">
-                                                            
-                                                           <p>Account Manager</p>
-                                                          
+
+                                                            <p>Account Manager</p>
+
                                                         </div>
                                                     </div>
                                                     <div class="panel-main__detail pt-2">
                                                         <h3 class="panel-main-heading">Work Type</h3>
                                                         <div class="text-body">
-                                                            
+
                                                             <ul class="skils-list">
                                                                 <li>Onsite</li>
                                                                 <li>Work from Home</li>
-                                                           
+
                                                             </ul>
-                                                          
+
                                                         </div>
                                                     </div>
                                                     <div class="panel-main__detail pt-2">
                                                         <h3 class="panel-main-heading">Need Benifit Requirements</h3>
                                                         <div class="text-body">
-                                                            
-                                                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempore, sed explicabo nostrum temporibus laboriosam quam ipsum consequuntur cum quisquam modi?</p>
-                                                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempore, sed explicabo nostrum temporibus laboriosam quam ipsum consequuntur cum quisquam modi?</p>
-                                                          
+
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Adipisci tempore, sed explicabo nostrum temporibus
+                                                                laboriosam quam ipsum consequuntur cum quisquam modi?
+                                                            </p>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Adipisci tempore, sed explicabo nostrum temporibus
+                                                                laboriosam quam ipsum consequuntur cum quisquam modi?
+                                                            </p>
+
                                                         </div>
                                                     </div>
                                                     <div class="panel-main__detail pt-2">
                                                         <h3 class="panel-main-heading">Desired Salary Package</h3>
                                                         <div class="text-body">
-                                                            
-                                                           <p>$40 - $60 / Hr</p>
-                                                          
+
+                                                            <p>$40 - $60 / Hr</p>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel-main__detail pt-2 d-flex justify-content-end mb-3 mt-3">
+                                                        <div class="cv-accept">
+                                                            <a href="" class="reject">Reject</a>
+                                                            <a data-bs-toggle="modal"
+                                                            data-bs-target="#staticBackdrop-accept">Accept</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1392,160 +1423,8 @@
                                                                     class="check-tick" />
                                                             </div>
                                                             <div class="checkbox checkbox-danger error-checkbox">
-                                                                <input id="checkbox6" type="checkbox" checked="">
-                                                                <label for="checkbox6"></label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <a class="stars ">
-                                                    <svg class="" width="19" height="18" viewBox="0 0 19 18" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
-                                                            stroke="#157BFB" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </button>
-                                        <div class="panel">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                commodo consequat.</p>
-                                        </div>
-                                    </div>
-                                    <div class=" scroll-accorC mb-3">
-                                        <button
-                                            class="  accordion applicants-card d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <h3 class="applicants-card--heading my-0 py-0">
-                                                    Fernando martin
-                                                </h3>
-                                                <span>Last Job Title</span>
-                                            </div>
-                                            <div>
-                                                <div class="d-flex align-items-center">
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#2BC155" />
-                                                        <g clip-path="url(#clip0_446_77)">
-                                                            <path
-                                                                d="M14.9999 11.0221C13.1102 11.0221 11.4741 12.3346 11.0641 14.1793L9.72166 20.2205C9.71182 20.2648 9.70685 20.3101 9.70685 20.3555C9.70685 20.6991 9.98543 20.9777 10.3291 20.9777H19.6708C19.7162 20.9777 19.7615 20.9727 19.8058 20.9629C20.1413 20.8883 20.3528 20.556 20.2782 20.2205L18.9357 14.1793C18.5258 12.3346 16.8897 11.0221 14.9999 11.0221ZM14.9999 9.7777C17.4729 9.7777 19.6141 11.4953 20.1506 13.9094L21.493 19.9505C21.7167 20.9569 21.0821 21.954 20.0758 22.1777C19.9428 22.2072 19.807 22.2221 19.6708 22.2221H10.3291C9.29814 22.2221 8.4624 21.3864 8.4624 20.3555C8.4624 20.2193 8.47731 20.0835 8.50685 19.9505L9.84933 13.9094C10.3858 11.4953 12.527 9.7777 14.9999 9.7777Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M16.2444 13.511C16.5881 13.511 16.8667 13.7896 16.8667 14.1332C16.8667 14.4769 16.5881 14.7555 16.2444 14.7555H14.6889C14.5171 14.7555 14.3778 14.8948 14.3778 15.0666C14.3778 15.2384 14.5171 15.3777 14.6889 15.3777H15.3111C16.1702 15.3777 16.8667 16.0741 16.8667 16.9332C16.8667 17.7924 16.1702 18.4888 15.3111 18.4888H13.7555C13.4119 18.4888 13.1333 18.2102 13.1333 17.8666C13.1333 17.5229 13.4119 17.2444 13.7555 17.2444H15.3111C15.4829 17.2444 15.6222 17.1051 15.6222 16.9332C15.6222 16.7614 15.4829 16.6221 15.3111 16.6221H14.6889C13.8298 16.6221 13.1333 15.9257 13.1333 15.0666C13.1333 14.2075 13.8298 13.511 14.6889 13.511H16.2444Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M14.3778 12.8888C14.3778 12.5452 14.6564 12.2666 15 12.2666C15.3437 12.2666 15.6222 12.5452 15.6222 12.8888V14.1333C15.6222 14.4769 15.3437 14.7555 15 14.7555C14.6564 14.7555 14.3778 14.4769 14.3778 14.1333V12.8888Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M15.6222 19.111C15.6222 19.4547 15.3437 19.7333 15 19.7333C14.6564 19.7333 14.3778 19.4547 14.3778 19.111V17.8666C14.3778 17.523 14.6564 17.2444 15 17.2444C15.3437 17.2444 15.6222 17.523 15.6222 17.8666V19.111Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M14.3332 10.1688C14.4609 10.4879 14.3057 10.85 13.9866 10.9777C13.6675 11.1053 13.3054 10.9501 13.1778 10.631L11.9334 7.51991C11.7311 7.01435 12.2299 6.51126 12.7372 6.70914C13.2031 6.89089 13.5504 6.97771 13.7555 6.97771C13.8066 6.97771 13.8489 6.9668 13.9413 6.92753C13.9658 6.91711 13.9947 6.90438 14.0622 6.87448C14.3841 6.73344 14.6383 6.6666 15 6.6666C15.3608 6.6666 15.6191 6.73362 15.942 6.8733C16.0239 6.90917 16.0566 6.92344 16.0856 6.93537C16.1653 6.96822 16.2037 6.97771 16.2444 6.97771C16.4375 6.97771 16.7879 6.89011 17.2672 6.70741C17.7739 6.51428 18.2679 7.01648 18.0666 7.51991L16.8221 10.631C16.6945 10.9501 16.3324 11.1053 16.0133 10.9777C15.6943 10.85 15.5391 10.4879 15.6667 10.1688L16.4497 8.21145C16.3781 8.21857 16.3098 8.22215 16.2444 8.22215C16.0173 8.22215 15.8291 8.1756 15.6117 8.08608C15.5688 8.0684 15.5218 8.04788 15.4479 8.01546C15.2677 7.93753 15.1657 7.91104 15 7.91104C14.8359 7.91104 14.7395 7.93638 14.5618 8.01427C14.5007 8.04132 14.462 8.0584 14.428 8.07285C14.195 8.17189 14 8.22215 13.7555 8.22215C13.6898 8.22215 13.6215 8.21874 13.5505 8.21196L14.3332 10.1688Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_77">
-                                                                <rect width="15.5556" height="15.5556" fill="white"
-                                                                    transform="translate(7.22217 6.6665)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            $14,000 - $25,000
-                                                        </p>
-                                                        <span>Monthly Salary</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex align-items-center">
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#157BFB" />
-                                                        <g clip-path="url(#clip0_446_67)">
-                                                            <path
-                                                                d="M15.153 9.67432L9.59741 12.4521L15.153 15.2299L20.7085 12.4521L15.153 9.67432Z"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                            <path d="M9.59741 18.0073L15.153 20.7851L20.7085 18.0073"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                            <path d="M9.59741 15.2295L15.153 18.0073L20.7085 15.2295"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_67">
-                                                                <rect width="13.3333" height="13.3333" fill="white"
-                                                                    transform="translate(8.48633 8.56299)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            3 Year Experience
-                                                        </p>
-                                                        <span>Experience</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex align-items-center">
-
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#E5F1FF" />
-                                                        <g clip-path="url(#clip0_446_84)">
-                                                            <path
-                                                                d="M14.9999 8.3335C12.1855 8.3335 9.89575 10.6232 9.89575 13.4377C9.89575 14.3385 10.1338 15.2243 10.5841 15.999C10.689 16.1796 10.8064 16.3556 10.9329 16.5222L14.7781 21.6668H15.2217L19.0669 16.5222C19.1934 16.3556 19.3108 16.1796 19.4158 15.999C19.8661 15.2243 20.1041 14.3385 20.1041 13.4377C20.1041 10.6232 17.8144 8.3335 14.9999 8.3335ZM14.9999 15.1304C14.0666 15.1304 13.3072 14.371 13.3072 13.4377C13.3072 12.5043 14.0666 11.745 14.9999 11.745C15.9333 11.745 16.6926 12.5043 16.6926 13.4377C16.6926 14.371 15.9333 15.1304 14.9999 15.1304Z"
-                                                                fill="#157BFB" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_84">
-                                                                <rect width="13.3333" height="13.3333" fill="white"
-                                                                    transform="translate(8.33325 8.3335)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-
-
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            3 Year Experience
-                                                        </p>
-                                                        <span>Experience</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <a href="#" class="view-cv">View CV</a>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex justify-content-center align-items-center">
-                                                    <div class="main-text check__boxes-div">
-                                                        <p class="mb-0 pb-0">
-                                                            Actions
-                                                        </p>
-                                                        <div class="check__boxes">
-                                                            <div class="">
-                                                                <input type="checkbox" name="checkbox" checked
-                                                                    class="check-tick" />
-                                                            </div>
-                                                            <div class="checkbox checkbox-danger error-checkbox">
-                                                                <input id="checkbox6" type="checkbox">
-                                                                <label for="checkbox6"></label>
+                                                                <input id="checkbox8" type="checkbox" class="cross-input" checked="">
+                                                                <label for="checkbox8" class="cross-input-label"></label>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1696,8 +1575,8 @@
                                                                     class="check-tick" />
                                                             </div>
                                                             <div class="checkbox checkbox-danger error-checkbox">
-                                                                <input id="checkbox6" type="checkbox" checked="">
-                                                                <label for="checkbox6"></label>
+                                                                <input id="checkbox10" type="checkbox" class="cross-input" checked="">
+                                                                <label for="checkbox10" class="cross-input-label"></label>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1722,769 +1601,17 @@
                                                 commodo consequat.</p>
                                         </div>
                                     </div>
-                                    <div class=" scroll-accorC mb-3">
-                                        <button
-                                            class="  accordion applicants-card d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <h3 class="applicants-card--heading my-0 py-0">
-                                                    Fernando martin
-                                                </h3>
-                                                <span>Last Job Title</span>
-                                            </div>
-                                            <div>
-                                                <div class="d-flex align-items-center">
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#2BC155" />
-                                                        <g clip-path="url(#clip0_446_77)">
-                                                            <path
-                                                                d="M14.9999 11.0221C13.1102 11.0221 11.4741 12.3346 11.0641 14.1793L9.72166 20.2205C9.71182 20.2648 9.70685 20.3101 9.70685 20.3555C9.70685 20.6991 9.98543 20.9777 10.3291 20.9777H19.6708C19.7162 20.9777 19.7615 20.9727 19.8058 20.9629C20.1413 20.8883 20.3528 20.556 20.2782 20.2205L18.9357 14.1793C18.5258 12.3346 16.8897 11.0221 14.9999 11.0221ZM14.9999 9.7777C17.4729 9.7777 19.6141 11.4953 20.1506 13.9094L21.493 19.9505C21.7167 20.9569 21.0821 21.954 20.0758 22.1777C19.9428 22.2072 19.807 22.2221 19.6708 22.2221H10.3291C9.29814 22.2221 8.4624 21.3864 8.4624 20.3555C8.4624 20.2193 8.47731 20.0835 8.50685 19.9505L9.84933 13.9094C10.3858 11.4953 12.527 9.7777 14.9999 9.7777Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M16.2444 13.511C16.5881 13.511 16.8667 13.7896 16.8667 14.1332C16.8667 14.4769 16.5881 14.7555 16.2444 14.7555H14.6889C14.5171 14.7555 14.3778 14.8948 14.3778 15.0666C14.3778 15.2384 14.5171 15.3777 14.6889 15.3777H15.3111C16.1702 15.3777 16.8667 16.0741 16.8667 16.9332C16.8667 17.7924 16.1702 18.4888 15.3111 18.4888H13.7555C13.4119 18.4888 13.1333 18.2102 13.1333 17.8666C13.1333 17.5229 13.4119 17.2444 13.7555 17.2444H15.3111C15.4829 17.2444 15.6222 17.1051 15.6222 16.9332C15.6222 16.7614 15.4829 16.6221 15.3111 16.6221H14.6889C13.8298 16.6221 13.1333 15.9257 13.1333 15.0666C13.1333 14.2075 13.8298 13.511 14.6889 13.511H16.2444Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M14.3778 12.8888C14.3778 12.5452 14.6564 12.2666 15 12.2666C15.3437 12.2666 15.6222 12.5452 15.6222 12.8888V14.1333C15.6222 14.4769 15.3437 14.7555 15 14.7555C14.6564 14.7555 14.3778 14.4769 14.3778 14.1333V12.8888Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M15.6222 19.111C15.6222 19.4547 15.3437 19.7333 15 19.7333C14.6564 19.7333 14.3778 19.4547 14.3778 19.111V17.8666C14.3778 17.523 14.6564 17.2444 15 17.2444C15.3437 17.2444 15.6222 17.523 15.6222 17.8666V19.111Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M14.3332 10.1688C14.4609 10.4879 14.3057 10.85 13.9866 10.9777C13.6675 11.1053 13.3054 10.9501 13.1778 10.631L11.9334 7.51991C11.7311 7.01435 12.2299 6.51126 12.7372 6.70914C13.2031 6.89089 13.5504 6.97771 13.7555 6.97771C13.8066 6.97771 13.8489 6.9668 13.9413 6.92753C13.9658 6.91711 13.9947 6.90438 14.0622 6.87448C14.3841 6.73344 14.6383 6.6666 15 6.6666C15.3608 6.6666 15.6191 6.73362 15.942 6.8733C16.0239 6.90917 16.0566 6.92344 16.0856 6.93537C16.1653 6.96822 16.2037 6.97771 16.2444 6.97771C16.4375 6.97771 16.7879 6.89011 17.2672 6.70741C17.7739 6.51428 18.2679 7.01648 18.0666 7.51991L16.8221 10.631C16.6945 10.9501 16.3324 11.1053 16.0133 10.9777C15.6943 10.85 15.5391 10.4879 15.6667 10.1688L16.4497 8.21145C16.3781 8.21857 16.3098 8.22215 16.2444 8.22215C16.0173 8.22215 15.8291 8.1756 15.6117 8.08608C15.5688 8.0684 15.5218 8.04788 15.4479 8.01546C15.2677 7.93753 15.1657 7.91104 15 7.91104C14.8359 7.91104 14.7395 7.93638 14.5618 8.01427C14.5007 8.04132 14.462 8.0584 14.428 8.07285C14.195 8.17189 14 8.22215 13.7555 8.22215C13.6898 8.22215 13.6215 8.21874 13.5505 8.21196L14.3332 10.1688Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_77">
-                                                                <rect width="15.5556" height="15.5556" fill="white"
-                                                                    transform="translate(7.22217 6.6665)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            $14,000 - $25,000
-                                                        </p>
-                                                        <span>Monthly Salary</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex align-items-center">
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#157BFB" />
-                                                        <g clip-path="url(#clip0_446_67)">
-                                                            <path
-                                                                d="M15.153 9.67432L9.59741 12.4521L15.153 15.2299L20.7085 12.4521L15.153 9.67432Z"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                            <path d="M9.59741 18.0073L15.153 20.7851L20.7085 18.0073"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                            <path d="M9.59741 15.2295L15.153 18.0073L20.7085 15.2295"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_67">
-                                                                <rect width="13.3333" height="13.3333" fill="white"
-                                                                    transform="translate(8.48633 8.56299)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            3 Year Experience
-                                                        </p>
-                                                        <span>Experience</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex align-items-center">
-
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#E5F1FF" />
-                                                        <g clip-path="url(#clip0_446_84)">
-                                                            <path
-                                                                d="M14.9999 8.3335C12.1855 8.3335 9.89575 10.6232 9.89575 13.4377C9.89575 14.3385 10.1338 15.2243 10.5841 15.999C10.689 16.1796 10.8064 16.3556 10.9329 16.5222L14.7781 21.6668H15.2217L19.0669 16.5222C19.1934 16.3556 19.3108 16.1796 19.4158 15.999C19.8661 15.2243 20.1041 14.3385 20.1041 13.4377C20.1041 10.6232 17.8144 8.3335 14.9999 8.3335ZM14.9999 15.1304C14.0666 15.1304 13.3072 14.371 13.3072 13.4377C13.3072 12.5043 14.0666 11.745 14.9999 11.745C15.9333 11.745 16.6926 12.5043 16.6926 13.4377C16.6926 14.371 15.9333 15.1304 14.9999 15.1304Z"
-                                                                fill="#157BFB" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_84">
-                                                                <rect width="13.3333" height="13.3333" fill="white"
-                                                                    transform="translate(8.33325 8.3335)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
 
 
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            3 Year Experience
-                                                        </p>
-                                                        <span>Experience</span>
-                                                    </div>
-                                                </div>
-                                            </div>
 
-                                            <div>
-                                                <a href="#" class="view-cv">View CV</a>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex justify-content-center align-items-center">
-                                                    <div class="main-text check__boxes-div">
-                                                        <p class="mb-0 pb-0">
-                                                            Actions
-                                                        </p>
-                                                        <div class="check__boxes">
-                                                            <div class="">
-                                                                <input type="checkbox" name="checkbox" checked
-                                                                    class="check-tick" />
-                                                            </div>
-                                                            <div class="checkbox checkbox-danger error-checkbox">
-                                                                <input id="checkbox6" type="checkbox">
-                                                                <label for="checkbox6"></label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <a class="stars ">
-                                                    <svg class="" width="19" height="18" viewBox="0 0 19 18" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
-                                                            stroke="#157BFB" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </button>
-                                        <div class="panel">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                commodo consequat.</p>
-                                        </div>
-                                    </div>
-                                    <div class=" scroll-accorC mb-3">
-                                        <button
-                                            class="  accordion applicants-card d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <h3 class="applicants-card--heading my-0 py-0">
-                                                    Fernando martin
-                                                </h3>
-                                                <span>Last Job Title</span>
-                                            </div>
-                                            <div>
-                                                <div class="d-flex align-items-center">
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#2BC155" />
-                                                        <g clip-path="url(#clip0_446_77)">
-                                                            <path
-                                                                d="M14.9999 11.0221C13.1102 11.0221 11.4741 12.3346 11.0641 14.1793L9.72166 20.2205C9.71182 20.2648 9.70685 20.3101 9.70685 20.3555C9.70685 20.6991 9.98543 20.9777 10.3291 20.9777H19.6708C19.7162 20.9777 19.7615 20.9727 19.8058 20.9629C20.1413 20.8883 20.3528 20.556 20.2782 20.2205L18.9357 14.1793C18.5258 12.3346 16.8897 11.0221 14.9999 11.0221ZM14.9999 9.7777C17.4729 9.7777 19.6141 11.4953 20.1506 13.9094L21.493 19.9505C21.7167 20.9569 21.0821 21.954 20.0758 22.1777C19.9428 22.2072 19.807 22.2221 19.6708 22.2221H10.3291C9.29814 22.2221 8.4624 21.3864 8.4624 20.3555C8.4624 20.2193 8.47731 20.0835 8.50685 19.9505L9.84933 13.9094C10.3858 11.4953 12.527 9.7777 14.9999 9.7777Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M16.2444 13.511C16.5881 13.511 16.8667 13.7896 16.8667 14.1332C16.8667 14.4769 16.5881 14.7555 16.2444 14.7555H14.6889C14.5171 14.7555 14.3778 14.8948 14.3778 15.0666C14.3778 15.2384 14.5171 15.3777 14.6889 15.3777H15.3111C16.1702 15.3777 16.8667 16.0741 16.8667 16.9332C16.8667 17.7924 16.1702 18.4888 15.3111 18.4888H13.7555C13.4119 18.4888 13.1333 18.2102 13.1333 17.8666C13.1333 17.5229 13.4119 17.2444 13.7555 17.2444H15.3111C15.4829 17.2444 15.6222 17.1051 15.6222 16.9332C15.6222 16.7614 15.4829 16.6221 15.3111 16.6221H14.6889C13.8298 16.6221 13.1333 15.9257 13.1333 15.0666C13.1333 14.2075 13.8298 13.511 14.6889 13.511H16.2444Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M14.3778 12.8888C14.3778 12.5452 14.6564 12.2666 15 12.2666C15.3437 12.2666 15.6222 12.5452 15.6222 12.8888V14.1333C15.6222 14.4769 15.3437 14.7555 15 14.7555C14.6564 14.7555 14.3778 14.4769 14.3778 14.1333V12.8888Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M15.6222 19.111C15.6222 19.4547 15.3437 19.7333 15 19.7333C14.6564 19.7333 14.3778 19.4547 14.3778 19.111V17.8666C14.3778 17.523 14.6564 17.2444 15 17.2444C15.3437 17.2444 15.6222 17.523 15.6222 17.8666V19.111Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M14.3332 10.1688C14.4609 10.4879 14.3057 10.85 13.9866 10.9777C13.6675 11.1053 13.3054 10.9501 13.1778 10.631L11.9334 7.51991C11.7311 7.01435 12.2299 6.51126 12.7372 6.70914C13.2031 6.89089 13.5504 6.97771 13.7555 6.97771C13.8066 6.97771 13.8489 6.9668 13.9413 6.92753C13.9658 6.91711 13.9947 6.90438 14.0622 6.87448C14.3841 6.73344 14.6383 6.6666 15 6.6666C15.3608 6.6666 15.6191 6.73362 15.942 6.8733C16.0239 6.90917 16.0566 6.92344 16.0856 6.93537C16.1653 6.96822 16.2037 6.97771 16.2444 6.97771C16.4375 6.97771 16.7879 6.89011 17.2672 6.70741C17.7739 6.51428 18.2679 7.01648 18.0666 7.51991L16.8221 10.631C16.6945 10.9501 16.3324 11.1053 16.0133 10.9777C15.6943 10.85 15.5391 10.4879 15.6667 10.1688L16.4497 8.21145C16.3781 8.21857 16.3098 8.22215 16.2444 8.22215C16.0173 8.22215 15.8291 8.1756 15.6117 8.08608C15.5688 8.0684 15.5218 8.04788 15.4479 8.01546C15.2677 7.93753 15.1657 7.91104 15 7.91104C14.8359 7.91104 14.7395 7.93638 14.5618 8.01427C14.5007 8.04132 14.462 8.0584 14.428 8.07285C14.195 8.17189 14 8.22215 13.7555 8.22215C13.6898 8.22215 13.6215 8.21874 13.5505 8.21196L14.3332 10.1688Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_77">
-                                                                <rect width="15.5556" height="15.5556" fill="white"
-                                                                    transform="translate(7.22217 6.6665)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            $14,000 - $25,000
-                                                        </p>
-                                                        <span>Monthly Salary</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex align-items-center">
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#157BFB" />
-                                                        <g clip-path="url(#clip0_446_67)">
-                                                            <path
-                                                                d="M15.153 9.67432L9.59741 12.4521L15.153 15.2299L20.7085 12.4521L15.153 9.67432Z"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                            <path d="M9.59741 18.0073L15.153 20.7851L20.7085 18.0073"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                            <path d="M9.59741 15.2295L15.153 18.0073L20.7085 15.2295"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_67">
-                                                                <rect width="13.3333" height="13.3333" fill="white"
-                                                                    transform="translate(8.48633 8.56299)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            3 Year Experience
-                                                        </p>
-                                                        <span>Experience</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex align-items-center">
-
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#E5F1FF" />
-                                                        <g clip-path="url(#clip0_446_84)">
-                                                            <path
-                                                                d="M14.9999 8.3335C12.1855 8.3335 9.89575 10.6232 9.89575 13.4377C9.89575 14.3385 10.1338 15.2243 10.5841 15.999C10.689 16.1796 10.8064 16.3556 10.9329 16.5222L14.7781 21.6668H15.2217L19.0669 16.5222C19.1934 16.3556 19.3108 16.1796 19.4158 15.999C19.8661 15.2243 20.1041 14.3385 20.1041 13.4377C20.1041 10.6232 17.8144 8.3335 14.9999 8.3335ZM14.9999 15.1304C14.0666 15.1304 13.3072 14.371 13.3072 13.4377C13.3072 12.5043 14.0666 11.745 14.9999 11.745C15.9333 11.745 16.6926 12.5043 16.6926 13.4377C16.6926 14.371 15.9333 15.1304 14.9999 15.1304Z"
-                                                                fill="#157BFB" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_84">
-                                                                <rect width="13.3333" height="13.3333" fill="white"
-                                                                    transform="translate(8.33325 8.3335)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-
-
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            3 Year Experience
-                                                        </p>
-                                                        <span>Experience</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <a href="#" class="view-cv">View CV</a>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex justify-content-center align-items-center">
-                                                    <div class="main-text check__boxes-div">
-                                                        <p class="mb-0 pb-0">
-                                                            Actions
-                                                        </p>
-                                                        <div class="check__boxes">
-                                                            <div class="">
-                                                                <input type="checkbox" name="checkbox"
-                                                                    class="check-tick" />
-                                                            </div>
-                                                            <div class="checkbox checkbox-danger error-checkbox">
-                                                                <input id="checkbox6" type="checkbox" checked="">
-                                                                <label for="checkbox6"></label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <a class="stars ">
-                                                    <svg class="" width="19" height="18" viewBox="0 0 19 18" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
-                                                            stroke="#157BFB" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </button>
-                                        <div class="panel">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                commodo consequat.</p>
-                                        </div>
-                                    </div>
-                                    <div class=" scroll-accorC mb-3">
-                                        <button
-                                            class="  accordion applicants-card d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <h3 class="applicants-card--heading my-0 py-0">
-                                                    Fernando martin
-                                                </h3>
-                                                <span>Last Job Title</span>
-                                            </div>
-                                            <div>
-                                                <div class="d-flex align-items-center">
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#2BC155" />
-                                                        <g clip-path="url(#clip0_446_77)">
-                                                            <path
-                                                                d="M14.9999 11.0221C13.1102 11.0221 11.4741 12.3346 11.0641 14.1793L9.72166 20.2205C9.71182 20.2648 9.70685 20.3101 9.70685 20.3555C9.70685 20.6991 9.98543 20.9777 10.3291 20.9777H19.6708C19.7162 20.9777 19.7615 20.9727 19.8058 20.9629C20.1413 20.8883 20.3528 20.556 20.2782 20.2205L18.9357 14.1793C18.5258 12.3346 16.8897 11.0221 14.9999 11.0221ZM14.9999 9.7777C17.4729 9.7777 19.6141 11.4953 20.1506 13.9094L21.493 19.9505C21.7167 20.9569 21.0821 21.954 20.0758 22.1777C19.9428 22.2072 19.807 22.2221 19.6708 22.2221H10.3291C9.29814 22.2221 8.4624 21.3864 8.4624 20.3555C8.4624 20.2193 8.47731 20.0835 8.50685 19.9505L9.84933 13.9094C10.3858 11.4953 12.527 9.7777 14.9999 9.7777Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M16.2444 13.511C16.5881 13.511 16.8667 13.7896 16.8667 14.1332C16.8667 14.4769 16.5881 14.7555 16.2444 14.7555H14.6889C14.5171 14.7555 14.3778 14.8948 14.3778 15.0666C14.3778 15.2384 14.5171 15.3777 14.6889 15.3777H15.3111C16.1702 15.3777 16.8667 16.0741 16.8667 16.9332C16.8667 17.7924 16.1702 18.4888 15.3111 18.4888H13.7555C13.4119 18.4888 13.1333 18.2102 13.1333 17.8666C13.1333 17.5229 13.4119 17.2444 13.7555 17.2444H15.3111C15.4829 17.2444 15.6222 17.1051 15.6222 16.9332C15.6222 16.7614 15.4829 16.6221 15.3111 16.6221H14.6889C13.8298 16.6221 13.1333 15.9257 13.1333 15.0666C13.1333 14.2075 13.8298 13.511 14.6889 13.511H16.2444Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M14.3778 12.8888C14.3778 12.5452 14.6564 12.2666 15 12.2666C15.3437 12.2666 15.6222 12.5452 15.6222 12.8888V14.1333C15.6222 14.4769 15.3437 14.7555 15 14.7555C14.6564 14.7555 14.3778 14.4769 14.3778 14.1333V12.8888Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M15.6222 19.111C15.6222 19.4547 15.3437 19.7333 15 19.7333C14.6564 19.7333 14.3778 19.4547 14.3778 19.111V17.8666C14.3778 17.523 14.6564 17.2444 15 17.2444C15.3437 17.2444 15.6222 17.523 15.6222 17.8666V19.111Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M14.3332 10.1688C14.4609 10.4879 14.3057 10.85 13.9866 10.9777C13.6675 11.1053 13.3054 10.9501 13.1778 10.631L11.9334 7.51991C11.7311 7.01435 12.2299 6.51126 12.7372 6.70914C13.2031 6.89089 13.5504 6.97771 13.7555 6.97771C13.8066 6.97771 13.8489 6.9668 13.9413 6.92753C13.9658 6.91711 13.9947 6.90438 14.0622 6.87448C14.3841 6.73344 14.6383 6.6666 15 6.6666C15.3608 6.6666 15.6191 6.73362 15.942 6.8733C16.0239 6.90917 16.0566 6.92344 16.0856 6.93537C16.1653 6.96822 16.2037 6.97771 16.2444 6.97771C16.4375 6.97771 16.7879 6.89011 17.2672 6.70741C17.7739 6.51428 18.2679 7.01648 18.0666 7.51991L16.8221 10.631C16.6945 10.9501 16.3324 11.1053 16.0133 10.9777C15.6943 10.85 15.5391 10.4879 15.6667 10.1688L16.4497 8.21145C16.3781 8.21857 16.3098 8.22215 16.2444 8.22215C16.0173 8.22215 15.8291 8.1756 15.6117 8.08608C15.5688 8.0684 15.5218 8.04788 15.4479 8.01546C15.2677 7.93753 15.1657 7.91104 15 7.91104C14.8359 7.91104 14.7395 7.93638 14.5618 8.01427C14.5007 8.04132 14.462 8.0584 14.428 8.07285C14.195 8.17189 14 8.22215 13.7555 8.22215C13.6898 8.22215 13.6215 8.21874 13.5505 8.21196L14.3332 10.1688Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_77">
-                                                                <rect width="15.5556" height="15.5556" fill="white"
-                                                                    transform="translate(7.22217 6.6665)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            $14,000 - $25,000
-                                                        </p>
-                                                        <span>Monthly Salary</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex align-items-center">
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#157BFB" />
-                                                        <g clip-path="url(#clip0_446_67)">
-                                                            <path
-                                                                d="M15.153 9.67432L9.59741 12.4521L15.153 15.2299L20.7085 12.4521L15.153 9.67432Z"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                            <path d="M9.59741 18.0073L15.153 20.7851L20.7085 18.0073"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                            <path d="M9.59741 15.2295L15.153 18.0073L20.7085 15.2295"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_67">
-                                                                <rect width="13.3333" height="13.3333" fill="white"
-                                                                    transform="translate(8.48633 8.56299)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            3 Year Experience
-                                                        </p>
-                                                        <span>Experience</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex align-items-center">
-
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#E5F1FF" />
-                                                        <g clip-path="url(#clip0_446_84)">
-                                                            <path
-                                                                d="M14.9999 8.3335C12.1855 8.3335 9.89575 10.6232 9.89575 13.4377C9.89575 14.3385 10.1338 15.2243 10.5841 15.999C10.689 16.1796 10.8064 16.3556 10.9329 16.5222L14.7781 21.6668H15.2217L19.0669 16.5222C19.1934 16.3556 19.3108 16.1796 19.4158 15.999C19.8661 15.2243 20.1041 14.3385 20.1041 13.4377C20.1041 10.6232 17.8144 8.3335 14.9999 8.3335ZM14.9999 15.1304C14.0666 15.1304 13.3072 14.371 13.3072 13.4377C13.3072 12.5043 14.0666 11.745 14.9999 11.745C15.9333 11.745 16.6926 12.5043 16.6926 13.4377C16.6926 14.371 15.9333 15.1304 14.9999 15.1304Z"
-                                                                fill="#157BFB" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_84">
-                                                                <rect width="13.3333" height="13.3333" fill="white"
-                                                                    transform="translate(8.33325 8.3335)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-
-
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            3 Year Experience
-                                                        </p>
-                                                        <span>Experience</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <a href="#" class="view-cv">View CV</a>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex justify-content-center align-items-center">
-                                                    <div class="main-text check__boxes-div">
-                                                        <p class="mb-0 pb-0">
-                                                            Actions
-                                                        </p>
-                                                        <div class="check__boxes">
-                                                            <div class="">
-                                                                <input type="checkbox" name="checkbox" checked
-                                                                    class="check-tick" />
-                                                            </div>
-                                                            <div class="checkbox checkbox-danger error-checkbox">
-                                                                <input id="checkbox6" type="checkbox">
-                                                                <label for="checkbox6"></label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <a class="stars ">
-                                                    <svg class="" width="19" height="18" viewBox="0 0 19 18" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
-                                                            stroke="#157BFB" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </button>
-                                        <div class="panel">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                commodo consequat.</p>
-                                        </div>
-                                    </div>
-                                    <div class=" scroll-accorC mb-3">
-                                        <button
-                                            class="  accordion applicants-card d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <h3 class="applicants-card--heading my-0 py-0">
-                                                    Fernando martin
-                                                </h3>
-                                                <span>Last Job Title</span>
-                                            </div>
-                                            <div>
-                                                <div class="d-flex align-items-center">
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#2BC155" />
-                                                        <g clip-path="url(#clip0_446_77)">
-                                                            <path
-                                                                d="M14.9999 11.0221C13.1102 11.0221 11.4741 12.3346 11.0641 14.1793L9.72166 20.2205C9.71182 20.2648 9.70685 20.3101 9.70685 20.3555C9.70685 20.6991 9.98543 20.9777 10.3291 20.9777H19.6708C19.7162 20.9777 19.7615 20.9727 19.8058 20.9629C20.1413 20.8883 20.3528 20.556 20.2782 20.2205L18.9357 14.1793C18.5258 12.3346 16.8897 11.0221 14.9999 11.0221ZM14.9999 9.7777C17.4729 9.7777 19.6141 11.4953 20.1506 13.9094L21.493 19.9505C21.7167 20.9569 21.0821 21.954 20.0758 22.1777C19.9428 22.2072 19.807 22.2221 19.6708 22.2221H10.3291C9.29814 22.2221 8.4624 21.3864 8.4624 20.3555C8.4624 20.2193 8.47731 20.0835 8.50685 19.9505L9.84933 13.9094C10.3858 11.4953 12.527 9.7777 14.9999 9.7777Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M16.2444 13.511C16.5881 13.511 16.8667 13.7896 16.8667 14.1332C16.8667 14.4769 16.5881 14.7555 16.2444 14.7555H14.6889C14.5171 14.7555 14.3778 14.8948 14.3778 15.0666C14.3778 15.2384 14.5171 15.3777 14.6889 15.3777H15.3111C16.1702 15.3777 16.8667 16.0741 16.8667 16.9332C16.8667 17.7924 16.1702 18.4888 15.3111 18.4888H13.7555C13.4119 18.4888 13.1333 18.2102 13.1333 17.8666C13.1333 17.5229 13.4119 17.2444 13.7555 17.2444H15.3111C15.4829 17.2444 15.6222 17.1051 15.6222 16.9332C15.6222 16.7614 15.4829 16.6221 15.3111 16.6221H14.6889C13.8298 16.6221 13.1333 15.9257 13.1333 15.0666C13.1333 14.2075 13.8298 13.511 14.6889 13.511H16.2444Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M14.3778 12.8888C14.3778 12.5452 14.6564 12.2666 15 12.2666C15.3437 12.2666 15.6222 12.5452 15.6222 12.8888V14.1333C15.6222 14.4769 15.3437 14.7555 15 14.7555C14.6564 14.7555 14.3778 14.4769 14.3778 14.1333V12.8888Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M15.6222 19.111C15.6222 19.4547 15.3437 19.7333 15 19.7333C14.6564 19.7333 14.3778 19.4547 14.3778 19.111V17.8666C14.3778 17.523 14.6564 17.2444 15 17.2444C15.3437 17.2444 15.6222 17.523 15.6222 17.8666V19.111Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M14.3332 10.1688C14.4609 10.4879 14.3057 10.85 13.9866 10.9777C13.6675 11.1053 13.3054 10.9501 13.1778 10.631L11.9334 7.51991C11.7311 7.01435 12.2299 6.51126 12.7372 6.70914C13.2031 6.89089 13.5504 6.97771 13.7555 6.97771C13.8066 6.97771 13.8489 6.9668 13.9413 6.92753C13.9658 6.91711 13.9947 6.90438 14.0622 6.87448C14.3841 6.73344 14.6383 6.6666 15 6.6666C15.3608 6.6666 15.6191 6.73362 15.942 6.8733C16.0239 6.90917 16.0566 6.92344 16.0856 6.93537C16.1653 6.96822 16.2037 6.97771 16.2444 6.97771C16.4375 6.97771 16.7879 6.89011 17.2672 6.70741C17.7739 6.51428 18.2679 7.01648 18.0666 7.51991L16.8221 10.631C16.6945 10.9501 16.3324 11.1053 16.0133 10.9777C15.6943 10.85 15.5391 10.4879 15.6667 10.1688L16.4497 8.21145C16.3781 8.21857 16.3098 8.22215 16.2444 8.22215C16.0173 8.22215 15.8291 8.1756 15.6117 8.08608C15.5688 8.0684 15.5218 8.04788 15.4479 8.01546C15.2677 7.93753 15.1657 7.91104 15 7.91104C14.8359 7.91104 14.7395 7.93638 14.5618 8.01427C14.5007 8.04132 14.462 8.0584 14.428 8.07285C14.195 8.17189 14 8.22215 13.7555 8.22215C13.6898 8.22215 13.6215 8.21874 13.5505 8.21196L14.3332 10.1688Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_77">
-                                                                <rect width="15.5556" height="15.5556" fill="white"
-                                                                    transform="translate(7.22217 6.6665)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            $14,000 - $25,000
-                                                        </p>
-                                                        <span>Monthly Salary</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex align-items-center">
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#157BFB" />
-                                                        <g clip-path="url(#clip0_446_67)">
-                                                            <path
-                                                                d="M15.153 9.67432L9.59741 12.4521L15.153 15.2299L20.7085 12.4521L15.153 9.67432Z"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                            <path d="M9.59741 18.0073L15.153 20.7851L20.7085 18.0073"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                            <path d="M9.59741 15.2295L15.153 18.0073L20.7085 15.2295"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_67">
-                                                                <rect width="13.3333" height="13.3333" fill="white"
-                                                                    transform="translate(8.48633 8.56299)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            3 Year Experience
-                                                        </p>
-                                                        <span>Experience</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex align-items-center">
-
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#E5F1FF" />
-                                                        <g clip-path="url(#clip0_446_84)">
-                                                            <path
-                                                                d="M14.9999 8.3335C12.1855 8.3335 9.89575 10.6232 9.89575 13.4377C9.89575 14.3385 10.1338 15.2243 10.5841 15.999C10.689 16.1796 10.8064 16.3556 10.9329 16.5222L14.7781 21.6668H15.2217L19.0669 16.5222C19.1934 16.3556 19.3108 16.1796 19.4158 15.999C19.8661 15.2243 20.1041 14.3385 20.1041 13.4377C20.1041 10.6232 17.8144 8.3335 14.9999 8.3335ZM14.9999 15.1304C14.0666 15.1304 13.3072 14.371 13.3072 13.4377C13.3072 12.5043 14.0666 11.745 14.9999 11.745C15.9333 11.745 16.6926 12.5043 16.6926 13.4377C16.6926 14.371 15.9333 15.1304 14.9999 15.1304Z"
-                                                                fill="#157BFB" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_84">
-                                                                <rect width="13.3333" height="13.3333" fill="white"
-                                                                    transform="translate(8.33325 8.3335)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-
-
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            3 Year Experience
-                                                        </p>
-                                                        <span>Experience</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <a href="#" class="view-cv">View CV</a>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex justify-content-center align-items-center">
-                                                    <div class="main-text check__boxes-div">
-                                                        <p class="mb-0 pb-0">
-                                                            Actions
-                                                        </p>
-                                                        <div class="check__boxes">
-                                                            <div class="">
-                                                                <input type="checkbox" name="checkbox"
-                                                                    class="check-tick" />
-                                                            </div>
-                                                            <div class="checkbox checkbox-danger error-checkbox">
-                                                                <input id="checkbox6" type="checkbox" checked="">
-                                                                <label for="checkbox6"></label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <a class="stars ">
-                                                    <svg class="" width="19" height="18" viewBox="0 0 19 18" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
-                                                            stroke="#157BFB" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </button>
-                                        <div class="panel">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                commodo consequat.</p>
-                                        </div>
-                                    </div>
-                                    <div class=" scroll-accorC mb-3">
-                                        <button
-                                            class="  accordion applicants-card d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <h3 class="applicants-card--heading my-0 py-0">
-                                                    Fernando martin
-                                                </h3>
-                                                <span>Last Job Title</span>
-                                            </div>
-                                            <div>
-                                                <div class="d-flex align-items-center">
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#2BC155" />
-                                                        <g clip-path="url(#clip0_446_77)">
-                                                            <path
-                                                                d="M14.9999 11.0221C13.1102 11.0221 11.4741 12.3346 11.0641 14.1793L9.72166 20.2205C9.71182 20.2648 9.70685 20.3101 9.70685 20.3555C9.70685 20.6991 9.98543 20.9777 10.3291 20.9777H19.6708C19.7162 20.9777 19.7615 20.9727 19.8058 20.9629C20.1413 20.8883 20.3528 20.556 20.2782 20.2205L18.9357 14.1793C18.5258 12.3346 16.8897 11.0221 14.9999 11.0221ZM14.9999 9.7777C17.4729 9.7777 19.6141 11.4953 20.1506 13.9094L21.493 19.9505C21.7167 20.9569 21.0821 21.954 20.0758 22.1777C19.9428 22.2072 19.807 22.2221 19.6708 22.2221H10.3291C9.29814 22.2221 8.4624 21.3864 8.4624 20.3555C8.4624 20.2193 8.47731 20.0835 8.50685 19.9505L9.84933 13.9094C10.3858 11.4953 12.527 9.7777 14.9999 9.7777Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M16.2444 13.511C16.5881 13.511 16.8667 13.7896 16.8667 14.1332C16.8667 14.4769 16.5881 14.7555 16.2444 14.7555H14.6889C14.5171 14.7555 14.3778 14.8948 14.3778 15.0666C14.3778 15.2384 14.5171 15.3777 14.6889 15.3777H15.3111C16.1702 15.3777 16.8667 16.0741 16.8667 16.9332C16.8667 17.7924 16.1702 18.4888 15.3111 18.4888H13.7555C13.4119 18.4888 13.1333 18.2102 13.1333 17.8666C13.1333 17.5229 13.4119 17.2444 13.7555 17.2444H15.3111C15.4829 17.2444 15.6222 17.1051 15.6222 16.9332C15.6222 16.7614 15.4829 16.6221 15.3111 16.6221H14.6889C13.8298 16.6221 13.1333 15.9257 13.1333 15.0666C13.1333 14.2075 13.8298 13.511 14.6889 13.511H16.2444Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M14.3778 12.8888C14.3778 12.5452 14.6564 12.2666 15 12.2666C15.3437 12.2666 15.6222 12.5452 15.6222 12.8888V14.1333C15.6222 14.4769 15.3437 14.7555 15 14.7555C14.6564 14.7555 14.3778 14.4769 14.3778 14.1333V12.8888Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M15.6222 19.111C15.6222 19.4547 15.3437 19.7333 15 19.7333C14.6564 19.7333 14.3778 19.4547 14.3778 19.111V17.8666C14.3778 17.523 14.6564 17.2444 15 17.2444C15.3437 17.2444 15.6222 17.523 15.6222 17.8666V19.111Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M14.3332 10.1688C14.4609 10.4879 14.3057 10.85 13.9866 10.9777C13.6675 11.1053 13.3054 10.9501 13.1778 10.631L11.9334 7.51991C11.7311 7.01435 12.2299 6.51126 12.7372 6.70914C13.2031 6.89089 13.5504 6.97771 13.7555 6.97771C13.8066 6.97771 13.8489 6.9668 13.9413 6.92753C13.9658 6.91711 13.9947 6.90438 14.0622 6.87448C14.3841 6.73344 14.6383 6.6666 15 6.6666C15.3608 6.6666 15.6191 6.73362 15.942 6.8733C16.0239 6.90917 16.0566 6.92344 16.0856 6.93537C16.1653 6.96822 16.2037 6.97771 16.2444 6.97771C16.4375 6.97771 16.7879 6.89011 17.2672 6.70741C17.7739 6.51428 18.2679 7.01648 18.0666 7.51991L16.8221 10.631C16.6945 10.9501 16.3324 11.1053 16.0133 10.9777C15.6943 10.85 15.5391 10.4879 15.6667 10.1688L16.4497 8.21145C16.3781 8.21857 16.3098 8.22215 16.2444 8.22215C16.0173 8.22215 15.8291 8.1756 15.6117 8.08608C15.5688 8.0684 15.5218 8.04788 15.4479 8.01546C15.2677 7.93753 15.1657 7.91104 15 7.91104C14.8359 7.91104 14.7395 7.93638 14.5618 8.01427C14.5007 8.04132 14.462 8.0584 14.428 8.07285C14.195 8.17189 14 8.22215 13.7555 8.22215C13.6898 8.22215 13.6215 8.21874 13.5505 8.21196L14.3332 10.1688Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_77">
-                                                                <rect width="15.5556" height="15.5556" fill="white"
-                                                                    transform="translate(7.22217 6.6665)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            $14,000 - $25,000
-                                                        </p>
-                                                        <span>Monthly Salary</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex align-items-center">
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#157BFB" />
-                                                        <g clip-path="url(#clip0_446_67)">
-                                                            <path
-                                                                d="M15.153 9.67432L9.59741 12.4521L15.153 15.2299L20.7085 12.4521L15.153 9.67432Z"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                            <path d="M9.59741 18.0073L15.153 20.7851L20.7085 18.0073"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                            <path d="M9.59741 15.2295L15.153 18.0073L20.7085 15.2295"
-                                                                stroke="white" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_67">
-                                                                <rect width="13.3333" height="13.3333" fill="white"
-                                                                    transform="translate(8.48633 8.56299)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            3 Year Experience
-                                                        </p>
-                                                        <span>Experience</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex align-items-center">
-
-                                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="30" height="30" rx="4" fill="#E5F1FF" />
-                                                        <g clip-path="url(#clip0_446_84)">
-                                                            <path
-                                                                d="M14.9999 8.3335C12.1855 8.3335 9.89575 10.6232 9.89575 13.4377C9.89575 14.3385 10.1338 15.2243 10.5841 15.999C10.689 16.1796 10.8064 16.3556 10.9329 16.5222L14.7781 21.6668H15.2217L19.0669 16.5222C19.1934 16.3556 19.3108 16.1796 19.4158 15.999C19.8661 15.2243 20.1041 14.3385 20.1041 13.4377C20.1041 10.6232 17.8144 8.3335 14.9999 8.3335ZM14.9999 15.1304C14.0666 15.1304 13.3072 14.371 13.3072 13.4377C13.3072 12.5043 14.0666 11.745 14.9999 11.745C15.9333 11.745 16.6926 12.5043 16.6926 13.4377C16.6926 14.371 15.9333 15.1304 14.9999 15.1304Z"
-                                                                fill="#157BFB" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_446_84">
-                                                                <rect width="13.3333" height="13.3333" fill="white"
-                                                                    transform="translate(8.33325 8.3335)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-
-
-                                                    <div class="main-text">
-                                                        <p class="mb-0 pb-0">
-                                                            3 Year Experience
-                                                        </p>
-                                                        <span>Experience</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <a href="#" class="view-cv">View CV</a>
-                                            </div>
-
-                                            <div>
-                                                <div class="d-flex justify-content-center align-items-center">
-                                                    <div class="main-text check__boxes-div">
-                                                        <p class="mb-0 pb-0">
-                                                            Actions
-                                                        </p>
-                                                        <div class="check__boxes">
-                                                            <div class="">
-                                                                <input type="checkbox" name="checkbox" checked
-                                                                    class="check-tick" />
-                                                            </div>
-                                                            <div class="checkbox checkbox-danger error-checkbox">
-                                                                <input id="checkbox6" type="checkbox">
-                                                                <label for="checkbox6"></label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <a class="stars ">
-                                                    <svg class="" width="19" height="18" viewBox="0 0 19 18" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
-                                                            stroke="#157BFB" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </button>
-                                        <div class="panel">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                commodo consequat.</p>
-                                        </div>
-                                    </div>
+                                    
+                                   
+                                   
+                                   
                                 </div>
                                 <!-- Accepted -->
                                 <div id="accepted" class="tabcontent-cv">
+                                   
                                     <div class=" scroll-accorC mb-3">
                                         <button
                                             class="  accordion applicants-card d-flex justify-content-between align-items-center">
@@ -2602,32 +1729,33 @@
                                             <div>
                                                 <div class="d-flex justify-content-center align-items-center">
                                                     <div class="main-text check__boxes-div">
-                                                        <p class="mb-0 pb-0">
+                                                        <p class="mb-0 pb-0 nmt-10">
                                                             Actions
                                                         </p>
-                                                        <div class="check__boxes">
-                                                            <div class="">
-                                                                <input type="checkbox" name="checkbox" checked
-                                                                    class="check-tick" />
-                                                            </div>
-                                                            <div class="checkbox checkbox-danger error-checkbox">
-                                                                <input id="checkbox6" type="checkbox">
-                                                                <label for="checkbox6"></label>
+                                                        <div class="check__boxes  mx-auto">
+                                                            <div class="checkbox checkbox-danger error-checkbox ms-2">
+                                                                <input id="checkbox1" type="checkbox" class="cross-input">
+                                                                <label for="checkbox1" class="mt-1 cross-input-label"></label>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div>
-                                                <a class="stars ">
-                                                    <svg class="" width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                            <div class="text-center">
+                                                <p class="mb-0 review-stars text-center">4.5
+
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <path
-                                                            d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
-                                                            stroke="#157BFB" stroke-linecap="round"
+                                                            d="M19 13C19 13.5304 18.7893 14.0391 18.4142 14.4142C18.0391 14.7893 17.5304 15 17 15H5L1 19V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H17C17.5304 1 18.0391 1.21071 18.4142 1.58579C18.7893 1.96086 19 2.46957 19 3V13Z"
+                                                            fill="#157BFB" fill-opacity="0.57" stroke="#157BFB"
+                                                            stroke-width="2" stroke-linecap="round"
                                                             stroke-linejoin="round" />
                                                     </svg>
-                                                </a>
+
+                                                        <small class="review-text">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</small>
+
+                                                </p>
                                             </div>
                                         </button>
                                         <div class="panel">
@@ -2754,32 +1882,33 @@
                                             <div>
                                                 <div class="d-flex justify-content-center align-items-center">
                                                     <div class="main-text check__boxes-div">
-                                                        <p class="mb-0 pb-0">
+                                                        <p class="mb-0 pb-0 nmt-10">
                                                             Actions
                                                         </p>
-                                                        <div class="check__boxes">
-                                                            <div class="">
-                                                                <input type="checkbox" name="checkbox" checked
-                                                                    class="check-tick" />
-                                                            </div>
-                                                            <div class="checkbox checkbox-danger error-checkbox">
-                                                                <input id="checkbox6" type="checkbox">
-                                                                <label for="checkbox6"></label>
+                                                        <div class="check__boxes  mx-auto">
+                                                            <div class="checkbox checkbox-danger error-checkbox ms-2">
+                                                                <input id="checkbox2" type="checkbox" class="cross-input">
+                                                                <label for="checkbox2" class="mt-1 cross-input-label"></label>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div>
-                                                <a class="stars ">
-                                                    <svg class="" width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                            <div class="text-center">
+                                                <p class="mb-0 review-stars text-center">4.5
+
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <path
-                                                            d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
-                                                            stroke="#157BFB" stroke-linecap="round"
+                                                            d="M19 13C19 13.5304 18.7893 14.0391 18.4142 14.4142C18.0391 14.7893 17.5304 15 17 15H5L1 19V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H17C17.5304 1 18.0391 1.21071 18.4142 1.58579C18.7893 1.96086 19 2.46957 19 3V13Z"
+                                                            fill="#157BFB" fill-opacity="0.57" stroke="#157BFB"
+                                                            stroke-width="2" stroke-linecap="round"
                                                             stroke-linejoin="round" />
                                                     </svg>
-                                                </a>
+
+                                                        <small class="review-text">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</small>
+
+                                                </p>
                                             </div>
                                         </button>
                                         <div class="panel">
@@ -2906,32 +2035,33 @@
                                             <div>
                                                 <div class="d-flex justify-content-center align-items-center">
                                                     <div class="main-text check__boxes-div">
-                                                        <p class="mb-0 pb-0">
+                                                        <p class="mb-0 pb-0 nmt-10">
                                                             Actions
                                                         </p>
-                                                        <div class="check__boxes">
-                                                            <div class="">
-                                                                <input type="checkbox" name="checkbox" checked
-                                                                    class="check-tick" />
-                                                            </div>
-                                                            <div class="checkbox checkbox-danger error-checkbox">
-                                                                <input id="checkbox6" type="checkbox">
-                                                                <label for="checkbox6"></label>
+                                                        <div class="check__boxes  mx-auto">
+                                                            <div class="checkbox checkbox-danger error-checkbox ms-2">
+                                                                <input id="checkbox3" type="checkbox" class="cross-input">
+                                                                <label for="checkbox3" class="mt-1 cross-input-label"></label>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div>
-                                                <a class="stars ">
-                                                    <svg class="" width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                            <div class="text-center">
+                                                <p class="mb-0 review-stars text-center">4.5
+
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <path
-                                                            d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
-                                                            stroke="#157BFB" stroke-linecap="round"
+                                                            d="M19 13C19 13.5304 18.7893 14.0391 18.4142 14.4142C18.0391 14.7893 17.5304 15 17 15H5L1 19V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H17C17.5304 1 18.0391 1.21071 18.4142 1.58579C18.7893 1.96086 19 2.46957 19 3V13Z"
+                                                            fill="#157BFB" fill-opacity="0.57" stroke="#157BFB"
+                                                            stroke-width="2" stroke-linecap="round"
                                                             stroke-linejoin="round" />
                                                     </svg>
-                                                </a>
+
+                                                        <small class="review-text">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</small>
+
+                                                </p>
                                             </div>
                                         </button>
                                         <div class="panel">
@@ -2941,6 +2071,7 @@
                                                 commodo consequat.</p>
                                         </div>
                                     </div>
+                                    
                                 </div>
                                 <!-- Rejeced -->
                                 <div id="rejected" class="tabcontent-cv">
@@ -3718,7 +2849,105 @@
 
         </div>
     </div>
-    </div>
+    <!-- </div> -->
+
+      <!--Write Note Modal-->
+      <div class="modal fade filter-modal2 " id="staticBackdrop-accept" data-bs-backdrop="static"
+      data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+          <div class="modal-content  border">
+              <div class="modal-header check-header">
+                  <h5 class="px-3">Accept Application Notes</h5>
+                  <button type="button" class="btn-close close-checkout" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+              </div>
+              <div class="modal-body ">
+                  <form action="">
+                      <div class="container-fluid">
+                          <div class="row">
+                              <div class="col-lg-12">
+                                  <div class="write__note">
+                                    <div class="mb-3 cv-person">
+                                        <label for="exampleInputEmail1" class="form-label">CV Person</label>
+                                        <input type="email" class="form-control" placeholder="Martin Joe" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                      </div>
+                                      <div class="over-all">
+                                          <div class="d-flex justify-content-between align-items-center">
+                                              <p class="mb-0">overall</p>
+                                              <div class="d-flex align-items-center">
+                                                <a class="stars ">
+                                                    <svg class="mx-1" width="19" height="18" viewBox="0 0 19 18"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
+                                                            stroke="#157BFB" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </a>
+                                                <a class="stars ">
+                                                    <svg class="mx-1" width="19" height="18" viewBox="0 0 19 18"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
+                                                            stroke="#157BFB" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </a>
+                                                <a class="stars ">
+                                                    <svg class="mx-1" width="19" height="18" viewBox="0 0 19 18"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
+                                                            stroke="#157BFB" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </a>
+                                                <a class="stars ">
+                                                    <svg class="mx-1" width="19" height="18" viewBox="0 0 19 18"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
+                                                            stroke="#157BFB" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </a>
+                                                <a class="stars ">
+                                                    <svg class="mx-1" width="19" height="18" viewBox="0 0 19 18"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M9.5 1L12.1265 6.321L18 7.1795L13.75 11.319L14.753 17.167L9.5 14.4045L4.247 17.167L5.25 11.319L1 7.1795L6.8735 6.321L9.5 1Z"
+                                                            stroke="#157BFB" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </a>
+                                                <p class="mb-0 ms-3 mt-2">2.0</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-12 mt-3">
+                                        <div class="write__note cv-person">
+                                            <label for="exampleInputEmail1" class="form-label">Notes</label>
+                                            <textarea name="" id="" rows="10" placeholder="Enter Your Comment"></textarea>
+                                        </div>
+                                    </div>
+                                     <div class="col-12 w-100">
+                                        <div class="note-btn d-flex justify-content-center my-4">
+                                            <button  data-bs-dismiss="modal" class="close-checkout"><a href="#" class="cancel close-btn py-3 px-5">Close</a></button>
+                                            <button><a href="#" class="save py-3 px-5">Save</a></button>
+                                        </div>
+                                     </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+
+              </div>
+
+          </div>
+
+      </div>
+  </div>
 
 
 
