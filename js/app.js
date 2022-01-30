@@ -171,7 +171,7 @@ $(function () {
         })
     })
 
-
+// change stars colors
     $('.stars').each(function () {
         $(this).on('click', function () {
             let star = $(this).find('svg')
