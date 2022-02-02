@@ -1,0 +1,123 @@
+.payment-detail{
+    font-weight: 600;
+font-size: 25px;
+line-height: 37px;
+color: #157BFB;
+text-align: center;
+}
+.payment-line{
+    border: 2px solid #C7C7C7 !important;
+    margin-bottom: 0px !important;
+}
+.payment-table{
+    @media only screen and(max-width:1200px){
+        width: 900px;
+    }
+    &>:not(:last-child)>:last-child>*{
+        border-bottom: 2px solid rgba(199, 199, 199, 0.41) !important;
+    }
+    &>:not(caption)>*>*{
+        border-bottom: 0px !important;
+    }
+    .tr{
+       &:nth-child(2n) {
+           background: #F4F4F4 !important;
+        }
+        td{
+          text-align: center;
+          padding: 15px 0px !important;
+          .span{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #BBBBBB;
+            padding: 5px;
+            border: 1px solid #BBBBBB;
+            margin-left: 7px;
+            border-radius: 4px;
+            width: 100px;
+          }
+        }
+
+        &:hover{
+            background-color: #F4F4F4;
+        }
+    }
+    th{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #161717;
+        text-align: center;
+        button{
+            background-color: #157BFB;
+            border: none !important;
+            border-radius: 4px;
+            color: white;
+            padding: 10px 10px;
+            margin-left: auto;
+            font-size: 16px;
+            width: 90%;
+        }
+    }
+    td{
+        font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: rgba(0, 0, 0, 0.86);
+
+    }
+}
+.tab-scroll{
+
+    @media only screen and(max-width:1200px){
+        // width: 940px;
+        width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    }
+}
+.payment-card{
+    background: #FFFFFF;
+border: 1px solid #157BFB;
+box-sizing: border-box;
+box-shadow: 0px 20px 54px rgba(0, 0, 0, 0.13);
+border-radius: 4px;
+min-height: 80vh;
+margin-bottom: 30px;
+
+}
+
+.payment-heading2{
+    font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 135%;
+color: #666666;
+text-align: center;
+}
+.payment-cancel{
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+background: #ECECEC;
+border: 1px solid #212325;
+box-sizing: border-box;
+border-radius: 12px;
+padding: 10px 40px;
+text-decoration: none;
+margin: 0px 5px;
+}
+.payment-save{
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+background: #157BFB;
+border-radius: 12px;
+padding: 10px 50px;
+color: #FFFFFF;
+text-decoration: none;
+}

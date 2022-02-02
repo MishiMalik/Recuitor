@@ -82,7 +82,7 @@ $('.quick-btn').each(function() {
     $(this).siblings().removeClass('active-btn')
   })
 })
-
+// stars overview rating
 $('.stars-overview').on('click', function(){
   $(this).prevAll().find('svg').attr('fill', '#157BFB')
   $(this).nextAll().find('svg').attr('fill', 'none')
