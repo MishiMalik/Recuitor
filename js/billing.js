@@ -18,8 +18,10 @@ function billing(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
-  document.getElementById("billing").click();
+ document.getElementById("billing").click();
 
+
+  // show and hide view
 
   $('.view-action').on('click',function(){
     $('.orders').css({'display':'none'});
@@ -28,4 +30,17 @@ function billing(evt, cityName) {
   $('.back-btn').on('click',function(){
     $('.orders').css({'display':'block'});
     $('.view-order').css({'display':'none'})
-  })
+  });
+
+ 
+
+ // Show and hide invoice
+  $('.invoice-action ').on('click',function(){
+    $('.orders').css({'display':'none'});
+    $('.Invoice').css({'display':'block'});
+  });
+  $('.back-btn').on('click',function(){
+    $('.orders').css({'display':'block'});
+    $('.Invoice').css({'display':'none'})
+  });
+

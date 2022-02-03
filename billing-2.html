@@ -31,7 +31,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/jquery-autocomplete/1.0.7/jquery.auto-complete.css"
         integrity="sha512-uq8QcHBpT8VQcWfwrVcH/n/B6ELDwKAdX4S/I3rYSwYldLVTs7iII2p6ieGCM13QTPEKZvItaNKBin9/3cjPAg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Payments</title>
+    <title>Billing</title>
 </head>
 
 <body class="job-body manage-body">
@@ -379,135 +379,99 @@
         <div class="container-fluid mt-5">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-10">
-                    <div class="payment-card mt-5">
-                        <h2 class="payment-detail mt-4">
-                            PAYMENT DETAILS
-                        </h2>
-                        <hr class="payment-line">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-8 col-sm-10  col-11  mx-auto mt-4">
-                                <h3 class="payment-heading2">
-                                    Add Payment method
-                                </h3>
-                                <div class="row">
-                                    <div class="col-lg-6 my-1">
-                                        <div class="payment-method" id="method-card">
-                                            <div class="d-flex align-items-start">
-                                                <input type="radio" name="pay" checked id="credit-radio">
-                                                <div class="method-content w-100">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <img src="images/cards 1.png" alt="" class="img-fluid mt-2">
-                                                        <div>
-                                                            <svg width="29" height="22" viewBox="0 0 29 22" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                                <rect width="29" height="22" fill="url(#pattern0)" />
-                                                                <defs>
-                                                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox"
-                                                                        width="1" height="1">
-                                                                        <use xlink:href="#image0_379_792"
-                                                                            transform="translate(-1.23077 -3.44444) scale(0.0192308 0.0277778)" />
-                                                                    </pattern>
-                                                                    <image id="image0_379_792" width="400" height="300"
-                                                                        xlink:href="data:image/png;base64,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" />
-                                                                </defs>
-                                                            </svg>
-                                                        </div>
-            
-                                                    </div>
-                                                    <p class="method-content-name mb-0">Credit Cards</p>
-                                                </div>
-                                            </div>
+                    <div class="payment-card mt-5 pb-5">
+                       <div class="row">
+                           <div class="col-lg-12">
+                               <h2 class="cancel-subscription text-center mt-4">
+                                Cancle Subscription
+                               </h2>
+                           </div>
+                       </div>
+                       <div class="row">
+                          <div class="col-lg-10 col-11 mx-auto">
+                              <div class="row">
+                                <div class="col-lg-6 mt-4 reasons-col">
+                                    <ul class="reasons-list">
+                                       <h2 class="reason my-2">What's making you cancel ?</h2>
+                                        <li>
+                                           <div class="form-check mt-3">
+                                               <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>I found a better app
+                                               <label class="form-check-label" for="radio1"></label>
+                                             </div>
+                                        </li>
+                                        <li>
+                                           <div class="form-check mt-3">
+                                               <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Technical issues
+                                               <label class="form-check-label" for="radio1"></label>
+                                             </div>
+                                        </li>
+   
+                                        <li>
+                                           <div class="form-check mt-3">
+                                               <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Very costly
+                                               <label class="form-check-label" for="radio1"></label>
+                                             </div>
+                                        </li>
+   
+                                        <li>
+                                           <div class="form-check mt-3">
+                                               <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>I don't know
+                                               <label class="form-check-label" for="radio1"></label>
+                                             </div>
+                                        </li>
+   
+                                        <li>
+                                           <div class="form-check mt-3">
+                                               <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Too much dificult
+                                               <label class="form-check-label" for="radio1"></label>
+                                             </div>
+                                        </li>
+   
+                                        <li>
+                                           <div class="form-check mt-3">
+                                               <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>other
+                                               <label class="form-check-label" for="radio1"></label>
+                                             </div>
+                                        </li>
+   
+                                    
+                                    </ul>
+                                    <input type="text" placeholder="Reason" class="mt-1  reason-input">
+                              </div>
+                              <div class="col-lg-6 mt-4 ">
+                                 <div class="row d-flex justify-content-center align-items-center">
+                                     <div class="col-lg-11   d-flex justify-content-center align-items-center mt-4">
+                                         <div class="support-card">
+                                             <h3>
+                                                Get support for packages/ Service to help you go
+                                             </h3>
+                                             <div class="schedule-meeting d-flex justify-content-center mt-3">
+                                                 <a href="" class="meeting-btn ">Schedule Meeting</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+
+                              <div class="col-lg-12">
+                                <div class="write__note mt-5">
+                                     <div class="col-12 w-100 mt-5">
+                                        <div class="note-btn d-flex justify-content-center my-5">
+                                            <button  data-bs-dismiss="modal" class="close-checkout"><a href="#" class="close-btn-bill py-3 px-5">Close</a></button>
+                                            <button><a href="#" class="save py-3 px-5 border-4">confirm</a></button>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6 my-1">
-                                        <div class="payment-method" id="method-paypal">
-                                            <div class="d-flex align-items-start">
-                                                <input type="radio" name="pay" id="paypal-radio">
-                                                <div class="method-content w-100">
-                                                    <div class="d-flex justify-content-center ">
-                                                        <img src="images/paypal-3384015_1280 1.png" alt="" class="img-fluid mt-2">
-                                                    </div>
-                                                    <p class="method-content-name mb-0">Paypal</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                </div>
-                                <div class="credit-detail row">
-                                    <h5 class="modal-title paayment-heading mb-3 mt-4" id="staticBackdropLabel">Credit Card Details
-                                    </h5>
-                                    <div class="col-12">
-                                        <label for="" class="check-label">Card Number</label>
-                                        <div class="input-group flex-nowrap ">
-                                            <span class="input-group-text input-span" id="addon-wrapping">
-                                                <img src="images/cards 2.png" alt="no img" class="img-fluid">
-                                            </span>
-                                            <input type="text" class="form-control check-input" placeholder="5220 - ____"
-                                                aria-label="Username" aria-describedby="addon-wrapping">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 mt-2">
-                                        <label for="" class="check-label">Expired Date</label>
-                                        <div class="input-group flex-nowrap ">
-                                            <span class="input-group-text input-span" id="addon-wrapping">
-                                                <img src="images/calender 1.png" alt="no img" class="img-fluid">
-                                            </span>
-                                            <input type="text" class="form-control check-input" placeholder="__ / __"
-                                                aria-label="Username" aria-describedby="addon-wrapping">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 mt-2">
-                                        <label for="" class="check-label">CVV</label>
-                                        <div class="input-group flex-nowrap ">
-                                            <span class="input-group-text input-span" id="addon-wrapping">
-                                                <img src="images/1006865-200 1.png" alt="no img" class="img-fluid">
-                                            </span>
-                                            <input type="text" class="form-control check-input" placeholder="_  _  _"
-                                                aria-label="Username" aria-describedby="addon-wrapping">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 check-text mt-2">
-                                        <p>By signing up, you indicate that you agree to the Smart Executive Job <a href=""> terms
-                                                and conditions .</a></p>
-                                    </div>
-            
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12 mt-4 mb-5 pb-5">
-                                        <div class="d-flex justify-content-center">
-                                            <a href="" class="payment-cancel">Cancel</a>
-                                            <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="payment-save">Save</a>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="col-12 check-button mt-3 mb-2" aria-label="Close">
-                                        <a data-bs-toggle="modal"
-                                        data-bs-target="#staticBackdrop-payment">
-                                            <p class="mb-0">Save</p>
-                                          
-                                        </a>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
+                                     </div>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                       </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <div class="modal fade" tabindex="-1"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body border-0">
-              <p class="mb-0 text-center mt-4">Payment Info save sucessfully.</p>
-            </div>
-            <div class="modal-footer border-0">
-              <button type="button" class="btn btn-primary mx-auto mb-4" data-bs-dismiss="modal">Save</button>
-            </div>
-          </div>
-        </div>
-      </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -517,8 +481,7 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 
     <script src="js/app.js"></script>
-    <script src="js/candidate.js"></script>
-    <script src="js/package.js"></script>
+    <script src="js/billing.js"></script>
     <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
@@ -532,5 +495,3 @@
 </body>
 
 </html>
-
-
